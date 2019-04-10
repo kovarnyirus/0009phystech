@@ -1,0 +1,108 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-about/_s-about.pug
+include ../blocks/s-infrastructure/_s-infrastructure.pug
+include ../blocks/s-logos/_s-logos.pug
+include ../blocks/s-main-calendar/_s-main-calendar.pug
+include ../blocks/s-news/_s-news.pug
+include ../blocks/s-block/_s-block.pug
+include ../blocks/s-sq/_s-sq.pug
+include ../blocks/s-number-2/_s-number-2.pug
+include ../blocks/s-price/_s-price.pug
+include ../blocks/s-price-servise/_s-price-servise.pug
+include ../blocks/s-offices/_s-offices.pug
+include ../blocks/s-get-to/_s-get-to.pug
+include ../blocks/footer-page/_footer-page.pug
+include ../blocks/s-about-work-shop/_s-about-work-shop.pug
+include ../blocks/s-schedule/_s-schedule.pug
+include ../blocks/s-video/_s-video.pug
+include ../blocks/s-peoples/_s-peoples.pug
+include ../blocks/s-price-work-shop/_s-price-work-shop.pug
+include ../blocks/s-profit/_s-profit.pug
+
+block title
+	title Аренда  переговорных  комнат
+
+block pagecontent
+	+mob-mnu--wsh()
+	+header()
+		//- +top-line()
+		//- +top-nav--landing()
+		+top-nav--wsh()
+	
+		+b.header-block--dark(style='background-image: url(img/head-bg-wsh.jpg);')
+			.container
+				+breadcrumb("Фитнес-зал","Технопарк")  
+				.row
+					.col-xxl-8.col
+						h1.under-canvas.page-title.page-title.page-title--sm.ttu
+							span Узнайте как законно и безопасно снизить налоги и затраты благодаря изменениям 2019 года
+
+						+e.text--white.text-white Профессиональный однодневный воркшоп по&nbsp;развитию 
+							br
+							| бухгалтерских и&nbsp;финансово-аналитических навыков
+
+						.row
+							.col-auto
+								+e.item-landing 
+									+e.icon-wrap-land: +icon('event')
+									+e.text-item 
+										.strong Когда
+										div 18 апреля 2019
+											br
+											| в 10:00
+							.col-auto
+								+e.item-landing
+									+e.icon-wrap-land: +icon('placeholder')
+									+e.text-item 
+										.strong Где
+										div Москва, 
+											br
+											| Долгопрудненское ш., дом 3
+
+					.col-lg-auto
+						+b.timer-block
+							+e.title  До начала осталось:
+							ul.example-timer
+								li
+									span.days 00
+									p.days_text.small дня
+								li.seperator.seperator--day
+								li
+									span.hours 00
+									p.hours_text.small часов
+								li.seperator :
+								li
+									span.minutes 00
+									p.minutes_text.small минут
+								li.seperator :
+								li
+									span.seconds 00
+									p.seconds_text.small секунд
+							+e.btn(href="#") ПРИНЯТЬ УЧАСТИЕ
+	+s-profit
+	+s-price-servise-wsh
+	.container
+		.row
+			.col-xl-auto
+				+s-about-work-shop 
+			.col
+				+s-schedule
+	//- +s-block--landing
+	//- .bg-primary.animate-footer 
+	+s-video
+	+s-peoples
+	+s-price-work-shop
+
+	+s-form--wsh()
+	//- +s-logos(class="s-logos--page")
+	//- 	.col-12: h2.ttu РЕЗИДЕНТЫ
+	//- +s-get-to()
+	//- +footer-page()
+	//- 	//- +s-contact()
+	//- 	+footer()
+	
+	

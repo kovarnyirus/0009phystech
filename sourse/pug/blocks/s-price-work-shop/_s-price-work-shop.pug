@@ -1,0 +1,32 @@
+mixin s-price-work-shop()
+	// start s-price-work-shop
+	+b.s-price-work-shop.section#s-price-work-shop&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Цены
+				+e.text Выберите билет и после оплаты мы вышлем вам его на почту.
+			.row
+				mixin item(t,p)
+					+e.col.col-sm-6
+						+e.item
+							+e.item-inner
+								.row
+									.col
+										+e.title.h3.strong.ttu= t
+										block
+										+e.price= p
+									.col-sm-auto
+										div: +e.btn(href="#") Оплатить онлайн
+										div: +e.btn(href="#") Оплатить по счету
+					// /+e.col.col-sm-6 
+				+item('Базовый','6 000 р.')
+					+e.text Посещение
+						br
+						|  мероприятия
+				+item('VIP','10 000 р.')
+					+e.text Посещение мероприятия
+						br
+						| отдельная зона у сцены
+						br
+						| консультация спискера
+	// end s-price-work-shop

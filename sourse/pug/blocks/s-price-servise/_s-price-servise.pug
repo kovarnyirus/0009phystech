@@ -1,0 +1,127 @@
+mixin s-price-servise()
+	// start s-price-servise
+	+b.s-price-servise.section#s-price-servise&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Услуги
+			.row
+				mixin item(i,t,p)
+					+e.col.col-lg-3.col-md-4.col-sm-6
+						+e.item
+							+e.img-wrap
+								img(src=`img/servise-${i}.svg`, alt="")
+							+e.title= t
+							// 08.02 переделал
+							+e.item-foot
+								+e.text Мы постоянно развиваем сервисы и добавляем новые услуги для гостей и резидентов Технопарка. В скором времени тут появиться что то новенькое
+								+e.price= p
+					// /+e.col.col-lg-3.col-md-4.col-sm-6
+				+item('1',"Аренда компьютера","3 000 ₽/мес")
+				+item('2',"Аренда дополнительного МФУ","3 000 ₽/мес")
+				+item('3',"Размещение промо-ролика на мониторах технопарка","цена договорная")
+				+item('4',"Брошюратор","300 ₽")
+				+item('5',"Аренда шкафа","500 ₽/мес")
+				+item('6',"Аренда переговорной комнаты","600 ₽/час")
+				+item('7',"Аренда конференц-зала","цена договорная")
+				+item('8',"Кейтеринг","цена договорная")
+	// end s-price-servise
+
+
+mixin s-price-servise-rent()
+	// start s-price-servise
+	// добавил классы 17.02
+	+b.s-price-servise--dark.lazy-background.section#s-price-servise&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Услуги
+			.row
+				mixin item(i,t,p)
+					+e.col.col-md-4.col-sm-6
+						+e.item
+							+e.img-wrap
+								// добавил классы 17.02
+								img.img-svg(src=`img/rent-i-${i}.svg`, alt="")
+							+e.title= t
+							// 08.02 переделал
+							+e.item-foot
+								+e.text Мы постоянно развиваем сервисы и добавляем новые услуги для гостей и резидентов Технопарка. В скором времени тут появиться что то новенькое
+								+e.price= p
+					// /+e.col.col-lg-3.col-md-4.col-sm-6
+				+item('1',"Аренда компьютера","3 000 ₽/мес")
+				+item('2',"Аренда дополнительного МФУ","3 000 ₽/мес")
+				+item('3',"Уборка","цена договорная")
+				+item('4',"Паркинг","3 000 ₽/мес")
+				+item('6',"Аренда переговорной комнаты","600 ₽/час") 
+				+item('5',"Размещение промо-ролика на мониторах технопарка","цена договорная")
+	// end s-price-servise
+
+
+mixin s-price-servise-rent2()
+	// start s-price-servise
+	// добавил классы 17.02
+	+b.s-price-servise--blue.lazy-background.section#s-price-servise&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Дополнительные услуги
+			.row
+				mixin item(i,t,p)
+					+e.col.col-lg-3.col-6
+						+e.item--blue
+							+e.img-wrap
+								// добавил классы 17.02
+								img(src=`img/servise-rent-${i}.svg`, alt="")
+							+e.title= t
+					// /+e.col.col-lg-3.col-6
+				+item('1',"Почтовый ящик")
+				+item('2',"Монитор")
+				+item('3',"Проектор")
+				+item('4',"Кейтеринг") 
+	// end s-price-servise
+
+mixin s-price-servise-wsh()
+	// start s-price-servise
+	// добавил классы 17.02
+	+b.s-price-servise--work-shop.section#s-price-servise&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Что вы узнаете
+			.row
+				mixin item(i,t,p)
+					+e.col.col-lg-3.col-6
+						+e.item--blue
+							+e.img-wrap
+								// добавил классы 17.02
+								img(src=`img/servises-work-shop-${i}.svg`, alt="")
+							.h4= t
+					// /+e.col.col-lg-3.col-6
+				+item('1',"Как снизить НДС, законно и безопасно! ")
+				+item('2',"Как самостоятельно  перейти на онлайн-кассу в 2019 году? ")
+				+item('3',"Налоговые изменения 2019 года: как выгодно их использовать? ")
+				+item('4',"ЕГАИС для оптовиков и розницы.  Самые дешевые способы подключения.") 
+	// end s-price-servise
+
+
+mixin s-price-servise-14()
+	// start s-price-servise
+	// добавил классы 17.02
+	+b.s-price-servise--blue.--blue-dark.lazy-background.section#s-price-servise&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Дополнительные услуги
+			.row
+				mixin item(i,t,p)
+					+e.col.col-xl.col-md-4.col-sm-6
+						+e.item--blue
+							+e.img-wrap 
+								img.lazy.res-i(src="#" data-src=`img/servise-14-${i}.svg` height="65" width="65", alt="")
+							+e.title= t
+							block
+					// /+e.col.col-xl.col-md-4.col-sm-6
+				+item('1',"Организация мероприятия  «под ключ»")
+				+item('2',"Размещение рекламно- информационных материалов в холе ")
+				+item('3',"Размещение промо-ролика  на мониторах технопарка")
+					+e.foot-text.h4.strong цена договорная
+				+item('4',"Организация шатлов от метро «Алтуфьево»  до Физтехпарк ") 
+				+item('5',"Аренда переговорной комнаты") 
+					+e.foot-text.h4.strong 600 ₽/час
+	// end s-price-servise

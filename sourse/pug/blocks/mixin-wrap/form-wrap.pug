@@ -1,0 +1,62 @@
+mixin form-head()
+	form.js-form-validate( method="post" action="action.php" data-parsley-validate="") 
+		input(type='hidden', class="order", name='Вид формы', value=`Заявка  с сайта` ) 
+		block
+mixin input(  t , pl)
+	+e.input-wrap.form-group
+		+e.SPAN.title= pl
+		label 
+			+e.INPUT.input.form-control(type= t )&attributes(attributes)
+	// +e.input-wrap
+mixin sel(t)
+	+e.input-wrap.form-group
+		//- label 
+		+e.SELECT.input.form-control()&attributes(attributes)
+			option(selected disabled)= t
+			block
+	// +e.input-wrap
+
+mixin ta(p , pl)
+	+e.input-wrap.form-group
+		label
+			+e.SPAN.title= p
+			+e.TEXTAREA.input.form-control( placeholder= pl)&attributes(attributes)
+	// +e.input-wrap
+
+mixin input-l(  t ,p )
+	+e.input-wrap.form-group
+		label
+			+e.INPUT.input.form-control(type= t     )&attributes(attributes) 
+			+e.SPAN.title-label= p
+		block
+	// +e.input-wrap
+mixin input-un(  t ,p )
+	+e.input-wrap.form-group
+		label
+			+e.INPUT.input.form-control(type= t   )&attributes(attributes) 
+			+e.SPAN.title-label= p
+		block
+	// +e.input-wrap
+mixin t-un(   p )
+	+e.input-wrap.form-group
+		label
+			+e.TEXTAREA.input.form-control(   )&attributes(attributes) 
+			+e.SPAN.title-label= p
+		block
+	// +e.input-wrap
+
+mixin select-l(  p )
+	+e.input-wrap.form-group
+		label
+			+e.SELECT.input.form-control( required   )&attributes(attributes) 
+				option.d-none(selectedvalue="")= p
+				block
+			//- +e.SPAN.title-label
+	// +e.input-wrap
+
+mixin form-wrap()
+	+b.form-wrap&attributes(attributes)
+		form.js-form-validate
+			block
+
+

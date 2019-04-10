@@ -1,0 +1,187 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-about/_s-about.pug
+include ../blocks/s-infrastructure/_s-infrastructure.pug
+include ../blocks/s-logos/_s-logos.pug
+include ../blocks/s-main-calendar/_s-main-calendar.pug
+include ../blocks/s-news/_s-news.pug
+include ../blocks/s-block/_s-block.pug
+include ../blocks/s-sq/_s-sq.pug
+include ../blocks/s-number-2/_s-number-2.pug
+
+block title
+	title Мероприятия
+
+block pagecontent
+	+mob-mnu()
+	+header()
+		//- +top-line()
+		+top-nav()
+	
+		+b.header-block(style="background-image: url(img/head-bg-3.jpg);")
+			.container
+				+breadcrumb("Мероприятия","Технопарк")
+
+				h1.under-canvas.page-title.page-title
+					span Мероприятия
+	.animate-block#particles-js.particle-canvas.particles-js
+		+b.s-main-calendar.section.bg-white
+			.container
+				.row
+					.col
+						+b.section-title.mt-3.pb-3
+							.row.align-items-center
+								.col
+									.h4.strong.pt-0 Отображены 
+										|
+										span.text-primary 4 мероприятия  
+										| 
+										| на 09.08.2018
+								.col-auto
+									+e.A.btn.under-canvas(href="#") Показать все
+						- for (var x = 0; x < 3; x++)
+							+e.item--horizontal.under-canvas
+								.row.align-items-center
+									.col-lg-auto 
+										+e.img-wrap--horizontal
+											span: img.res-i(src="img/calendar-img.png", alt="")
+									.col
+										+e.title--horizontal
+											a(href="#") Мероприятие для журналистов в одну две три строки для наглядности
+										+e.date 21.08.2018
+							// +e.item
+							
+							+e.item--horizontal.under-canvas
+								.row.align-items-center
+									.col-lg-auto 
+										+e.img-wrap--horizontal
+											span: img.res-i(src="img/calendar-img-2.jpg", alt="")
+									.col
+										+e.title--horizontal
+											a(href="#") Мероприятие для журналистов в одну две три строки для наглядности
+										+e.date 21.08.2018
+							// +e.item
+						+pugin-2()
+					.col-xxl-auto.col-lg-6.order-lg-0.order-first
+						+e.aside
+							+e.head.under-canvas
+								.row
+									.col-xl-auto
+										.h4.strong.ttu  Календарь мероприятий
+									.col
+										+b.choice-block
+											+e.arrow--left(href="#")
+												+icon("sm-left")
+											+e.text декабрь
+											+e.arrow--right(href="#")
+												+icon("sm-right")
+									.col
+										+b.choice-block--year
+											+e.arrow--left(href="#")
+												+icon("sm-left")
+											+e.text 2018
+											+e.arrow--right.disabled(href="#")
+												+icon("sm-right")
+							+e.table-wrap.under-canvas
+								table.NewsCalTable(  )
+									tbody
+										tr
+											td.NewsCalHeader  Пн
+											td.NewsCalHeader   Вт
+											td.NewsCalHeader  Ср
+											td.NewsCalHeader  Чт
+											td.NewsCalHeader Пт
+											td.NewsCalHeader Сб
+											td.NewsCalHeader  Вс
+										tr
+											td.NewsCalDefault--prev
+												span 1
+											td.NewsCalDefault()
+												span 2
+											td.NewsCalDefault()
+												span 3
+												.NewsCalNews(style='padding-top:5px;')
+													a(href='/kalendar/detail.php?ID=2', title='2') 100
+											td.NewsCalDefault()
+												span 4
+											td.NewsCalDefault()
+												span 5
+											td.NewsCalWeekend()
+												span 6
+											td.NewsCalWeekend()
+												span 7
+										tr
+											td.NewsCalToday()
+												span 8
+											td.NewsCalDefault()
+												span 9
+											td.NewsCalDefault()
+												span 10
+											td.NewsCalDefault()
+												span 11
+											td.NewsCalDefault()
+												span 12
+											td.NewsCalWeekend()
+												span 13
+											td.NewsCalWeekend()
+												span 14
+										tr
+											td.NewsCalDefault()
+												span 15
+												.NewsCalNews(style='padding-top:5px;')
+													
+													a(href='/kalendar/detail.php?ID=1', title='Событие 1') 4
+											td.NewsCalDefault()
+												span 16
+											td.NewsCalDefault()
+												span 17
+											td.NewsCalDefault()
+												span 18
+											td.NewsCalDefault()
+												span 19
+											td.NewsCalWeekend()
+												span 20
+											td.NewsCalWeekend()
+												span 21
+										tr
+											td.NewsCalDefault()
+												span 22
+											td.NewsCalDefault()
+												span 23
+											td.NewsCalDefault()
+												span 24
+											td.NewsCalDefault()
+												span 25
+											td.NewsCalDefault()
+												span 26
+											td.NewsCalWeekend()
+												span 27
+											td.NewsCalWeekend()
+												span 28
+										tr
+											td.NewsCalDefault()
+												span 29
+											td.NewsCalDefault()
+												span 30
+											td.NewsCalDefault()
+												span 31
+											td.NewsCalOtherMonth()
+												span 1
+											td.NewsCalOtherMonth()
+												span 2
+											td.NewsCalOtherMonth()
+												span 3
+											td.NewsCalOtherMonth()
+												span 4
+	.bg-light
+		+s-news
+	.bg-primary.animate-footer
+		canvas.x-canvas-2
+		+s-form()
+		//- +s-contact()
+		+footer()
+	
+	

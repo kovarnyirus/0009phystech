@@ -1,0 +1,52 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-about/_s-about.pug
+include ../blocks/s-infrastructure/_s-infrastructure.pug
+include ../blocks/s-logos/_s-logos.pug
+include ../blocks/s-main-calendar/_s-main-calendar.pug
+include ../blocks/s-news/_s-news.pug
+include ../blocks/s-block/_s-block.pug
+include ../blocks/s-sq/_s-sq.pug
+include ../blocks/s-number-2/_s-number-2.pug
+include ../blocks/s-patner/_s-patner.pug
+
+block title
+	title РЕЗИДЕНТЫ
+
+block pagecontent
+	+mob-mnu()
+	+header()
+		//- +top-line()
+		+top-nav()
+	
+		+b.header-block
+			.container
+				+breadcrumb("Фитнес-зал","Технопарк")
+
+	.animate-block#particles-js.particle-canvas.particles-js
+		.container
+			h1.under-canvas.page-title.page-title.pb-0
+				span РЕЗИДЕНТЫ
+		
+		//- .large-header#large-header
+			//- canvas.x-canvas#x-canvas
+			//- canvas.x-canvas#x-canvas2
+			//- canvas.x-canvas#x-canvas3
+		+b.s-content.section.py-0
+			.container
+				+e.section-title
+					h2 
+						span.text-primary “Физтехпарк”
+						| — это инновационная площадка для проведения событий: форумов, выставок, конференций, деловых встреч, образовательных мероприятий, торжественных шоу-программ.
+		+s-patner
+		
+	.bg-primary.animate-footer
+		canvas.x-canvas-2
+		+s-form()
+		//- +s-contact()
+		+footer()
+	
+	

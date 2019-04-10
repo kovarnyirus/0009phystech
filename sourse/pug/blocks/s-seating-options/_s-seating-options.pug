@@ -1,0 +1,20 @@
+mixin s-seating-options()
+	// start s-seating-options
+	+b.s-seating-options.section#s-seating-options&attributes(attributes)
+		.container
+			+b.section-title 
+				h2 Варианты рассадки
+				
+			.row
+				mixin item(i, t)
+					+e.col.col-lg-3.col-6
+						+e.item
+							+e.img-wrap
+								img.lazy.res-i(src="#" data-src=`img/seating-i-${i}.png` width='140' height="130", alt="")
+							+e.title= t
+					// /+e.col.col-lg-3.col-6
+				+item('1','Фуршет')
+				+item('2','Банкет')
+				+item('3','Театр')
+				+item('4','Класс')
+	// end s-seating-options

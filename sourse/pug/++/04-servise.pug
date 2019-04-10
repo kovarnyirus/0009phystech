@@ -1,0 +1,91 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-about/_s-about.pug
+include ../blocks/s-infrastructure/_s-infrastructure.pug
+include ../blocks/s-logos/_s-logos.pug
+include ../blocks/s-main-calendar/_s-main-calendar.pug
+include ../blocks/s-news/_s-news.pug
+include ../blocks/s-block/_s-block.pug
+include ../blocks/s-sq/_s-sq.pug
+include ../blocks/s-number-2/_s-number-2.pug
+
+block title
+	title УСЛУГА И СЕВРИС
+
+block pagecontent
+	+mob-mnu()
+	+header()
+		//- +top-line()
+		+top-nav()
+	
+		+b.header-block(style="background-image: url(img/head-bg-3.jpg);")
+			.container
+				+breadcrumb("Физтехпарк","Технопарк")
+				// изменил
+				.under-canvas.page-title.page-title
+					h1
+						span ТЕХНОПАРК
+					//- a.btn.btn.btn-danger(href="#") Воспользоваться
+					a.btn.btn.btn-danger.popup-with-move-anim(href="#modal-event") Воспользоваться
+				// /изменил
+	.animate-block#particles-js.particle-canvas.particles-js
+		
+		//- .large-header#large-header
+			//- canvas.x-canvas#x-canvas
+			//- canvas.x-canvas#x-canvas2
+			//- canvas.x-canvas#x-canvas3
+		+b.s-content.section
+			.container
+				+e.section-title
+					h2 
+						span.text-primary К Вашим услугам  
+						| 
+						| – фитнес-зона, силовые и кардио-тренажеры, боксерский ринг, душевые кабинки. Опция будет доступна не только резидентам “Физтехпарка”, но и всем желающим вести здоровый образ жизни.
+				.row.justify-content-center
+					mixin item(i,t)
+						.col-md-3.col-sm-4.col-6
+							+e.item
+								+e.img-wrap
+									img.res-i(src=`img/${i}`, alt="")
+								+e.caption= t
+						// .col-md-3.col-sm-4.col-6
+					+item("001-barbell.svg","ТРЕНАЖЕРЫ")
+					+item("002-boxing-gloves.svg","БОКСЕРСКИЙ РИНГ")
+					+item("003-barbell.svg","СТОЙКА ВЕСОВ")
+					+item("004-exercise.svg", "ГРУШИ")
+			 
+ 
+	+b.s-content--slider.text-white.bg-primary.animate-section.mb-0
+		canvas.x-canvas
+		.container
+			.row
+				.col-xxl-4.col-lg-5.section.po-event-no
+					+b.section-title
+						h2.ttu Хотите арендовать  пространство?
+					.h3.strong Какой то текст про спортзал для наглядности, справа слайдер
+					mixin item(n,t)
+						+e.group 
+							+e.number= n
+							.h4.strong= t
+					+item("20","Тренеров")
+					+item("25","Тренажеров")
+					+item("740 м2","Площадь спортзала")
+				+e.slider-col.col
+					+e.slider-wrap
+						+e.slider--js
+							- for (var x = 0; x < 3; x++)
+								+e.slide
+									+e.img-wrap.img-bg
+										img(src="#" data-lazy="img/content.jpg", alt="")
+
+	+s-news
+	.bg-primary.animate-footer
+		canvas.x-canvas-2
+		+s-form()
+		//- +s-contact()
+		+footer()
+	
+	

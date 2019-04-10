@@ -1,0 +1,85 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-about/_s-about.pug
+include ../blocks/s-infrastructure/_s-infrastructure.pug
+include ../blocks/s-logos/_s-logos.pug
+include ../blocks/s-main-calendar/_s-main-calendar.pug
+include ../blocks/s-news/_s-news.pug
+include ../blocks/s-block/_s-block.pug
+include ../blocks/s-sq/_s-sq.pug
+include ../blocks/s-number-2/_s-number-2.pug
+
+block title
+	title ТЕХНОПАРК
+
+block pagecontent
+	+mob-mnu()
+	+header()
+		//- +top-line()
+		+top-nav()
+	
+		+b.header-block(style="background-image: url(img/head-bg-2.jpg);")
+			.container
+				+breadcrumb("Физтехпарк","Технопарк")
+
+				h1.under-canvas.page-title.page-title
+					span ТЕХНОПАРК
+	.animate-block#particles-js.particle-canvas.particles-js
+		
+		//- .large-header#large-header
+			//- canvas.x-canvas#x-canvas
+			//- canvas.x-canvas#x-canvas2
+			//- canvas.x-canvas#x-canvas3
+		+b.s-content.section
+			.container
+				+e.section-title
+					h2 
+						span.text-primary Физтехпарк  
+						| 
+						| – московский технопарк в сфере высоких технологий, который объединяет на своей площадке как крупные IT корпорации, так и молодые перспективные компании, и предоставляет все условия для их быстрого развития. 
+				.row.justify-content-center
+					mixin item(i,t)
+						.col-xl.col-md-3.col-sm-4.col-6
+							+e.item
+								+e.img-wrap
+									img.res-i(src=`img/${i}`, alt="")
+								+e.caption= t
+						// .col-xl.col-md-3.col-sm-4.col-6
+					+item("001-brain.svg","НЕЙРОТЕХНОЛОГИИ")
+					+item("002-structure.svg","МАШИННОЕ ОБУЧЕНИЕ")
+					+item("003-assembly.svg","РОБОТОТЕХНИКА")
+					+item("004-artificial-intelligence.svg", "МИКРОЭЛЕКТРОНИКА")
+					+item("005-blockchain.svg","BLOCKCHAIN")
+					+item("006-vr-glasses.svg","VR/AR ")
+					+item("007-joystick.svg","КИБЕРСПОРТ")
+	+s-sq()
+	+s-number-2
+	+b.s-content.text-white.bg-primary.animate-section.section
+		canvas.x-canvas
+		.container
+			.row
+				.col-lg-5
+					+b.section-title
+						h2.ttu Хотите арендовать  пространство?
+					p “Физтехпарк” обладает не только высокотехногичной инфраструктурой,  здесь работает опытная команда профессионалов. У нас Вы можете как провести свое мероприятие самостоятельно, арендуя помещения, так и заказать его организацию “под ключ” у наших специалистов. 
+					+e.A.btn(href="#") АРЕНДОВАТЬ
+				.col
+					+e.img-big
+						img.res-i(src="img/arenda.jpg", alt="")
+	+s-logos
+		.col-auto
+			h2.ttu РЕЗИДЕНТЫ
+		.col-auto
+			+e.A.btn(href="#") Список всех резидентов 
+	+s-block 
+	+s-news
+	.bg-primary.animate-footer
+		canvas.x-canvas-2
+		+s-form()
+		//- +s-contact()
+		+footer()
+	
+	

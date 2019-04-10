@@ -1,0 +1,93 @@
+mixin s-events()
+	// start s-events
+	+b.s-events.section#s-events&attributes(attributes)
+		.container
+			+b.section-title 
+				.row
+					.col
+						h2 Календарь мероприятий
+					.col-md-auto 
+						+b.choice-block
+							+e.arrow--left(href="#")
+								+icon("sm-left")
+							+e.text декабрь
+							+e.arrow--right(href="#")
+								+icon("sm-right")
+				
+			+e.head
+				table
+					tr
+						- for (var x = 0; x < 4; x++)
+							th Пн
+							th ВТ
+							th СР
+							th ЧТ
+							th Пт
+							th
+								.strong.text-danger Сб
+							th
+								.strong.text-danger ВС
+						th Пн
+						th ВТ
+						th СР 
+					tr
+						- for (var x = 1; x <= 4; x++)
+							td=x  
+						td.current 5
+							+e.count 3
+						td 6
+						td 7
+						
+						- for (var x = 8; x <= 12; x++)
+							td=x   
+						td 13
+							+e.count 2
+						td 14
+							+e.count 1
+						
+						- for (var x = 15; x <= 31; x++)
+							td=x   
+
+			+e.body
+				.section-title.h4.strong  5 августа 2019
+				// start s-main-calendar
+				+b.s-main-calendar  
+					- for (var x = 0; x < 3; x++)
+						+e.item--horizontal.under-canvas
+							.row.align-items-center
+								.col-lg-auto 
+									+e.img-wrap--horizontal
+										span: img.res-i(src="img/calendar-img.png", alt="")
+								.col
+									.row
+										.col 
+											+e.title-lg
+												a(href="#") Мероприятие для журналистов в одну две три строки для наглядности
+										.col-sm-auto.pt-3
+											+e.time.h4
+												+icon('clock2')
+												|  14:30
+									.row.align-items-center
+										.col
+											+e.date 21.08.2018
+												span.divider-text
+												| 21.08.2018
+										.col-sm-auto
+											+e.btn(href="#") Подробнее
+						// +e.item
+						
+						+e.item--horizontal.under-canvas
+							.row.align-items-center
+								.col-lg-auto 
+									+e.img-wrap--horizontal
+										span: img.res-i(src="img/calendar-img-2.jpg", alt="")
+								.col
+									+e.title--horizontal
+										a(href="#") Мероприятие для журналистов в одну две три строки для наглядности
+									+e.date 21.08.2018
+										span.divider-text
+										| 21.08.2018
+						// +e.item
+				// end s-main-calendar
+
+	// end s-events

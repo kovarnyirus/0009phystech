@@ -1,0 +1,208 @@
+include ../mixin-wrap/mixin-wrap.pug
+
+
+																		 
+mixin mob-mnu()
+	
+	+b.trop.main-mnu.hidden-mnu.hidden-lg.landingMenu2.d-lg-none
+		.toggle-mnu.toggle-mnu-1
+			span
+		.wrapp-hidden 
+			+e.logo
+				a(href="#")
+					img(src="img/logo-new.svg", alt="")
+			+mnu()
+			div.pl-2
+				+e.tel.h4.strong.text-white(href="tel:") +7 (495) 114-50-12
+	//  мобильное меню
+mixin mob-mnu--wsh()
+	
+	+b.trop.main-mnu.hidden-mnu.hidden-lg.landingMenu2.d-lg-none
+		.toggle-mnu.toggle-mnu-1
+			span
+		.wrapp-hidden 
+			+e.logo
+				a(href="#")
+					img(src="img/logo-new.svg", alt="")
+			+mnu--wsh()
+			div.pl-2
+				+e.tel.h4.strong.text-white(href="tel:") +7 (495) 114-50-12
+	//  мобильное меню
+
+mixin top-nav() 
+	// start top-nav
+	+b.top-nav
+		.container
+			.row
+				.col-lg-auto.col
+					.row
+						.col-sm-auto
+							+e.logo
+								a(href="#")
+									img.res-i(src="img/logo-new.svg", alt="")
+						.col-auto.d-none.d-md-block.d-lg-none.d-xxl-block
+							+e.title МЕЖДУНАРОДНЫЙ   
+								|
+								span.d-block НАУЧНО-ОБРАЗОВАТЕЛЬНЫЙ 
+								|  КЛАСТЕР
+				.col.d-none.d-lg-block
+					+mnu()
+				// добавил
+				.col-auto
+					.row.row--small
+						.col-auto
+							+e.A.btn-lang.active(href="#") Ru
+						.col-auto
+							+e.A.btn-lang(href="#") En
+				// добавил
+				.col-auto
+					+e.A.btn.popup-with-move-anim(href="#modal-call") Обратная связь
+				
+
+				.col-auto
+					// изменил
+					+e.A.btn-po.popup-with-move-anim(href="#modal-po")
+						+icon('user')
+					// изменил
+				.col-auto.d-lg-none
+					.toggle-mnu.toggle-mnu-1.d-lg-none
+						span
+					
+	// end top-nav
+
+mixin top-nav-po() 
+	// start top-nav
+	+b.top-nav
+		.container
+			.row
+				.col-lg-auto.col
+					.row
+						.col-sm-auto
+							+e.logo
+								a(href="#")
+									img.res-i(src="img/logo-new.svg", alt="")
+						.col-auto.d-none.d-md-block.d-lg-none.d-xxl-block
+							+e.title МЕЖДУНАРОДНЫЙ   
+								|
+								span.d-block НАУЧНО-ОБРАЗОВАТЕЛЬНЫЙ 
+								|  КЛАСТЕР
+				.col.d-none.d-lg-block
+					+mnu()
+				// добавил
+				.col-auto
+					.row.row--small
+						.col-auto
+							+e.A.btn-lang.active(href="#") Ru
+						.col-auto
+							+e.A.btn-lang(href="#") En
+				// добавил
+				.col-auto
+					+e.A.btn.popup-with-move-anim(href="#modal-call") Обратная связь
+				
+
+				.col-auto
+					// изменил
+					.dropdown
+						+e.A.btn-po.active.dropdown-toggle(href="#"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+							+icon('user')
+						.dropdown-menu.dropdown-menu-right
+							.arrow
+							a.dropdown-item(href='#') Резидент
+							a.dropdown-item(href='#') Редактировать профиль
+							a.dropdown-item(href='#') Эксплуатация
+							a.dropdown-item(href='#') Оформить пропуск
+					// изменил
+				.col-auto.d-lg-none
+					.toggle-mnu.toggle-mnu-1.d-lg-none
+						span
+					
+	// end top-nav
+
+
+
+mixin top-nav--landing() 
+	// start top-nav
+	+b.top-nav--landing
+		.container
+			.row
+				.col-lg-auto.col
+					.row
+						.col-sm-auto
+							+e.logo
+								a(href="#")
+									img.res-i(src="img/logo-land.svg", alt="")
+						.col-auto.d-none.d-md-block.d-lg-none.d-xxl-block
+							+e.title МЕЖДУНАРОДНЫЙ   
+								|
+								span.d-block НАУЧНО-ОБРАЗОВАТЕЛЬНЫЙ 
+								|  КЛАСТЕР
+				.col.d-none.d-lg-block
+					+mnu()
+				//- // добавил
+				//- .col-auto
+				//- 	.row.row--small
+				//- 		.col-auto
+				//- 			+e.A.btn-lang.active(href="#") Ru
+				//- 		.col-auto
+				//- 			+e.A.btn-lang(href="#") En
+				//- // добавил
+				//- .col-auto
+				//- 	+e.A.btn.popup-with-move-anim(href="#modal-call") Обратная связь
+				
+
+				.col-auto.d-none.d-sm-block
+					+e.tel.h4.strong(href="tel:") +7 (495) 114-50-12
+				.col-auto
+					// изменил
+					+e.A.btn-po.popup-with-move-anim(href="#modal-po")
+						+icon('user')
+					// изменил
+				.col-auto.d-lg-none
+					.toggle-mnu.toggle-mnu-1.d-lg-none
+						span
+					
+	// end top-nav
+mixin top-nav--wsh() 
+	// start top-nav
+	+b.top-nav--landing
+		.container
+			.row
+				.col-lg-auto.col
+					.row
+						.col-sm-auto
+							+e.logo
+								a(href="#")
+									img.res-i(src="img/logo-land.svg", alt="")
+						.col-auto.d-none.d-md-block.d-lg-none.d-xxl-block
+							+e.title МЕЖДУНАРОДНЫЙ   
+								|
+								span.d-block НАУЧНО-ОБРАЗОВАТЕЛЬНЫЙ 
+								|  КЛАСТЕР
+				.col.d-none.d-lg-block
+					+mnu--wsh
+				//- // добавил
+				//- .col-auto
+				//- 	.row.row--small
+				//- 		.col-auto
+				//- 			+e.A.btn-lang.active(href="#") Ru
+				//- 		.col-auto
+				//- 			+e.A.btn-lang(href="#") En
+				//- // добавил
+				//- .col-auto
+				//- 	+e.A.btn.popup-with-move-anim(href="#modal-call") Обратная связь
+				
+
+				.col-auto.d-none.d-sm-block
+					+e.link-wrap.text-right
+						a.text-white.small(href="mailto:sales@phpark.ru") sales@phpark.ru
+					+e.tel.h4.strong(href="tel:") +7 (495) 114-50-12
+				.col-auto
+					// изменил
+					+e.A.btn-po.popup-with-move-anim(href="#modal-po")
+						+icon('user')
+					// изменил
+				.col-auto.d-lg-none
+					.toggle-mnu.toggle-mnu-1.d-lg-none
+						span
+					
+	// end top-nav

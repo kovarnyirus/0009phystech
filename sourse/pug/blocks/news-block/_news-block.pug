@@ -1,0 +1,12 @@
+mixin news-block()
+	// start news-block
+	+b.news-block
+		.container
+			+e.title.under-canvas Последние новости
+			+e.slider--js
+				- for (var x = 0; x < 5; x++)
+					+e.slide.under-canvas
+						+e.item
+							div: +e.A.link(href="#").text-white Global Venture Alliance и федеральная девелоперская компания Талан
+							+e.date 15.10.2019
+	// end news-block

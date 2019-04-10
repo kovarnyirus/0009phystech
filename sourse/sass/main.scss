@@ -1,0 +1,85 @@
+$output-bourbon-deprecation-warnings: false;
+// @import "mq";
+@import "bourbon";
+@import "vars";
+@import "bootstrap/bootstrap";
+// @import "../libs/animate";
+@import "fontawesome-pro-5.0.8/web-fonts-with-css/scss/fontawesome";
+@import "fontawesome-pro-5.0.8/web-fonts-with-css/scss/fa-brands";
+@import "fontawesome-pro-5.0.8/web-fonts-with-css/scss/fa-regular";
+@import "fontawesome-pro-5.0.8/web-fonts-with-css/scss/fa-solid";
+@import "fontawesome-pro-5.0.8/web-fonts-with-css/scss/fa-light";
+// @import "../libs/magnificPopup/magnific-popup";
+// @import "../libs/swiper-4.2.0/dist/css/swiper";
+// @import "../libs/select2-4.0.6-rc.1/dist/css/select2.min";
+// @import "../libs/dropzone";
+// @import "../libs/gijgo-master/dist/combined/css/gijgo";
+// @import "../libs/gijgo-master/dist/combined/css/demo.min";
+// @import "../libs/slick/slick1";
+// @import "../libs/ion.rangeSlider-2.2.0/css/ion.rangeSlider";
+// @import "../libs/ion.rangeSlider-2.2.0/css/ion.rangeSlider.skinHTML5";
+
+@import "base";
+
+
+@import "../../public/img/svg/_sprite";
+
+@import "../pug/blocks/mixin-wrap/mixin-wrap";
+@import "../pug/blocks/mixin-wrap/form-wrap";
+@import "../pug/blocks/header/_header";
+@import "../pug/blocks/top-line/top-line";
+@import "../pug/blocks/top-nav/top-nav";
+
+
+@import "../pug/blocks/header-block/_header-block";
+@import "../pug/blocks/s-content/_s-content";
+@import "../pug/blocks/s-contact/_s-contact";
+
+
+@import "../pug/blocks/s-about/_s-about";
+@import "../pug/blocks/s-block/_s-block";
+@import "../pug/blocks/s-infrastructure/_s-infrastructure";
+@import "../pug/blocks/s-logos/_s-logos";
+@import "../pug/blocks/s-main-calendar/_s-main-calendar";
+@import "../pug/blocks/s-news/_s-news";
+@import "../pug/blocks/s-sq/_s-sq";
+@import "../pug/blocks/s-number-2/_s-number-2";
+@import "../pug/blocks/s-patner/s-patner";
+
+@import "../pug/blocks/s-form/s-form";
+@import "../pug/blocks/footer/footer";
+@import "../pug/blocks/modal/modal";
+@import "../pug/blocks/news-block/news-block";
+
+@import "../pug/blocks/aside/aside";
+@import "../pug/blocks/po-block/po-block";
+@import "../pug/blocks/s-price/s-price";
+@import "../pug/blocks/s-price-servise/s-price-servise";
+@import "../pug/blocks/s-offices/s-offices";
+@import "../pug/blocks/s-get-to/s-get-to";
+@import "../pug/blocks/footer-page/footer-page";
+
+@import "../pug/blocks/s-about-work-shop/_s-about-work-shop";
+@import "../pug/blocks/s-schedule/_s-schedule";
+@import "../pug/blocks/s-video/_s-video";
+@import "../pug/blocks/s-peoples/_s-peoples";
+@import "../pug/blocks/s-price-work-shop/_s-price-work-shop";
+@import "../pug/blocks/s-profit/_s-profit";
+
+@import "../pug/blocks/s-seating-options/_s-seating-options";
+@import "../pug/blocks/s-add-servises/_s-add-servises";
+@import "../pug/blocks/s-events/_s-events";
+@import "../pug/blocks/s-articals/_s-articals";
+
+@import "media";// Всегда в конце
+
+
+
+.animate-js-second {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}

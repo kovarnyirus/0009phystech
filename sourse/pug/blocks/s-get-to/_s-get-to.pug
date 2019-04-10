@@ -1,0 +1,37 @@
+mixin s-get-to()
+	// start s-get-to
+	+b.s-get-to.section#s-get-to&attributes(attributes)
+		.container
+			+e.row.row
+				.col-lg-6
+					+b.section-title
+						h2 Как добраться
+					+e.wrap
+						+e.text
+							p Физтехпарк располагается в 2 км от МКАД по Дмитровскому шоссе, в шаговой доступности от платформы “Новодачная” Савеловского направления (400 метров).
+
+
+
+							p Наземным общественным транспортом можно добраться от метро “Алтуфьево” маршрутом №545  (17 минут).
+						+e.ya-block 
+							img(src="img/drive-img", alt="")
+							div Технопарк находится в зоне каршеринга Яндекс.Драйв
+						+e.group
+							+e.icon-wrap: +icon('mark')
+							div 127495, г.Москва, Долгопрудненское шоссе, дом 3.
+						
+						+e.group
+							a(href="tel:+7(495)114-50-12")
+								+e.icon-wrap: +icon('tel')
+								| +7 (495) 114-50-12
+						+e.group
+							a(href="mailto:administration@phpark.ru")
+								+e.icon-wrap: +icon('mail')
+								| administration@phpark.ru
+				.col
+					+e.map-wrap-wrap
+						+e.map-wrap
+							<script   async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae745f50e4e17c129b2a674d9bdd9c42c73e112878eab9b62397585392dee41ad&amp;width=926&amp;height=664&amp;lang=ru_RU&amp;scroll=false"></script>
+					
+				
+	// end s-get-to

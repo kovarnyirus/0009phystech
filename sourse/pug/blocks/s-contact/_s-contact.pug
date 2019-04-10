@@ -1,0 +1,132 @@
+mixin s-contact()
+	// start s-contact
+	+b.s-contact#s-contact
+		.container
+			 
+			.section
+				+e.group: .h4.strong 
+					span.text-primary Физтехпарк  
+					| 
+					| располагается в 2 км от МКАД по Дмитровскому шоссе, в шаговой доступности от платформы “Новодачная” Савеловского направления (400 метров). Наземным общественным транспортом можно добраться от метро “Алтуфьево” (17 минут). 
+				+e.group: .h4 Адрес: г.Москва, Долгопрудненское шоссе, дом 3.
+				//- +e.group
+				+e.map-wrap.under-canvas
+					#map
+				+e.item
+					.h3 Ресепшн
+					+e.text Общие вопросы, бухгалтерское и юридическое сопровождение, патентование, кадровые и почтовые услуги, печать и полиграфия, клининг.
+					.row
+						+e.col.col
+							//- .row
+							//- 	.col-auto
+							//- 		+e.avatar
+							//- 			img.res-i(src="img/contact-1.jpg", alt="")
+							//- 	.col
+							.h4.strong Елена Разумникова
+						.col-xl-auto
+							div: +e.A.link--tel.text-body.under-canvas(href="tel:+74956659955") +7 495 665 99 55
+							div: +e.A.link--mail.text-body.under-canvas(href="mailto:e.razumnikova@phpark.ru") e.razumnikova@phpark.ru
+				
+				// +e.item
+				+e.item
+					.h3 Взаимодействие с партнерами  и инвесторами по международным проектам
+				
+					.row
+						+e.col.col
+							//- .row
+							//- 	.col-auto
+							//- 		+e.avatar
+							//- 			img.res-i(src="img/contact-2.jpg", alt="")
+							//- 	.col
+							.h4.strong Виктор Меняйлов
+						.col-xl-auto
+							div: +e.A.link--tel.text-body.under-canvas(href="tel:+74956659955") +7 495 665 99 55
+							div: +e.A.link--mail.text-body.under-canvas(href="mailto:e.razumnikova@phpark.ru") e.razumnikova@phpark.ru
+				// +e.item
+				
+				+e.item
+					.h3 Контакты для СМИ
+					.row
+						+e.col.col
+							//- .row
+							//- 	.col-auto
+							//- 		+e.avatar
+							//- 			img.res-i(src="img/contact-2.jpg", alt="")
+							//- 	.col
+							.h4.strong Ольга Будник
+						.col-xl-auto
+							div: +e.A.link--tel.text-body.under-canvas(href="tel:+74956659955") +7 495 665 99 55
+							div: +e.A.link--mail.text-body.under-canvas(href="mailto:e.razumnikova@phpark.ru") e.razumnikova@phpark.ru
+				// +e.item
+				
+				+e.item
+					.h3 Сопровождение строительных работ, инженерно-техническое обслуживание
+					.row
+						+e.col.col
+							//- .row
+							//- 	.col-auto
+							//- 		+e.avatar
+							//- 			img.res-i(src="img/contact-2.jpg", alt="")
+							//- 	.col
+							.h4.strong Михаил Михеев
+						.col-xl-auto
+							div: +e.A.link--tel.text-body.under-canvas(href="tel:+74956659955") +7 495 665 99 55
+							div: +e.A.link--mail.text-body.under-canvas(href="mailto:e.razumnikova@phpark.ru") e.razumnikova@phpark.ru
+				// +e.item
+				
+				+e.item
+					.h3 Менеджер по мероприятиям
+					+e.text Почасовая аренда помещений, мероприятия
+					.row
+						+e.col.col
+							//- .row
+							//- 	.col-auto
+							//- 		+e.avatar
+							//- 			img.res-i(src="img/contact-1.jpg", alt="")
+							//- 	.col
+							.h4.strong Михаил Михеев
+						.col-xl-auto
+							div: +e.A.link--tel.text-body.under-canvas(href="tel:+74956659955") +7 495 665 99 55
+							div: +e.A.link--mail.text-body.under-canvas(href="mailto:e.razumnikova@phpark.ru") e.razumnikova@phpark.ru
+				// +e.item
+
+				
+		script.
+			var map;
+			function initMap() {
+			map = new google.maps.Map(document.getElementById('map'), {
+			zoom: 5,
+			center: new google.maps.LatLng(55.095056644476,49.091040),
+			mapTypeId: 'roadmap',
+			
+			});
+			//- var iconBase = 'img/mark.png';
+			var icons = {
+			
+			info: {
+			//- icon: iconBase
+			}
+			};
+			var features = [
+			{
+			position: new google.maps.LatLng(55.76721556897639,49.10119449999995),
+			type: 'info',
+			title: 'Казань',
+			}, 
+
+			];
+			// Create markers.
+			features.forEach(function(feature) {
+			var marker = new google.maps.Marker({
+			position: feature.position,
+			icon: icons[feature.type].icon,
+			map: map,
+			title: feature.title,
+			//- title: title
+			});
+			});
+			}
+		//- script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=key=AIzaSyCnoRp8wBQeCZLL8k4R-vckP_wDGVR2k10&callback=initMap')
+		script(async='', defer='' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCnoRp8wBQeCZLL8k4R-vckP_wDGVR2k10&callback=initMap')
+		
+	// end s-contact

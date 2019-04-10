@@ -1,0 +1,52 @@
+mixin s-infrastructure()
+	// start s-infrastructure 
+	+b.s-infrastructure.section.animate-section&attributes(attributes)
+		canvas.x-canvas
+		
+		.container
+			block
+			.resp-tabs-js
+				.row
+					.col-xxl-8.col-lg-7
+						.resp-tabs-list
+							mixin item(i,t)
+								+e.tab-btn.resp-tab-btn
+									.row
+										.col-auto.d-xl-block.d-none
+											+e.icon-wrap
+												+icon(`infrastructure-i-${i}`)
+										.col
+											+e.title
+												.row.align-items-center
+													.col-auto.d-xl-none
+														+e.icon-wrap
+															+icon(`infrastructure-i-${i}`)
+													.col
+														span= t
+											block
+								// +e.tab-btn.resp-tab-btn
+							+item("1","Фитнес-зал","")
+								+e.caption К&nbsp;вашим услугам&nbsp;&mdash; фитнес-зона, силовые и&nbsp;кардио-тренажеры, боксерский ринг, душевые кабинки. Опция будет доступна не&nbsp;только резидентам &laquo;Физтехпарка&raquo;, но&nbsp;и&nbsp;всем желающим вести здоровый образ жизни.
+							+item("2","КАФЭ","")
+								+e.caption Вкусный кофе нескольких сортов, десерты и&nbsp;легкие закуски, завтраки в&nbsp;непринужденной обстановке&nbsp;&mdash; все это предлагает кафе-бар &laquo;Физтехпарка&raquo;
+							+item("3","Столовая","")
+								+e.caption В&nbsp;меню&nbsp;&mdash; русская, европейская, азиатская, японская, американская и&nbsp;другие виды и&nbsp;стили кухни. Средний чек в&nbsp;режиме &laquo;быстрого питания&raquo;&nbsp;&mdash; 180-250&nbsp;рублей. Вы&nbsp;можете заказать услуги кейтеринга, организацию деловых обедов, бранчей и&nbsp;т.п.
+							+item("4",'Кофейня "CoffeePlay"',"")
+								+e.caption  Вкусный кофе нескольких сортов, десерты и&nbsp;легкие закуски, завтраки в&nbsp;непринужденной обстановке&nbsp;&mdash; все это предлагает кафе-бар &laquo;Физтехпарка&raquo;
+
+					.col-xxl-4.col-lg-5
+						+e.text Физтехпарк&nbsp;&mdash; московский технопарк в&nbsp;сфере высоких технологий, который объединяет на&nbsp;своей площадке как крупные&nbsp;IT корпорации, так и&nbsp;молодые перспективные компании, и&nbsp;предоставляет все условия для их&nbsp;быстрого развития.
+						.resp-tabs-container
+							- for (var i = 0; i < 4; i++)
+								.resp-tabs-content
+									+e.slider--js.gal
+										- for (var x = 0; x < 3; x++)
+											+e.slide
+												+e.img-wrap.img-bg
+													img(src="#" data-lazy="img/infrastructure-img.jpg", alt="")
+
+								// .resp-tabs-content
+						
+						// .resp-tabs-container
+	// end s-infrastructure
+

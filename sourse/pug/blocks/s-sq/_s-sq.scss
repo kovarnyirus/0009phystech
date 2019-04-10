@@ -1,0 +1,158 @@
+.s-sq {
+	@include bgs;
+	background-image: url(../img/sq-bg.jpg);
+	h2{
+		max-width: 560px;
+		padding-bottom: 60px;
+	}
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh;
+	&__number{
+		@include media-breakpoint-up(xl) {
+
+			font-size: 70px;
+		}
+		
+		@include media-breakpoint-up(xl) {
+
+			font-size: 60px;
+		}
+		font-size: 42px;
+		
+		color: $primary;  
+		font-weight: 700;
+		line-height: 1.17;
+		// @include media-breakpoint-up(xxl) {}
+
+	}
+	&__col{
+		position: relative;
+		@include media-breakpoint-up(xl) {
+
+			padding-top: 100px;
+			padding-bottom: 100px;
+		}
+		
+		@include media-breakpoint-up(lg) {
+
+			padding-top: 60px;
+			padding-bottom: 60px;
+			// margin-bottom: 0;
+			margin-top: 0;
+		}
+		margin-top: 30px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		max-width: 560px;
+		&::before{
+			content: '';
+		
+			@include media-breakpoint-up(xl) {
+
+				left: 100px;
+			}
+			
+			@include media-breakpoint-up(lg) {
+				
+				// left: 100px;
+				left: 50px;
+			}
+			@include media-breakpoint-up(md) {
+
+				left: 40px;
+				top: 0;
+			}
+			@include media-breakpoint-down(sm) {
+					
+				top: 40%;
+				transform: translateY(-50%);
+			}
+			right: 15px;
+		
+			position: absolute;
+			border: 1px solid #fff;
+			display: block;
+		}
+		&:nth-child(1) {
+
+			&::before{
+				@include media-breakpoint-up(xl) {
+					
+					width: 290px;
+					height: 290px;
+				}
+				
+				@include media-breakpoint-up(lg) {
+					
+					width: 200px;
+					height: 200px;
+				}
+
+				width: 160px;
+				height: 160px;
+			}
+		}
+		
+		&:nth-child(2) {
+
+			&::before{
+				@include media-breakpoint-up(xl) {
+
+					width: 206px;
+					height: 206px;
+				}
+				
+				@include media-breakpoint-up(lg) {
+
+					width: 156px;
+					height: 156px;
+				}
+				width: 126px;
+				height: 126px;
+			
+			}
+		}
+		&:nth-child(3) {
+
+			&::before{
+				@include media-breakpoint-up(lg) {
+
+					width: 49px;
+					height: 49px;
+				}
+				width: 40px;
+				height: 40px;
+			}
+		}
+
+
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {
+		padding-bottom: 100px;
+	}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-up(xs) {}
+	
+	//
+	@include media-breakpoint-between(md, xl) { }
+	
+	
+	//
+	@include media-breakpoint-only(xs) {}
+	@include media-breakpoint-only(sm) {}
+	@include media-breakpoint-only(md) {}
+	@include media-breakpoint-only(lg) {}
+	@include media-breakpoint-only(xl) {}
+	
+	//
+	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-down(lg) {}
+	@include media-breakpoint-down(md) {}
+	@include media-breakpoint-down(sm) {}
+	@include media-breakpoint-down(xs) {} 
+
+}

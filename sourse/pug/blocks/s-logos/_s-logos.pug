@@ -1,0 +1,25 @@
+mixin s-logos()
+	// start s-logos
+	+b.s-logos.section#s-logos&attributes(attributes)
+		.container
+			+b.section-title
+				.row
+					block
+				
+			+e.slider--js
+				mixin item(i,p)
+					+e.slide
+						+e.item
+							+e.img-wrap
+								img.res-i(src="#" data-lazy=`img/patner-${i}.png`, alt="")
+							+e.caption= p
+					// +e.slide
+				+item("1","Qnext Tech")
+				+item("2","Terra company")
+				+item("3","Bridgestone")
+				+item("4","Bridgestone")
+				+item("5","Adata")
+				+item("6","Unicorn")
+				+item("6","Unicorn")
+				+item("6","Unicorn")
+	// end s-logos

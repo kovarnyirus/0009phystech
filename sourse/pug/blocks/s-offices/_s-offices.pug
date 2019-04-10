@@ -1,0 +1,446 @@
+mixin s-offices()
+	// start s-offices
+	+b.s-offices.section#s-offices&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Отдельные офисы
+				
+			+e.row.row
+				mixin item(i, t, pr)
+					+e.col.col-xl-4.col-md-6
+						+e.item&attributes(attributes)
+							+e.img-wrap.img-bg(href="#" style=`background-image: url(img/office-${i}.jpg);`)
+								img(src=`img/office-${i}.jpg`, alt="")
+							+e.caption
+								+e.title= t 
+								+e.item-row.row.h4.row--sm
+									.col-auto
+										+icon('user') 
+										| 
+										strong 10
+									
+									.col-auto
+										// 08.02 добавил
+										+icon('square') 
+										//- span.text-primary S 
+										| 
+										strong 80 кв.м
+									.col.text-right.strong 7 этаж
+								
+								.row.align-items-center.row--sm
+									.col
+										+e.price= pr
+									.col-auto
+										+e.btn(href="#") подробнее
+					// +e.col.col-xl-4.col-md-6
+				+item('1','Офис Премьер','50 000 ₽/м')
+				+item('2','Офис Эконом','20 000 ₽/м')
+				+item('3','Офис Президент','150 000 ₽/мес.')
+	// end s-offices
+
+mixin s-offices-rent()
+	// start s-offices
+	// добавил класс
+	+b.s-offices--rent.section#s-offices&attributes(attributes)
+		.container
+			+b.section-title
+				.row
+					.col
+						h2 Подбор помещения
+					.col-md-auto 
+						+e.text 
+							+icon('clock')
+							| Доступ в здание 
+							| 
+							span.text-primary с 8-00 до 22-00.
+			+e.head
+				+form-wrap()
+					.row
+						+e.head-col.col-xxl-2.col-md-4
+							+e.input-wrap.form-group
+								+e.head-title Тип помещения
+								label
+									+e.SELECT.input.form-control( required   )&attributes(attributes) 
+										option( ) Офисы
+										option( ) Офисы 
+									//- +e.SPAN.title-label
+							// +e.input-wrap
+						
+						+e.head-col.col-xxl-2.col-md-4
+							+e.input-wrap.form-group
+								+e.head-title Секция
+								label
+									+e.SELECT.input.form-control( required   )&attributes(attributes) 
+										option( ) Южная башня
+										option( ) Южная башня 
+									//- +e.SPAN.title-label
+							// +e.input-wrap
+						
+						+e.head-col.col-xxl-2.col-md-4
+							+e.input-wrap.form-group
+								+e.head-title Этаж
+								label
+									+e.SELECT.input.form-control( required   )&attributes(attributes) 
+										option( ) 2
+										option( ) 2
+									//- +e.SPAN.title-label
+							// +e.input-wrap
+						+e.head-col.col-xxl-3.col-md-6
+							+e.head-title Площадь, кв м
+							input(type="text").js-range-slider
+						+e.head-col.col-xxl-3.col-md-6
+							+e.head-title Стоимость, руб. в месяц
+							input(type="text").js-range-slider
+						+e.head-col.col-xxl-2.col-auto
+							+in-ch('')
+								+e.SPAN.text С мебелью
+						
+						+e.head-col.col-xxl-2.col-auto
+							+in-ch('')
+								+e.SPAN.text С готовой отделкой
+					+e.btn-wrap
+						+e.btn.btn-primary(type='button') Подобрать
+						+e.btn.btn--outline-primary(type='button') ОЧИСТить
+			+e.row.row
+				mixin item(i, t, pr)
+					+e.col.col-xl-4.col-md-6
+						+e.item&attributes(attributes)
+							//- +e.img-wrap.img-bg(href="#" style=`background-image: url(img/office-${i}.jpg);`)
+							+e.img-wrap.img-bg(href="#" )
+								img.lazy-bg(src="#" data-src=`img/office-${i}.jpg`, alt="")
+							+e.caption
+								.row
+
+									.col
+										+e.title= t 
+									.col-auto.text-right
+										+e.label Южная башня
+										br
+										+e.label Офис
+								+e.item-row.row.h4.row--sm
+									.col-auto
+										+icon('user') 
+										| 
+										strong 10
+									
+									.col-auto
+										// 08.02 добавил
+										+icon('square') 
+										//- span.text-primary S 
+										| 
+										strong 80 кв.м
+									.col.text-right.strong 7 этаж
+								
+								.row.align-items-center.row--sm
+									.col
+										+e.price= pr
+											+e.popover.btn-popover(data-toggle="popover" data-trigger="hover" data-content='<div class="popover__title ">В стоимость входит:</div><ul><li>Эксплуатационные и коммунальные расходы</li><li>Юридический адрес</li><li>Пропускная система </li> <li>Приточно-вытяжная вентиляция   </li></ul>') ?
+									.col-auto
+										+e.btn(href="#") подробнее
+					// +e.col.col-xl-4.col-md-6
+				+item('1','Офис Премьер','50 000 ₽/м')
+				+item('2','Офис Эконом','20 000 ₽/м')
+				+item('3','Офис Президент','150 000 ₽/мес.')
+			+e.btn--more(href="#")  Показать еще
+	// end s-offices
+
+mixin s-offices-rent2()
+	// start s-offices
+	// добавил класс
+	+b.s-offices--rent.section#s-offices&attributes(attributes)
+		.container
+			+b.section-title
+				.row
+					.col
+						h2 Календарь 
+			+b.blockpicker.section.pt-0
+				.row.no-gutters
+					.col-lg-3.col-auto
+						+e.ingo-text - Свободное время
+						mixin title(t)
+							+e.title-item
+								div
+									.d-none.d-lg-inline Переговорная 
+									| 
+									span= t 
+									| 
+								.s-offices__popover.btn-popover(data-toggle="popover" data-trigger="hover" data-content='VIP-переговорная (до 20 человек), со всей необходимой канцелярией, флипчартом и проектором/монитором ') ?
+						+title('Лондон')
+						+title('Рим')
+						+title('Нью-Йорк')
+						+title('Лондон')
+					+e.col.col-lg-9.col
+						+e.slider--js.swiper-container
+							.swiper-scrollbar
+							.swiper-wrapper
+								mixin slide(t)
+									+e.slide.swiper-slide
+										+e.slide-head
+											+e.date= t
+											+e.hours 
+												+e.hours-item 08:00
+												+e.hours-item 09:00
+												+e.hours-item 10:00
+												+e.hours-item 11:00
+												+e.hours-item 12:00
+												+e.hours-item 13:00
+												+e.hours-item 14:00
+												+e.hours-item 15:00
+												+e.hours-item 16:00
+												+e.hours-item 17:00
+												+e.hours-item 18:00
+												+e.hours-item 19:00
+												+e.hours-item 20:00
+												+e.hours-item 21:00
+												+e.hours-item 22:00
+											+e.hours--body 
+												+e.hours-item--body 
+												+e.hours-item--body 
+												+e.hours-item--body 
+												+e.hours-item--body 
+												+e.hours-item--body 
+												+e.hours-item--body 
+												+e.hours-item--body 
+													+e.btn(class=" popup-with-move-anim" href="#modal-rent")
+												+e.hours-item--body 
+													+e.btn(class=" popup-with-move-anim" href="#modal-rent")
+												+e.hours-item--body 
+													+e.btn(class=" popup-with-move-anim" href="#modal-rent")
+												+e.hours-item--body 
+													+e.btn(class=" popup-with-move-anim" href="#modal-rent")
+												+e.hours-item--body 
+													+e.btn(class=" popup-with-move-anim" href="#modal-rent")
+												+e.hours-item--body 
+													+e.btn(class=" popup-with-move-anim" href="#modal-rent")
+												+e.hours-item--body 
+													+e.btn(class=" popup-with-move-anim" href="#modal-rent")
+												+e.hours-item--body 
+													+e.btn(class=" popup-with-move-anim" href="#modal-rent")
+												+e.hours-item--body 
+													+e.btn(class=" popup-with-move-anim" href="#modal-rent")
+											
+											+e.hours--body 
+												+e.hours-item--body 
+													+e.btn(class=" popup-with-move-anim" href="#modal-rent")
+												+e.hours-item--body 
+													+e.btn(class=" popup-with-move-anim" href="#modal-rent")
+												+e.hours-item--body 
+													+e.btn(class=" popup-with-move-anim" href="#modal-rent")
+												+e.hours-item--body 
+													+e.btn(class=" popup-with-move-anim" href="#modal-rent")
+												+e.hours-item--body 
+												+e.hours-item--body 
+												+e.hours-item--body 
+												+e.hours-item--body 
+												+e.hours-item--body 
+												+e.hours-item--body 
+												+e.hours-item--body 
+												+e.hours-item--body 
+													+e.btn(class=" popup-with-move-anim" href="#modal-rent")
+												+e.hours-item--body 
+													+e.btn(class=" popup-with-move-anim" href="#modal-rent")
+												+e.hours-item--body 
+													+e.btn(class=" popup-with-move-anim" href="#modal-rent")
+												+e.hours-item--body 
+													+e.btn(class=" popup-with-move-anim" href="#modal-rent")
+											
+											+e.hours--body 
+												+e.hours-item--body 
+												+e.hours-item--body 
+												+e.hours-item--body 
+												+e.hours-item--body 
+												+e.hours-item--body: +e.btn(class=" popup-with-move-anim" href="#modal-rent")
+												+e.hours-item--body: +e.btn(class=" popup-with-move-anim" href="#modal-rent")
+												+e.hours-item--body: +e.btn(class=" popup-with-move-anim" href="#modal-rent")
+												+e.hours-item--body: +e.btn(class=" popup-with-move-anim" href="#modal-rent")
+												+e.hours-item--body: +e.btn(class=" popup-with-move-anim" href="#modal-rent")
+												+e.hours-item--body: +e.btn(class=" popup-with-move-anim" href="#modal-rent")
+												+e.hours-item--body 
+												+e.hours-item--body 
+												+e.hours-item--body 
+												+e.hours-item--body 
+												+e.hours-item--body 
+											
+											+e.hours--body 
+												+e.hours-item--body 
+												+e.hours-item--body 
+												+e.hours-item--body 
+												+e.hours-item--body 
+												+e.hours-item--body 
+												+e.hours-item--body 
+												+e.hours-item--body 
+												+e.hours-item--body 
+												+e.hours-item--body 
+												+e.hours-item--body 
+												+e.hours-item--body 
+												+e.hours-item--body: +e.btn(class=" popup-with-move-anim" href="#modal-rent")
+												+e.hours-item--body: +e.btn(class=" popup-with-move-anim" href="#modal-rent")
+												+e.hours-item--body: +e.btn(class=" popup-with-move-anim" href="#modal-rent")
+												+e.hours-item--body: +e.btn(class=" popup-with-move-anim" href="#modal-rent")
+									// /+e.slide
+								+slide('18 февраля')
+									
+									
+								+slide('19 февраля')
+								+slide('20 февраля')
+							 
+									
+			.h3.strong.ttu.pb-3 Забронировать переговорную
+			+form-wrap()
+				.row
+					.col-xl-2.col-lg-6
+						.row.date-picker-block-js
+							.col-lg-12.col-sm-6
+								+input("text","Дата начала встречи ")(class="startDate")
+							.col-lg-12.col-sm-6
+								+input("text","Дата окончания встречи")(class="endDate") 
+					.col-xl-2.col-lg-6
+						.row.time-picker-block-js
+							.col-lg-12.col-sm-6
+								+input("text"," Налало встречи")(class="startTime")
+							.col-lg-12.col-sm-6
+								+input("text","Окончание встречи")(class="endTime") 
+					.col-xl-4
+						+e.input-wrap.form-group
+							+e.head-title Выберите переговорную
+							label
+								+e.SELECT.input.form-control( required   )&attributes(attributes) 
+									option( ) Офисы
+									option( ) Офисы 
+						// +e.input-wrap
+						+input("tel","Ваш номер телефона")
+					 
+								
+					.col-xl-4
+						.row
+							.col-xl-12.col-sm-6
+								+input("text","Ваше имя, фамилия")
+							.col-xl-12.col-sm-6
+								+input("email","Ваше e-mail") 
+					
+				.row.justify-content-center
+					.col-xl.col-md-auto.order-xl-first.order-last
+						+e.warning 
+							span Вводите только существующий 
+								| 
+								strong e-mail  
+								| 
+								| так как на него мы отправим ссылку для оплаты 
+								|
+								span.text-primary переговорной комнаты
+								|
+								| . Бронь действительна в течении часа
+					.col-xxl-4.col-md-auto
+						.row.row--sm.align-items-center
+							.col-sm.order-sm-first.order-last
+								+polite
+							.col
+								+e.BUTTON.btn(type="submit") Отправить
+								//- +e.SPAN.title-label
+							
+			+e.row.row
+				mixin item(i, t, pr)
+					+e.col.col-xl-6
+						+e.item--horizontal&attributes(attributes)
+							.row
+								.col-md-6
+									+e.slider--js
+										- for (var x = 0; x < 3; x++)
+											+e.slide
+												+e.img-wrap--slider.img-bg( )
+													img(src="#" data-lazy=`img/office-${i}.jpg`, alt="")
+								.col-md-6.order-md-first
+									+e.caption
+										.row
+
+											.col
+												+e.title= t  
+										+e.item-row.row.h4.row--sm
+											.col-auto
+												+icon('user') 
+												| 
+												strong 10
+											
+											.col-auto 
+												strong 1 этаж
+											//- .col.text-right.strong 7 этаж
+										
+										.row.align-items-center.row--sm
+											.col
+												+e.price= pr
+													+e.popover.btn-popover(data-toggle="popover" data-trigger="hover" data-content='<div class="popover__title ">В стоимость входит:</div><ul><li>Эксплуатационные и коммунальные расходы</li><li>Юридический адрес</li><li>Пропускная система </li> <li>Приточно-вытяжная вентиляция   </li></ul>') ?
+											.col-12
+												+e.btn--modal(class=" popup-with-move-anim" href="#modal-rent") Забронировать
+					// +e.col.col-xl-4.col-md-6
+				+item('1','Переговорная  Нью-Йорк','50 000 ₽/м')
+				+item('1','Переговорная  Нью-Йорк','50 000 ₽/м')
+				+item('1','Переговорная  Нью-Йорк','50 000 ₽/м')
+				+item('1','Переговорная  Нью-Йорк','50 000 ₽/м')
+				//- +item('2','Офис Эконом','20 000 ₽/м')
+				//- +item('3','Офис Президент','150 000 ₽/мес.')
+			+e.btn--more(href="#")  Показать еще
+	// end s-offices
+
+mixin s-offices-14()
+	// start s-offices
+	+b.s-offices.section.bgn#s-offices&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Отдельные офисы 
+			+e.row.row
+				mixin item(i, t,  t2, li1, li2, pr1, pr2, pr3 )
+					+e.col.col-xl-4.col-md-6
+						+e.item&attributes(attributes)
+							+e.img-wrap.img-bg(href="#" style=`background-image: url(img/office-${i}.jpg);`)
+								img(src=`img/office-${i}.jpg`, alt="")
+							+e.caption
+								.row
+									.col
+										+e.title= t 
+									.col-auto.pt-2
+										+icon('user') 
+										| 
+										strong= t2
+								ul
+									li= li1
+									li= li2
+								
+								.row.align-items-center.row--sm
+									.col
+										table
+											tr
+												td.small Первый час:
+												td.h5.strong.text-primary= pr1
+											
+											tr
+												td.small Последующие:
+												td.h5.strong.text-primary= pr2
+											
+											tr
+												td.small День:
+												td.h5.strong.text-primary= pr3 
+									.col-xxl-auto
+										+e.btn--sm(href="#") Оставить заявку
+					// +e.col.col-xl-4.col-md-6
+				+item('1','Ландау', '600-800','Полное техническое оснащение','Подходит для деловых форумов, конференций, хакатонов и др  ','15 000 ₽','10 000 ₽','120 000 ₽')
+				+item('2','Королев','80-120','Полное техническое оснащение','Подходит для тренингов, мастер-классов, воркшопов и др ','5 000 ₽','3 000 ₽','35 000 ₽')
+				+item('3','Курчатов',  '40-50','Полное техническое оснащение','Подходит для деловых встреч, презентаций, лекций, бизнес-завтраков и др. ','3 000 ₽','2 000 ₽','25 000 ₽')
+			+e.footer
+				.row.row--sm
+					+e.footer-col.col-xxl-auto
+						+e.title-footer.h4.strong В  цену уже включены:
+					+e.footer-col.col-auto
+						+e.footer-label Услуги клининга
+					
+					+e.footer-col.col-auto
+						+e.footer-label Высокоскоростной интернет
+					
+					+e.footer-col.col-auto
+						+e.footer-label Техническая поддержка
+					
+					+e.footer-col.col-auto
+						+e.footer-label Оборудование
+					
+
+
+	// end s-offices

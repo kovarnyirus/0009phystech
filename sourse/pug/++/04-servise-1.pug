@@ -1,0 +1,65 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-about/_s-about.pug
+include ../blocks/s-infrastructure/_s-infrastructure.pug
+include ../blocks/s-logos/_s-logos.pug
+include ../blocks/s-main-calendar/_s-main-calendar.pug
+include ../blocks/s-news/_s-news.pug
+include ../blocks/s-block/_s-block.pug
+include ../blocks/s-sq/_s-sq.pug
+include ../blocks/s-number-2/_s-number-2.pug
+
+block title
+	title УСЛУГА И СЕРВИС
+
+block pagecontent
+	+mob-mnu()
+	+header()
+		//- +top-line()
+		+top-nav()
+	
+		+b.header-block
+			.container
+				+breadcrumb("Фитнес-зал","Технопарк")
+
+	.animate-block#particles-js.particle-canvas.particles-js
+		+b.s-content.section.py-0
+			.container
+				.row
+					.col-lg-6
+						h1.big-title.page-title.pb-0  СТАРТОВАЯ ПЛОЩАДКА
+						
+						.h1.page-title.strong.py-0.ttu.mw-100
+							span Физтехпарк стартапам 
+						.h2.strong  Общее инфраструктурное и технологическое оснащение Физтехпарка призвано решать любые задачи бизнеса
+					.col
+						+e.img-top.img-bg(style="background-image: url(img/startap.jpg);")
+							img(src="img/startap.jpg", alt="")
+ 
+		//- +s-block-2 
+	//- .bg-light
+		//- +s-block 
+	+b.list-block
+		.container
+			+e.UL.list
+				+e.LI.item венчурные        и акселерационные                    программы
+				+e.LI.item коворкинг или мини-офис                        в аренду 
+				+e.LI.item обширная инфраструктура - фудкорт, кафе, спортзал, парковочные           места, каршеринг и общественный транспорт
+				+e.LI.item технологическое оснащение -  аренда серверов, офисной техники и спецоборудования, скоростной wi-fi
+				+e.LI.item дополнительные услуги – финансовые и юридические  сервисы, гостиница
+				+e.LI.item образовательные                 инициативы
+		+e.img-bg(style="background-image: url(img/list-bg.jpg);")
+
+
+
+	+s-news
+	.bg-primary.animate-footer
+		canvas.x-canvas-2
+		+s-form()
+		//- +s-contact()
+		+footer()
+	
+	

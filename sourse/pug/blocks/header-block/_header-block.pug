@@ -1,0 +1,25 @@
+mixin header-block()
+	// start header-block
+	+b.header-block#header-block
+		+e.slider--js
+			+e.slide()
+				.animate-js-second
+					
+
+				.container
+					h1.under-canvas
+						span ЗАГОЛОВОК ГЛАВНОГО СЛАЙДЕРА В&nbsp;ПАРУ СТРОК
+					+e.text.under-canvas: span МОСКОВСКИЙ ТЕХНОПАРК В СФЕРЕ ВЫСОКИХ ТЕХНОЛОГИЙ, КОТОРЫЙ ОБЪЕДИНЯЕТ НА СВОЕЙ ПЛОЩАДКЕ КАК КРУПНЫЕ IT КОРПОРАЦИИ, ТАК И МОЛОДЫЕ ПЕРСПЕКТИВНЫЕ КОМПАНИИ, 
+			
+			+e.slide(style="background-image: url(img/head-bg.jpg);")
+				.container
+					h1.under-canvas
+						span ЗАГОЛОВОК ГЛАВНОГО СЛАЙДЕРА В&nbsp;ПАРУ СТРОК
+					+e.text.under-canvas: span ПОДЗАГОЛОВОК ТАКЖЕ В ПАРУ СТРОК ДЛЯ НАГЛЯДНОСТИ ОТОБРАДЕНИЯ КОНЕТЕНТА
+			+e.slide(style="background-image: url(img/head-bg.jpg);")
+				.container
+					h1.under-canvas
+						span ЗАГОЛОВОК ГЛАВНОГО СЛАЙДЕРА В&nbsp;ПАРУ СТРОК
+					+e.text.under-canvas: span ПОДЗАГОЛОВОК ТАКЖЕ В ПАРУ СТРОК ДЛЯ НАГЛЯДНОСТИ ОТОБРАДЕНИЯ КОНЕТЕНТА
+		block
+	// end header-block

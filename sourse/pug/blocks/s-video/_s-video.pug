@@ -1,0 +1,11 @@
+mixin s-video()
+	// start s-video
+	+b.s-video.section.lazy-background#s-video&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Вебинар
+				+e.text.h4 Вебинар Татьяны Каримовой о нововведениях 2019 года
+			+e.video-wrap
+				<iframe width="560" height="315"  src="https://www.youtube.com/embed/9KNP8WU-IcI"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			+e.btn(href="#") зарегистрироваться на вебинар
+	// end s-video

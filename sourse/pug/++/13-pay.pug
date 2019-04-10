@@ -1,0 +1,80 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-about/_s-about.pug
+include ../blocks/s-infrastructure/_s-infrastructure.pug
+include ../blocks/s-logos/_s-logos.pug
+include ../blocks/s-main-calendar/_s-main-calendar.pug
+include ../blocks/s-news/_s-news.pug
+include ../blocks/s-block/_s-block.pug
+include ../blocks/s-sq/_s-sq.pug
+include ../blocks/s-number-2/_s-number-2.pug
+include ../blocks/s-price/_s-price.pug
+include ../blocks/s-price-servise/_s-price-servise.pug
+include ../blocks/s-offices/_s-offices.pug
+include ../blocks/s-get-to/_s-get-to.pug
+include ../blocks/footer-page/_footer-page.pug
+include ../blocks/s-about-work-shop/_s-about-work-shop.pug
+include ../blocks/s-schedule/_s-schedule.pug
+include ../blocks/s-video/_s-video.pug
+include ../blocks/s-peoples/_s-peoples.pug
+include ../blocks/s-price-work-shop/_s-price-work-shop.pug
+include ../blocks/s-profit/_s-profit.pug
+
+block title
+	title Аренда  переговорных  комнат
+
+block pagecontent
+	+mob-mnu--wsh()
+	+header()
+		//- +top-line()
+		//- +top-nav--landing()
+		+top-nav--landing()
+	
+		+b.header-block--dark.--pay
+			.container
+				+breadcrumb("Фитнес-зал","Технопарк")  
+				h1.under-canvas.page-title.page-title.page-title--sm.ttu
+					span Оплатить услуги
+				.row
+					.col-xl-8.col
+						+form-wrap()(class="w-100")
+							//- .h4.text-primary.ttu.strong.pb-3 
+							+e.input-wrap.form-group
+								+e.head-title Название оплачиваемой услуги
+								label
+									+e.SELECT.input.form-control( required   )&attributes(attributes) 
+										option( ) Название оплачиваемой услуги 1
+										option( ) Название оплачиваемой услуги  2
+							.row
+								.col-lg-6
+									+input-l("text","Ваше имя")
+									+input-l("text","Ваша фамилия")
+									.row
+										.col-md-6
+											+input-un("tel","Ваш телефон") 
+										.col-md-6
+											+input-un("text","Сумма оплаты")(class="input-pay")
+											+e.SPAN.after руб.
+								.col-lg-6
+									+input-un("email","Ваше e-mail") 
+									+t-un("Текст сообщения")
+							.row.row--sm.align-items-center
+								.col-sm
+									+polite
+								.col
+									+e.BUTTON.btn(type="submit") Оплатить
+					.col-xl-4
+						.h4.text-white Возможное пояснение к оплатам для очевидностьи последующих действий с формой и редиректами на сайты платежных агрегаторов. Возможно размещение допустимых платежных систем
+						.row.row--sm.align-items-center
+							.col-auto
+								img(src="img/pay-1.png", alt="")
+							
+							.col-auto
+								img(src="img/pay-2.png", alt="")
+							
+		+footer()
+	
+	

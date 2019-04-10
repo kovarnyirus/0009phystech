@@ -1,0 +1,81 @@
+mixin s-block()
+	// start s-block
+	+b.s-block.section#s-block&attributes(attributes)
+		.container
+			.row.no-gutters
+				mixin item(i)
+					+e.col.col-lg.under-canvas
+						+e.item
+							+e.img-bg(style=`background-image: url(img/about-img-${i}.jpg)`)
+							+e.item-head
+								+e.item-title
+									block
+								+e.item-caption= t
+								+e.item-text Физтехпарк&nbsp;&mdash; московский технопарк в&nbsp;сфере высоких технологий, который объединяет на&nbsp;своей площадке как
+							+e.A.btn(href="#") ПОДРОБНЕЕ
+					// +e.col.col-lg
+				+item("1")
+					span: a.text-white(href="#") Компаниям  и&nbsp;стартапам
+				+item("2")
+					span: a.text-white(href="#") Партнерам  и&nbsp;инвесторам
+				+item("3")
+					span: a.text-white(href="#") Посетителям
+	// end s-block
+mixin s-block-2()
+	// start s-block
+	+b.s-block#s-block&attributes(attributes)
+		.container
+			.row
+				mixin item(i, t)
+					+e.col--servises.col-xl-4.col-md-6.under-canvas
+						+e.item--servises.tdn(href="#")
+							+e.img-bg( style=`background-image: url(img/servise-${i}.jpg)`)
+							+e.item-head
+								+e.item-title
+									span= t
+							 
+					// +e.col.col-lg
+				+item("1","Офисы")
+					
+				+item("2","Коворкинг")
+				+item("3","Конгресс-центр")
+				+item("4","Спортзал")
+				+item("5","Общепит")
+				+item("6","Переговорные")
+				+item("7","Парковка")
+				+e.col--servises.col-xl-4.col-md-6.under-canvas
+					+e.item--servises.--last
+						+e.text-block Мы постоянно развиваем сервисы и добавляем новые услуги для гостей и резидентов Технопарка. В скором времени тут появиться что то новенькое
+	// end s-block
+
+
+mixin s-block--landing()
+	// start s-block
+	+b.s-block--page.section#s-block&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Что рядом
+			.row.no-gutters
+				mixin item(i)
+					+e.col.col-xl-3.col-md-6.under-canvas
+						+e.item
+							+e.img-bg.img-bg
+								img.lazy-bg(src="#" data-src=`img/beside-${i}.jpg`, alt="")
+							+e.item-head
+								+e.item-title
+									block
+								+e.item-caption= t
+								+e.item-text На первом этаже технопарка оборудованно просторное Play-spase, в котором вы всегда можете отдохнуть и поиграть в настольный футбол, тенис, бильярд или просто расположиться на удобных креслах и диванах.    
+							//- +e.A.btn(href="#") ПОДРОБНЕЕ
+					// +e.col.col-xl-3.col-md-6.under-canvas
+				+item("1")
+					span Кафе
+				+item("2")
+					span Столовая
+				+item("3")
+					span Спорт зал
+				
+				+item("4")
+					span Play-spaсe
+
+	// end s-block

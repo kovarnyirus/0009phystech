@@ -1,0 +1,61 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-about/_s-about.pug
+include ../blocks/s-infrastructure/_s-infrastructure.pug
+include ../blocks/s-logos/_s-logos.pug
+include ../blocks/s-main-calendar/_s-main-calendar.pug
+include ../blocks/s-news/_s-news.pug
+include ../blocks/s-block/_s-block.pug
+include ../blocks/s-sq/_s-sq.pug
+include ../blocks/s-number-2/_s-number-2.pug
+include ../blocks/s-price/_s-price.pug
+include ../blocks/s-price-servise/_s-price-servise.pug
+include ../blocks/s-offices/_s-offices.pug
+include ../blocks/s-get-to/_s-get-to.pug
+include ../blocks/footer-page/_footer-page.pug
+
+block title
+	title Аренда офисов в технопарке
+
+block pagecontent
+	+mob-mnu()
+	+header()
+		//- +top-line()
+		+top-nav--landing()
+	
+		+b.header-block--dark(style='background-image: url(img/head-bg-rent.jpg);')
+			.container
+				+breadcrumb("Фитнес-зал","Технопарк")  
+				.row
+					.col
+						h1.under-canvas.page-title.page-title.ttu
+							span Аренда офисов в технопарке
+						+e.text--white.text-white Офис в&nbsp;современном бизнес-центре, объединяющем на&nbsp;своей территории ведущие&nbsp;IT компании.Отличная инфраструктура Технопарка&nbsp;&mdash; кафе, ресторан, спорт-клуб, салон красоты, ателье, химчистка, банкоматы, конгресс-центр, переговорные комнаты, коворкинг. Охраняемая территория.
+					.col-lg-auto
+						+form-wrap()
+							.h4.text-primary.ttu.strong.pb-3 Запишитесь на&nbsp;просмотр помещений
+							+input-l("text","Ваше имя, фамилия")
+							+input-un("email","Ваше e-mail") 
+							+input-un("tel","Ваш телефон") 
+							.row.row--sm.align-items-center
+								.col-sm
+									+polite
+								.col
+									+e.BUTTON.btn(type="submit") ЗАПИСАТЬСЯ
+	//- +s-price
+	+s-offices-rent()
+	+s-price-servise-rent
+	+s-block--landing
+	.bg-primary.animate-footer 
+		+s-form--rent()
+	+s-logos(class="s-logos--page")
+		.col-12: h2.ttu РЕЗИДЕНТЫ
+	+s-get-to()
+	+footer-page()
+	//- 	//- +s-contact()
+	//- 	+footer()
+	
+	

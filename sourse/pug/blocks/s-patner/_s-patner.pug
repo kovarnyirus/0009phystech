@@ -1,0 +1,68 @@
+mixin s-patner()
+	// start s-patner
+	+b.s-patner.section.pt-0
+		.container
+			+e.head
+				.row
+					.col-auto.under-canvas
+						.h4.strong Фильтр по нарправлениям
+					.col
+						.row
+							.col-auto.under-canvas
+								+e.LABEL.input-wrap
+									+e.INPUT.input(type="checkbox")
+									+e.SPAN.btn-head(rol="button") Образование
+							
+							.col-auto.under-canvas
+								+e.LABEL.input-wrap
+									+e.INPUT.input(type="checkbox")
+									+e.SPAN.btn-head(rol="button") IT
+							
+							.col-auto.under-canvas
+								+e.LABEL.input-wrap
+									+e.INPUT.input(type="checkbox")
+									+e.SPAN.btn-head(rol="button") Сервис
+							
+							.col-auto.under-canvas
+								+e.LABEL.input-wrap
+									+e.INPUT.input(type="checkbox")
+									+e.SPAN.btn-head(rol="button") Образование
+							
+							.col-auto.under-canvas
+								+e.LABEL.input-wrap
+									+e.INPUT.input(type="checkbox")
+									+e.SPAN.btn-head(rol="button") IT
+							
+							.col-auto.under-canvas
+								+e.LABEL.input-wrap
+									+e.INPUT.input(type="checkbox")
+									+e.SPAN.btn-head(rol="button") Сервис
+
+					
+			.row
+				mixin item(i,p)
+					+e.col.col-xxl-3.col-lg-4.col-sm-6
+						+e.item
+							+e.img-wrap.under-canvas
+								img.res-i(src=`img/patner-${i}.png`, alt="")
+							+e.caption
+								+e.title.h4.under-canvas= p
+								+e.text.h4.under-canvas
+									span.text-primary ООО “Техносервис”  
+									| 
+									| – фитнес-зона, силовые и кардио-тренажеры, боксерский ринг, душевые кабинки. Опция будет доступна не только резидентам “Физтехпарка”, но и всем желающим вести здоровый образ жизни.
+									block
+								.h4.under-canvas.text-left: a(href="#") www.techservice.ru
+								div: +e.label.under-canvas  Образование
+					// +e.col.col-xxl-3.col-lg-4.col-sm-6
+				+item("7","Qnext Tech")
+					span sdadsad asdasdsdasd   ASDASD SADASD SADASD SDSDAS SDASDAS 
+				+item("1","Qnext Tech")
+				+item("2","Terra company")
+				+item("3","Bridgestone")
+				+item("4","Bridgestone")
+				+item("5","Adata")
+				+item("6","Unicorn")
+				+item("6","Unicorn")
+				+item("6","Unicorn")
+	// end s-patner

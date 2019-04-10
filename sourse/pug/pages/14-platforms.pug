@@ -1,0 +1,70 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-about/_s-about.pug
+include ../blocks/s-infrastructure/_s-infrastructure.pug
+include ../blocks/s-logos/_s-logos.pug
+include ../blocks/s-main-calendar/_s-main-calendar.pug
+include ../blocks/s-news/_s-news.pug
+include ../blocks/s-block/_s-block.pug
+include ../blocks/s-sq/_s-sq.pug
+include ../blocks/s-number-2/_s-number-2.pug
+include ../blocks/s-price/_s-price.pug
+include ../blocks/s-price-servise/_s-price-servise.pug
+include ../blocks/s-offices/_s-offices.pug
+include ../blocks/s-get-to/_s-get-to.pug
+include ../blocks/footer-page/_footer-page.pug
+
+include ../blocks/s-seating-options/_s-seating-options.pug
+include ../blocks/s-add-servises/_s-add-servises.pug
+include ../blocks/s-events/_s-events.pug
+include ../blocks/s-articals/_s-articals.pug
+
+block title
+	title Наши площадки
+
+block pagecontent
+	+mob-mnu()
+	+header()
+		//- +top-line()
+		+top-nav--landing()
+	
+		+b.header-block--dark(style='background-image: url(img/head-bg-platform.jpg);')
+			.container
+				+breadcrumb("Фитнес-зал","Технопарк")  
+				.row
+					.col
+						h1.under-canvas.page-title.page-title.ttu
+							span Профессиональная среда и&nbsp;место встречи единомышленников
+						+e.text--white.text-white 
+							p.fw-400 Многофункциональные event-площадки Физтехпарка предназначены для проведения мероприятий любого масштаба. Пространство идеально подойдет для деловых, культурных и&nbsp;развлекательных мероприятий: форумов, конференций и&nbsp;воркшопов, хакатонов и&nbsp;митапов, регулярных образовательных программ и&nbsp;тренингов, фуршетов и&nbsp;банкетов. Эргономичная инфраструктура технопарка способствуют достижению наивысших результатов работы. 
+
+							p: strong ФизтехПарк за&nbsp;2&nbsp;года зарекомендовал себя, как удобное место проведения профильных событий. Более 50&nbsp;мероприятий было проведено только за&nbsp;2018&nbsp;год.
+					.col-lg-auto
+						+form-wrap()(class="")
+							.h4.text-primary.ttu.strong Запишись на демонстарацию
+							.pb-3.text-secondary.small Запишись на день, для тебя будет бесплатная парковка, тебя встретят наши менеджеры и проведут по залам
+
+							+input-l("text","Ваше имя, фамилия")
+							+input-un("email","Ваше e-mail") 
+							+input-un("tel","Ваш телефон") 
+							.row.row--sm.align-items-center
+								.col-sm
+									+polite
+								.col
+									+e.BUTTON.btn(type="submit") ЗАПИСАТЬСЯ
+	+s-offices-14
+	+s-seating-options
+	+s-price-servise-14
+	+s-events
+	.bg-primary.animate-footer 
+		+s-form--14()
+	+s-articals
+	+s-get-to()(class="mt-0")
+	+footer-page()
+	//- 	//- +s-contact()
+	//- 	+footer()
+	
+	

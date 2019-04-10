@@ -1,0 +1,57 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-about/_s-about.pug
+include ../blocks/s-infrastructure/_s-infrastructure.pug
+include ../blocks/s-logos/_s-logos.pug
+include ../blocks/s-main-calendar/_s-main-calendar.pug
+include ../blocks/s-news/_s-news.pug
+include ../blocks/s-block/_s-block.pug
+include ../blocks/news-block/_news-block.pug
+
+block title
+	title title
+
+block pagecontent
+	+mob-mnu()
+	+header()
+		//- +top-line()
+		+top-nav()
+	
+		+header-block()
+	.animate-block#particles-js.particle-canvas.particles-js
+		+news-block
+		//- .large-header#large-header
+			//- canvas.x-canvas#x-canvas
+			//- canvas.x-canvas#x-canvas2
+			//- canvas.x-canvas#x-canvas3
+		+s-about
+		+s-block
+	+s-infrastructure
+		+b.section-title
+			.row
+				.col-auto
+					h2.ttu Услуги и сервисы
+				.col-auto
+					+e.A.btn(href="#") Подробнее
+	+s-logos
+		.col-auto
+			h2.ttu РЕЗИДЕНТЫ
+		.col-auto
+			+e.A.btn(href="#") Список всех резидентов
+	+s-main-calendar
+	+s-logos
+		.col-auto
+			h2.ttu Партнеры
+		.col-auto
+			+e.A.btn(href="#") Список всех резидентов
+	+s-news
+	.bg-primary.animate-footer
+		canvas.x-canvas-2
+		//- +s-form()
+		//- +s-contact()
+		+footer()
+	
+	

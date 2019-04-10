@@ -1,0 +1,167 @@
+mixin s-main-calendar()
+	// start s-main-calendar
+	+b.s-main-calendar.section#s-main-calendar&attributes(attributes)
+		.container
+			.d-lg-none
+				+b.section-title
+					.row
+						.col
+							h2.ttu Календарь мероприятий
+						.col-auto
+							+e.A.btn(href="#") Все мероприятия
+					
+			.row
+				.col-lg-5.order-lg-0.order-last
+					.d-none.d-lg-block
+						+b.section-title
+							.row
+								.col
+									h2.ttu Календарь мероприятий
+								.col-auto
+									+e.A.btn(href="#") Все мероприятия
+							.h4 Ближайшее мероприятие
+					.d-lg-none.mb-3
+						.h4 Ближайшее мероприятие
+					+e.slider-wrap
+						+e.slider--js
+							- for (var x = 0; x < 3; x++)
+								+e.slide
+									+e.item
+										+e.head
+											+e.img-wrap
+												img.res-i(src="img/calendar-img.png", alt="")
+											+e.title
+												a(href="#") Мероприятие для журналистов в одну две три строки для наглядности
+										+e.date 21.08.2018
+								// +e.slide
+				.col.d-none.d-sm-block
+					+e.head
+						.row
+							
+							
+							.col-md-auto.col
+								+b.choice-block
+									+e.arrow--left(href="#")
+										+icon("sm-left")
+									+e.text декабрь
+									+e.arrow--right(href="#")
+										+icon("sm-right")
+							.col-md-auto.col
+								+b.choice-block--year
+									+e.arrow--left.disabled(href="#")
+										+icon("sm-left")
+									+e.text 2018
+									+e.arrow--right(href="#")
+										+icon("sm-right")
+					+e.table-wrap
+						table.NewsCalTable(  )
+							tbody
+								tr
+									td.NewsCalHeader  Пн
+									td.NewsCalHeader   Вт
+									td.NewsCalHeader  Ср
+									td.NewsCalHeader  Чт
+									td.NewsCalHeader Пт
+									td.NewsCalHeader Сб
+									td.NewsCalHeader  Вс
+								tr
+									td.NewsCalDefault--prev
+										span 1
+									td.NewsCalDefault()
+										span 2
+									td.NewsCalDefault()
+										span 3
+										.NewsCalNews(style='padding-top:5px;')
+											a(href='/kalendar/detail.php?ID=2', title='2') 100
+									td.NewsCalDefault()
+										span 4
+									td.NewsCalDefault()
+										span 5
+									td.NewsCalWeekend()
+										span 6
+									td.NewsCalWeekend()
+										span 7
+								tr
+									td.NewsCalToday()
+										span 8
+									td.NewsCalDefault()
+										span 9
+									td.NewsCalDefault()
+										span 10
+									td.NewsCalDefault()
+										span 11
+									td.NewsCalDefault()
+										span 12
+									td.NewsCalWeekend()
+										span 13
+									td.NewsCalWeekend()
+										span 14
+								tr
+									td.NewsCalDefault()
+										span 15
+										.NewsCalNews(style='padding-top:5px;')
+											
+											a(href='/kalendar/detail.php?ID=1', title='Событие 1') 4
+									td.NewsCalDefault()
+										span 16
+									td.NewsCalDefault()
+										span 17
+									td.NewsCalDefault()
+										span 18
+									td.NewsCalDefault()
+										span 19
+									td.NewsCalWeekend()
+										span 20
+									td.NewsCalWeekend()
+										span 21
+								tr
+									td.NewsCalDefault()
+										span 22
+									td.NewsCalDefault()
+										span 23
+									td.NewsCalDefault()
+										span 24
+									td.NewsCalDefault()
+										span 25
+									td.NewsCalDefault()
+										span 26
+									td.NewsCalWeekend()
+										span 27
+									td.NewsCalWeekend()
+										span 28
+								tr
+									td.NewsCalDefault()
+										span 29
+									td.NewsCalDefault()
+										span 30
+									td.NewsCalDefault()
+										span 31
+									td.NewsCalOtherMonth()
+										span 1
+									td.NewsCalOtherMonth()
+										span 2
+									td.NewsCalOtherMonth()
+										span 3
+									td.NewsCalOtherMonth()
+										span 4
+								
+								tr 
+									td.NewsCalOtherMonth()
+										span 5
+									td.NewsCalOtherMonth()
+										span 6
+									td.NewsCalOtherMonth()
+										span 7
+									td.NewsCalOtherMonth()
+										span 8
+									
+									td.NewsCalOtherMonth()
+										span 9
+									td.NewsCalOtherMonth()
+										span 10
+									td.NewsCalOtherMonth()
+										span 11
+
+	// end s-main-calendar
+ 
+	

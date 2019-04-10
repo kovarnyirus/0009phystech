@@ -1,0 +1,81 @@
+.aside {
+ 
+	margin-bottom: 30px; 
+	@include media-breakpoint-down(md) {
+		overflow-x: auto;
+		&__nav{
+			width: auto;
+			display: flex;
+			@include roww(10);
+		}
+	}
+			&__item{
+				// display: inline-block;
+				// width: auto;
+				flex-grow: 1;
+				// @include make-col-ready;
+				// @include make-col-ready;
+				@extend .col-auto;
+			}
+	&__link {  
+		color: $body-color;  
+		text-decoration: none !important;
+		@extend .h4;
+		font-weight: bold;
+		@include media-breakpoint-up(lg) {
+			margin-bottom: em(15);
+
+			display: inline-block;
+		}
+		display: block;
+		width: auto;
+		&--active {
+			color: $primary;
+		}
+	}
+
+	&__btn {
+		outline: none !important;
+		box-shadow: none !important;
+		// border-radius: 0;
+		margin-bottom: 10px;
+
+	}
+
+	//
+	@include media-breakpoint-up(xl) {}
+
+	@include media-breakpoint-up(md) {}
+
+	@include media-breakpoint-up(sm) {}
+
+	@include media-breakpoint-up(xs) {}
+
+	//
+	@include media-breakpoint-between(md, xl) {}
+
+
+	//
+	@include media-breakpoint-only(xs) {}
+
+	@include media-breakpoint-only(sm) {}
+
+	@include media-breakpoint-only(md) {}
+
+	@include media-breakpoint-only(lg) {}
+
+	@include media-breakpoint-only(xl) {}
+
+	//
+	@include media-breakpoint-down(xl) {}
+
+	@include media-breakpoint-down(lg) {}
+
+	@include media-breakpoint-down(md) {}
+
+	@include media-breakpoint-down(sm) {}
+
+	@include media-breakpoint-down(xs) {}
+
+}
+ 

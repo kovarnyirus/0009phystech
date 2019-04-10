@@ -1,0 +1,18 @@
+mixin s-number-2()
+	// start s-number-2
+	+b.s-number-2.section#s-number-2&attributes(attributes)
+		.container
+			
+			h2 Физтехпаркобладает уникальной экспертизой и&nbsp;является центром притяжения различных аудиторий пользователей
+		.container
+			.row
+				mixin item(n,t)
+					+e.col.col-lg-3.col-6
+						+e.item
+							+e.number= n
+							+e.caption.strong= t
+				+item(" 50"," Резидентов")
+				+item(" 71"," Арендаторов")
+				+item(" 76","Количество мест в коворкинге ")
+				+item(" 290","Количство парковочных мест ")
+	// end s-number-2

@@ -1,0 +1,16 @@
+mixin s-sq()
+	// start s-sq
+	+b.s-sq.section#s-sq.text-white
+		.container
+			h2 Просторные площади помогут подобрать лучшее помещение для Вашей  компании или стартапа
+		.container
+			.row
+				mixin item(n,t)
+					+e.col.col-lg
+						+e.item
+							+e.number= n
+							.h4.strong= t
+				+item("30083 м2","Общая площадь")
+				+item("15400 м2","Арендная площадь")
+				+item("740 м2","Конгресс-центр")
+	// end s-sq

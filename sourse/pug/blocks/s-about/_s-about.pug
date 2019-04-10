@@ -1,0 +1,15 @@
+mixin s-about()
+	// start s-about
+	+b.s-about.section#s-about&attributes(attributes)
+		.container
+			.row
+				+e.col.col-xl-auto
+					+b.section-title.under-canvas
+						h2 ФИЗТЕХПАРК
+					+e.text.under-canvas Физтехпарк&nbsp;&mdash; московский технопарк в&nbsp;сфере высоких технологий, который объединяет на&nbsp;своей площадке как крупные&nbsp;IT корпорации, так и&nbsp;молодые перспективные компании, и&nbsp;предоставляет все условия для их&nbsp;быстрого развития.
+
+				.col
+					+e.img-wrap.under-canvas.img-bg(style="background-image: url(img/about-img.jpg);")
+						img(src="img/about-img.jpg", alt="")
+					
+	// end s-about

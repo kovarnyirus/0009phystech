@@ -1,0 +1,55 @@
+include ../mixin-wrap/mixin-wrap.pug
+mixin footer()
+	+b.FOOTER.footer.bg-primary
+		.container
+			.row
+				.col-xl-3.col-lg-auto
+					+e.logo(href="#")
+						img.res-i(src="img/logo-foot-white.svg", alt="")
+					+soc()
+				.col-xl-3.col-sm-auto.col-6
+					+e.list
+						+e.list-item.h4
+							a(href="#") Новости
+
+						+e.list-item.h4
+							a(href="#") Инвесторам
+
+						+e.list-item.h4
+							a(href="#") Компаниям и стартапам
+
+						+e.list-item.h4
+							a(href="#") Посетителям
+						+e.list-item.h4
+							a(href="#") Мероприятия
+
+						+e.list-item.h4
+							a(href="#") Контакты 
+			
+				.col-xl-3.col-sm-auto.col-6
+					+e.list
+						+e.list-item
+							span.h4 Услуги и сервисы: 
+						+e.list-item
+							a(href="#") Аренда
+
+						+e.list-item
+							a(href="#") Коворкинг
+
+						+e.list-item
+							a(href="#") Фитнес-зал
+
+						+e.list-item
+							a(href="#") Парковка
+
+						+e.list-item
+							a(href="#") Кафе
+
+						+e.list-item
+							a(href="#") Столовая
+
+						+e.list-item
+							a(href="#") Кофейня
+
+						+e.list-item
+							a(href="#") Организация мероприятий

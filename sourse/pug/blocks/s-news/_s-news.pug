@@ -1,0 +1,70 @@
+mixin s-news()
+	// start s-news
+	+b.s-news.section#s-news&attributes(attributes)
+		.container
+			+b.section-title
+				.row
+					.col-auto
+						h2.ttu НОВОСТИ
+					.col-auto
+						+e.A.btn(href="#") ВСЕ НОВОСТИ
+			+e.slider--js
+				mixin item(i,t)
+					+e.slide
+						+e.item
+							+e.img-wrap.img-bg(href="#")
+								img(src="#" data-lazy=`img/news-${i}.jpg`, alt="")
+							+e.title
+								a(href="#")= t
+							+e.date 22. 10. 2018
+					// +e.slide
+				+item("1","Global Venture Alliance и федеральная девелоперская компания Талан начинают совместный проект по поиску лучших стартапов")
+				+item("2","Global Venture Alliance и федеральная девелоперская компания Талан начинают совместный проект по поиску лучших стартапов")
+				+item("3","Набор в Школу программистов для учеников 5-10 классов 7 октября")
+	// end s-news
+mixin s-news-6-1()
+	// start s-news
+	+b.s-news.section#s-news&attributes(attributes)
+		.container
+			+b.section-title
+				.row
+					.col-auto
+						h2.ttu Другие новости
+					.col-auto
+						+e.A.btn(href="#") ВСЕ НОВОСТИ
+			+e.slider--js
+				mixin item(i,t)
+					+e.slide
+						+e.item
+							+e.img-wrap.img-bg(href="#")
+								img(src="#" data-lazy=`img/news-${i}.jpg`, alt="")
+							+e.title
+								a(href="#")= t
+							+e.date 22. 10. 2018
+					// +e.slide
+				+item("1","Global Venture Alliance и федеральная девелоперская компания Талан начинают совместный проект по поиску лучших стартапов")
+				+item("2","Global Venture Alliance и федеральная девелоперская компания Талан начинают совместный проект по поиску лучших стартапов")
+				+item("3","Набор в Школу программистов для учеников 5-10 классов 7 октября")
+	// end s-news
+
+mixin s-news-6()
+	// start s-news
+	+b.s-news.section#s-new.pt-0
+		.container
+			.row
+				mixin item(i,t)
+					+e.col.col-lg-4.col-md-6
+						+e.item
+							+e.img-wrap.img-bg.under-canvas(href="#" style=`background-image: url(img/news-${i}.jpg);`)
+								img(src=`img/news-${i}.jpg`, alt="")
+							+e.title.under-canvas
+								a(href="#")= t
+							+e.date.under-canvas 22. 10. 2018
+					// +e.col.col-lg-4.col-md-6
+				- for (var x = 0; x < 3; x++)
+					+item("1","Global Venture Alliance и федеральная девелоперская компания Талан начинают совместный проект по поиску лучших стартапов")
+					+item("2","Global Venture Alliance и федеральная девелоперская компания Талан начинают совместный проект по поиску лучших стартапов")
+					+item("3","Набор в Школу программистов для учеников 5-10 классов 7 октября")
+			+pugin()
+	// end s-news
+
