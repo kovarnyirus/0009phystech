@@ -125,50 +125,55 @@
           <div class="container">
             <div class="row">
               <div class="col-xxl-4 col-lg-3">
-                <!-- start aside-->
                 <div class="aside">
                   <div class="aside__nav aside__nav--js">
-                    <div class="aside__item small"><a class="aside__link aside__link--active" href="#">Резидент</a>
+                    <div class="aside__item small"><a class="aside__link aside__link--active" href="#">Мой профиль</a>
                     </div>
-                    <div class="aside__item small"><a class="aside__link" href="#">Редактировать профиль</a>
+                    <div class="aside__item small"><a class="aside__link" href="#">Мои обращения</a>
                     </div>
-                    <div class="aside__item small"><a class="aside__link" href="#">Эксплуатация</a>
-                    </div>
-                    <div class="aside__item small"><a class="aside__link" href="#">Оформить пропуск</a>
+                    <div class="aside__item small"><a class="aside__link" href="#">Входящие обращения</a>
                     </div>
                   </div>
                 </div>
-                <!-- end aside-->
               </div>
               <div class="col">
                 <div class="po-block">
                   <div class="form-wrap">
                     <form class="js-form-validate">
                       <div class="row justify-content-between">
-                        <div class="col">
+                        <div class="col-md-9 col-lg-8 col-xl-6">
                           <div class="form-wrap__input-wrap form-group">
-                            <label><input class="form-wrap__input form-control under-canvas" type="text"/><span class="form-wrap__title-label">Название компании</span>
+                            <label><input class="form-wrap__input form-wrap__input--border form-control under-canvas" type="text"/><span class="form-wrap__title-label">Имя</span>
                             </label>
                           </div>
                           <!-- +e.input-wrap-->
                           <div class="form-wrap__input-wrap form-group">
-                            <label><input class="form-wrap__input form-control under-canvas" type="url"/><span class="form-wrap__title-label">Адрес офицального сайта</span>
+                            <label><input class="form-wrap__input form-wrap__input--border form-control under-canvas" type="text"/><span class="form-wrap__title-label">Фамилия</span>
                             </label>
                           </div>
                           <!-- +e.input-wrap-->
                           <div class="form-wrap__input-wrap form-group">
-                            <label><textarea class="form-wrap__input form-control under-canvas"> </textarea><span class="form-wrap__title-label">Краткое описание компании</span>
+                            <label><input class="form-wrap__input form-wrap__input--border form-control under-canvas" type="email"/><span class="form-wrap__title-label">E-mail</span>
                             </label>
                           </div>
                           <!-- +e.input-wrap-->
-                        </div>
-                        <div class="col-md-auto">
-                          <div class="logo-block">
-                            <div class="add-file">
-                              <label>
-                                <div class="add-file__img-wrap add-file__img-wrap--active under-canvas"><img class="res-i" src="img/patner-4.png" alt="">
-                                </div><input class="add-file__input" name="file" type="file"/><span class="add-file__btn under-canvas">Загрузить логотип</span>
-                              </label>
+                          <div class="row">
+                            <div class="col-12 col-md-6">
+                              <div class="form-wrap__input-wrap form-group">
+                                <label><input class="form-wrap__input form-wrap__input--border form-control under-canvas" type="password"/><span class="form-wrap__title-label">Пароль</span>
+                                </label>
+                              </div>
+                              <!-- +e.input-wrap-->
+                            </div>
+                            <div class="col-12 col-md-6">
+                              <button class="form-wrap__btn form-wrap__btn--edit under-canvas w-100" type="submit">Изменить пароль
+                              </button>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                              <div class="politic mb-5">
+                                <label class="custom-input"><input class="custom-input__input" type="checkbox" name="polite" checked="checked"/><span class="custom-input__lab"></span>
+                                </label>Получать  "E-mail уведомления"
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -185,69 +190,6 @@
       </div>
       <div class="bg-primary animate-footer">
         <canvas class="x-canvas-2"></canvas>
-        <!-- start s-form-->
-        <section class="s-form section" id="s-form">
-          <div class="container">
-            <div class="section-title">
-              <h2 class="ttu">ЕСТЬ вопросы?</h2>
-            </div>
-            <div class="row">
-              <div class="col-xxl-4">
-                <div class="s-form__text">Задайте их нашим специалистам. Заполните форму и мы ответи Вам в течении 18 часов.
-                </div>
-              </div>
-              <div class="col">
-                <div class="form-wrap">
-                  <form class="js-form-validate">
-                    <div class="row">
-                      <div class="col-lg-6">
-                        <div class="form-wrap__input-wrap form-group">
-                          <label><input class="form-wrap__input form-control" type="text"/><span class="form-wrap__title-label">Ваше имя</span>
-                          </label>
-                        </div>
-                        <!-- +e.input-wrap-->
-                        <div class="form-wrap__input-wrap form-group">
-                          <label><input class="form-wrap__input form-control" type="tel"/><span class="form-wrap__title-label">Ваше Номер телефона</span>
-                          </label>
-                        </div>
-                        <!-- +e.input-wrap-->
-                        <div class="form-wrap__input-wrap form-group">
-                          <label><input class="form-wrap__input form-control" type="email"/><span class="form-wrap__title-label">Ваш e-mail (необязательно)</span>
-                          </label>
-                        </div>
-                        <!-- +e.input-wrap-->
-                      </div>
-                      <div class="col-lg-6">
-                        <div class="form-wrap__input-wrap form-group">
-                          <label><textarea class="form-wrap__input form-control"> </textarea><span class="form-wrap__title-label">Ваш вопрос</span>
-                          </label>
-                        </div>
-                        <!-- +e.input-wrap-->
-                        <div class="row row--sm align-items-center">
-                          <div class="col-sm">
-                            <div class="politic"> 
-                              <label class="custom-input"><input class="custom-input__input" type="checkbox" name="polite" checked="checked"/><span class="custom-input__lab"></span>
-                              </label>Принимаю условия 
-                              
-                              <a class="form-wrap__link" href="Soglasie.pdf" target="_blank">пользовательского соглашения </a> 
-                              и 
-                               <a class="form-wrap__link" href="Soglasie.pdf" target="_blank">политики конфиденциальности </a>
-                            </div>
-                          </div>
-                          <div class="col">
-                            <button class="form-wrap__btn" type="submit">Отправить
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- end s-form-->
         <footer class="footer bg-primary">
           <div class="container">
             <div class="row">
@@ -318,13 +260,13 @@
         <!-- +e.input-wrap-->
         <div class="row row--sm align-items-center">
           <div class="col-sm">
-            <div class="politic"> 
+            <div class="politic">
               <label class="custom-input"><input class="custom-input__input" type="checkbox" name="polite" checked="checked"/><span class="custom-input__lab"></span>
-              </label>Принимаю условия 
+              </label>Принимаю условия
               
-              <a class="form-wrap__link" href="Soglasie.pdf" target="_blank">пользовательского соглашения </a> 
-              и 
-               <a class="form-wrap__link" href="Soglasie.pdf" target="_blank">политики конфиденциальности </a>
+              <a class="form-wrap__link" href="Soglasie.pdf" target="_blank">пользовательского соглашения</a>
+              и
+              <a class="form-wrap__link" href="Soglasie.pdf" target="_blank">политики конфиденциальности</a>
             </div>
           </div>
           <div class="col">
@@ -437,13 +379,13 @@
         </div>
         <div class="row row--sm align-items-center">
           <div class="col-sm">
-            <div class="politic"> 
+            <div class="politic">
               <label class="custom-input"><input class="custom-input__input" type="checkbox" name="polite" checked="checked"/><span class="custom-input__lab"></span>
-              </label>Принимаю условия 
+              </label>Принимаю условия
               
-              <a class="form-wrap__link" href="Soglasie.pdf" target="_blank">пользовательского соглашения </a> 
-              и 
-               <a class="form-wrap__link" href="Soglasie.pdf" target="_blank">политики конфиденциальности </a>
+              <a class="form-wrap__link" href="Soglasie.pdf" target="_blank">пользовательского соглашения</a>
+              и
+              <a class="form-wrap__link" href="Soglasie.pdf" target="_blank">политики конфиденциальности</a>
             </div>
           </div>
           <div class="col">
@@ -474,13 +416,13 @@
         <!-- +e.input-wrap-->
         <div class="row row--sm align-items-center">
           <div class="col-sm">
-            <div class="politic"> 
+            <div class="politic">
               <label class="custom-input"><input class="custom-input__input" type="checkbox" name="polite" checked="checked"/><span class="custom-input__lab"></span>
-              </label>Принимаю условия 
+              </label>Принимаю условия
               
-              <a class="form-wrap__link" href="Soglasie.pdf" target="_blank">пользовательского соглашения </a> 
-              и 
-               <a class="form-wrap__link" href="Soglasie.pdf" target="_blank">политики конфиденциальности </a>
+              <a class="form-wrap__link" href="Soglasie.pdf" target="_blank">пользовательского соглашения</a>
+              и
+              <a class="form-wrap__link" href="Soglasie.pdf" target="_blank">политики конфиденциальности</a>
             </div>
           </div>
           <div class="col">

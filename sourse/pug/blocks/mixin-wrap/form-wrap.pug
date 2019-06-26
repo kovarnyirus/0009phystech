@@ -1,16 +1,16 @@
 mixin form-head()
-	form.js-form-validate( method="post" action="action.php" data-parsley-validate="") 
-		input(type='hidden', class="order", name='Вид формы', value=`Заявка  с сайта` ) 
+	form.js-form-validate( method="post" action="action.php" data-parsley-validate="")
+		input(type='hidden', class="order", name='Вид формы', value=`Заявка  с сайта` )
 		block
 mixin input(  t , pl)
 	+e.input-wrap.form-group
 		+e.SPAN.title= pl
-		label 
+		label
 			+e.INPUT.input.form-control(type= t )&attributes(attributes)
 	// +e.input-wrap
 mixin sel(t)
 	+e.input-wrap.form-group
-		//- label 
+		//- label
 		+e.SELECT.input.form-control()&attributes(attributes)
 			option(selected disabled)= t
 			block
@@ -26,21 +26,28 @@ mixin ta(p , pl)
 mixin input-l(  t ,p )
 	+e.input-wrap.form-group
 		label
-			+e.INPUT.input.form-control(type= t     )&attributes(attributes) 
+			+e.INPUT.input.form-control(type= t     )&attributes(attributes)
+			+e.SPAN.title-label= p
+		block
+	// +e.input-wrap
+mixin input-l-1(  t ,p )
+	+e.input-wrap.form-group
+		label
+			+e.INPUT.input--border.form-control(type= t     )&attributes(attributes)
 			+e.SPAN.title-label= p
 		block
 	// +e.input-wrap
 mixin input-un(  t ,p )
 	+e.input-wrap.form-group
 		label
-			+e.INPUT.input.form-control(type= t   )&attributes(attributes) 
+			+e.INPUT.input.form-control(type= t   )&attributes(attributes)
 			+e.SPAN.title-label= p
 		block
 	// +e.input-wrap
 mixin t-un(   p )
 	+e.input-wrap.form-group
 		label
-			+e.TEXTAREA.input.form-control(   )&attributes(attributes) 
+			+e.TEXTAREA.input.form-control(   )&attributes(attributes)
 			+e.SPAN.title-label= p
 		block
 	// +e.input-wrap
@@ -48,7 +55,7 @@ mixin t-un(   p )
 mixin select-l(  p )
 	+e.input-wrap.form-group
 		label
-			+e.SELECT.input.form-control( required   )&attributes(attributes) 
+			+e.SELECT.input.form-control( required   )&attributes(attributes)
 				option.d-none(selectedvalue="")= p
 				block
 			//- +e.SPAN.title-label
