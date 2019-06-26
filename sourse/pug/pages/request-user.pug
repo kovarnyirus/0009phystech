@@ -12,6 +12,7 @@ include ../blocks/s-block/_s-block.pug
 include ../blocks/s-sq/_s-sq.pug
 include ../blocks/s-number-2/_s-number-2.pug
 include ../blocks/aside/_aside.pug
+include ../blocks/request-user/request-user.pug
 
 block title
 	title ЛИЧНЫЙ КАБИНЕТ
@@ -37,24 +38,11 @@ block pagecontent
 		.section
 			.container
 				.row
-					.col-xxl-4.col-lg-3
-						+asideLK('Мой профиль','Мои обращения')
+					.col-xxl-2.col-lg-3
+						+asideLK('Мой профиль', 'Мои обращения')
 					.col
-						+b.po-block
-							+form-wrap
-								.row.justify-content-between
-									.col-md-9.col-lg-8.col-xl-6
-										+input-l-1("text","Имя")(class="under-canvas")
-										+input-l-1("text","Фамилия")(class="under-canvas")
-										+input-l-1("email","E-mail")(class="under-canvas")
-										.row
-											.col-12.col-md-6
-												+input-l-1("password","Пароль")(class="under-canvas")
-											.col-12.col-md-6
-												+e.BUTTON.btn--edit.under-canvas.w-100(type="submit") Изменить пароль
-											.col-12.col-lg-6
-												+notifications()
-								+e.BUTTON.btn--edit.under-canvas(type="submit") Сохранить изменения
+						+request-user()
+
 	.bg-primary.animate-footer
 		canvas.x-canvas-2
 		//- +s-contact()

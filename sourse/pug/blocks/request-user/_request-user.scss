@@ -1,0 +1,124 @@
+.request-user {
+  &__item {
+    margin-bottom: 35px;
+  }
+
+  &__question {
+    background: #FFFFFF;
+    border: 1px solid #ACC8DA;
+    padding-top: 37px;
+    padding-bottom: 37px;
+    padding-right: 50px;
+    padding-left: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    color: #000000;
+    line-height: 1.5;
+    @include media-breakpoint-down(sm){
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 0px;
+      padding-left: 0px;
+      font-size: 16px;
+    }
+  }
+
+  &__avatar {
+    border-radius: 50%;
+    width: 63px;
+    height: 63px;
+  }
+
+  &__name {
+    font-weight: bold;
+  }
+
+  &__city {
+    font-size: 16px;
+  }
+
+  &__btn {
+    @extend .btn;
+    @extend .btn-outline-primary;
+    min-width: 171px;
+  }
+
+  &__answer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #DCF1FF;
+    padding-top: 37px;
+    padding-bottom: 37px;
+    padding-right: 50px;
+    padding-left: 22px;
+    @include media-breakpoint-down(sm){
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    flex-wrap: wrap;
+    background: #FFFFFF;
+    border: 1px solid #ACC8DA;
+    padding-top: 24px;
+    padding-left: 30px;
+    padding-right: 50px;
+    padding-bottom: 13px;
+    @include media-breakpoint-down(sm){
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+
+    & .soc {
+      display: flex;
+    }
+
+    & .soc__item {
+      border-radius: 50%;
+      background-color: #0C95ED;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    & .fab {
+      color: white;
+    }
+  }
+
+  &__share {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__status {
+    text-transform: uppercase;
+    color: #32AE30;
+    font-weight: bold;
+
+    &--consideration {
+      color: #FF8500;
+    }
+  }
+
+  &__textarea {
+    width: 100%;
+    min-height: 150px;
+    border: 1px solid #9FC2D9;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 24px;
+    padding-bottom: 15px;
+    padding-right: 5px;
+  }
+}

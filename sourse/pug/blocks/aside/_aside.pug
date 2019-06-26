@@ -9,13 +9,17 @@ mixin aside()
 			+e.item.small: +e.A.link(href="#") Оформить пропуск
 	// end aside
 
-mixin asideLK()
+mixin asideLK(...arr)
 	+b.aside
-		//- +e.BUTTON.btn--js.btn.btn-block.btn-primary.btn-lg.d-lg-none(type="button")
 		+e.nav--js
-			+e.item.small: +e.A.link--active(href="#") Мой профиль
-			+e.item.small: +e.A.link(href="#") Мои обращения
-			+e.item.small: +e.A.link(href="#") Входящие обращения
+			each item, index in arr
+				if index < 1
+					+e.item.small: +e.A.link--active(href="#")= item
+				else
+					+e.item.small: +e.A.link(href="#")= item
+
+
+
 
 
 
