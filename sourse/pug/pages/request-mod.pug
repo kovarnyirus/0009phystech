@@ -41,7 +41,30 @@ block pagecontent
 					.col-xxl-2.col-lg-3
 						+asideLK('Мой профиль', 'Мои обращения')
 					.col
-						+request-user()
+						div.mb-3
+							+b.FORM.form-wrap
+								.row
+									.col-2.date-picker-block-js
+										+input("text","Дата начала встречи ")(class="startDate")
+									.col-2.date-picker-block-js
+										+input("text","Дата начала встречи ")(class="startDate")
+									.col-auto.ml-auto
+										.row
+											.col-12.font-weight-bold.mb-3 Отображать только
+											.col-3
+												+in-ch('polite')(checked)
+													| Прочитанные
+											.col-3
+												+in-ch('polite')(checked)
+													| Не прочитанные
+											.col-3
+												+in-ch('polite')(checked)
+													| Отвеченные
+											.col-3
+												+in-ch('polite')(checked)
+													| Не отвеченные
+						+request-mod()
+						+pugin-2()
 
 	.bg-primary.animate-footer
 		canvas.x-canvas-2

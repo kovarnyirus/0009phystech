@@ -1,6 +1,10 @@
-.request-user {
+.request {
   &__item {
     margin-bottom: 35px;
+    position: relative;
+    &--new{
+      border: 1px solid #0C95ED;
+    }
   }
 
   &__question {
@@ -15,13 +19,33 @@
     font-size: 20px;
     color: #000000;
     line-height: 1.5;
-    @include media-breakpoint-down(sm){
+    position: static;
+    @include media-breakpoint-down(sm) {
       padding-top: 10px;
       padding-bottom: 10px;
       padding-right: 0px;
       padding-left: 0px;
       font-size: 16px;
     }
+  }
+
+  &__new {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #0C95ED;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid #0C95ED;
+  }
+
+  &__date {
+    margin-bottom: 20px;
+    font-size: 16px;
   }
 
   &__avatar {
@@ -42,6 +66,32 @@
     @extend .btn;
     @extend .btn-outline-primary;
     min-width: 171px;
+    font-size: 13px;
+    color: black;
+
+    &--del {
+      border: none;
+      color: #EF202F;
+      width: 100px;
+      min-width: 100px;
+    }
+
+    &--edit {
+      border: none;
+      color: #0C95ED;
+      text-transform: none;
+      min-width: 132px;
+      width: 132px;
+    }
+
+    &:disabled {
+      border-color:  #D8D8D8;
+      color: #C2C2C2;
+      cursor: default;
+    }
+    @include media-breakpoint-down(md){
+      margin-bottom: 10px;
+    }
   }
 
   &__answer {
@@ -52,7 +102,7 @@
     padding-bottom: 37px;
     padding-right: 50px;
     padding-left: 22px;
-    @include media-breakpoint-down(sm){
+    @include media-breakpoint-down(sm) {
       padding-top: 10px;
       padding-bottom: 10px;
       padding-right: 0px;
@@ -67,12 +117,10 @@
     border: 1px solid #ACC8DA;
     padding-top: 24px;
     padding-left: 30px;
-    padding-right: 50px;
     padding-bottom: 13px;
-    @include media-breakpoint-down(sm){
+    @include media-breakpoint-down(sm) {
       padding-top: 10px;
       padding-bottom: 10px;
-      padding-right: 0px;
       padding-left: 0px;
     }
 
@@ -103,6 +151,11 @@
     text-transform: uppercase;
     color: #32AE30;
     font-weight: bold;
+    font-size: 20px;
+    padding-right: 50px;
+    @include media-breakpoint-down(md) {
+      padding-right: 0;
+    }
 
     &--consideration {
       color: #FF8500;
@@ -120,5 +173,12 @@
     padding-left: 24px;
     padding-bottom: 15px;
     padding-right: 5px;
+  }
+
+  &--moderator {
+    & .request__status {
+      font-size: 13px;
+      padding-right: 0;
+    }
   }
 }

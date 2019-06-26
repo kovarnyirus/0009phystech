@@ -135,7 +135,89 @@
                 </div>
               </div>
               <div class="col">
-                <div class="request">
+                <div class="mb-3">
+                  <form class="form-wrap">
+                    <div class="row">
+                      <div class="col-2 date-picker-block-js">
+                        <div class="form-wrap__input-wrap form-group"><span class="form-wrap__title">Дата начала встречи </span>
+                          <label><input class="form-wrap__input form-control startDate" type="text"/>
+                          </label>
+                        </div>
+                        <!-- +e.input-wrap-->
+                      </div>
+                      <div class="col-2 date-picker-block-js">
+                        <div class="form-wrap__input-wrap form-group"><span class="form-wrap__title">Дата начала встречи </span>
+                          <label><input class="form-wrap__input form-control startDate" type="text"/>
+                          </label>
+                        </div>
+                        <!-- +e.input-wrap-->
+                      </div>
+                      <div class="col-auto ml-auto">
+                        <div class="row">
+                          <div class="col-12 font-weight-bold mb-3">Отображать только</div>
+                          <div class="col-3">
+                            <label class="custom-input"><input class="custom-input__input" type="checkbox" name="polite" checked="checked"/><span class="custom-input__lab"></span>Прочитанные
+                            </label>
+                          </div>
+                          <div class="col-3">
+                            <label class="custom-input"><input class="custom-input__input" type="checkbox" name="polite" checked="checked"/><span class="custom-input__lab"></span>Не прочитанные
+                            </label>
+                          </div>
+                          <div class="col-3">
+                            <label class="custom-input"><input class="custom-input__input" type="checkbox" name="polite" checked="checked"/><span class="custom-input__lab"></span>Отвеченные
+                            </label>
+                          </div>
+                          <div class="col-3">
+                            <label class="custom-input"><input class="custom-input__input" type="checkbox" name="polite" checked="checked"/><span class="custom-input__lab"></span>Не отвеченные
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="request request--moderator">
+                  <div class="request__item request__item--new">
+                    <div class="request__question">
+                      <div class="col-12 col-md-2 mb-3">
+                        <div class="request__name">Ирина Войтова
+                        </div>
+                        <div class="request__city">г. Санкт-Петербург
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-10">
+                        <div class="request__date">16.07.2019
+                        </div>
+                        <p>Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём.</p>
+                      </div><span class="request__new">новое</span>
+                    </div>
+                    <div class="request__footer">
+                      <div class="col-auto">
+                        <div class="request__share">поделиться
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <div class="soc"><a class="soc__item" href="#" target="_blank"><i class="fab fa-instagram"></i></a><a class="soc__item" href="#" target="_blank"><i class="fab  fa-facebook-f"></i></a><a class="soc__item" href="#" target="_blank"><i class="fab  fa-vk"></i></a><a class="soc__item" href="#" target="_blank"><i class="fab  fa-youtube"></i></a>
+                        </div>
+                      </div>
+                      <div class="col-auto ml-auto mw-100">
+                        <div class="row justify-content-end align-items-center">
+                          <div class="col-auto">
+                            <button class="request__btn">Ответить
+                            </button>
+                          </div>
+                          <div class="col-auto">
+                            <button class="request__btn" disabled="disabled">Публиковать
+                            </button>
+                          </div>
+                          <div class="col-auto">
+                            <button class="request__btn request__btn--del">Удалить
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <div class="request__item">
                     <div class="request__question">
                       <div class="col-12 col-md-2 mb-3">
@@ -145,6 +227,8 @@
                         </div>
                       </div>
                       <div class="col-12 col-md-10">
+                        <div class="request__date">16.07.2019
+                        </div>
                         <p>Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём.</p>
                       </div>
                     </div>
@@ -155,8 +239,6 @@
                       </div>
                       <div class="col-12 col-md-10">
                         <p>Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка</p>
-                        <button class="request__btn under-canvas" type="submit">Ответить
-                        </button>
                       </div>
                     </div>
                     <div class="request__footer">
@@ -168,8 +250,28 @@
                         <div class="soc"><a class="soc__item" href="#" target="_blank"><i class="fab fa-instagram"></i></a><a class="soc__item" href="#" target="_blank"><i class="fab  fa-facebook-f"></i></a><a class="soc__item" href="#" target="_blank"><i class="fab  fa-vk"></i></a><a class="soc__item" href="#" target="_blank"><i class="fab  fa-youtube"></i></a>
                         </div>
                       </div>
-                      <div class="col-auto ml-auto">
-                        <div class="request__status request__status--answered">Отвечено
+                      <div class="col-auto ml-auto mw-100">
+                        <div class="row justify-content-end align-items-center">
+                          <div class="col-auto">
+                            <div class="request__status request__status--answered">Отвечено
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <button class="request__btn request__btn--edit">Редактировать
+                            </button>
+                          </div>
+                          <div class="col-auto">
+                            <button class="request__btn">Ответить
+                            </button>
+                          </div>
+                          <div class="col-auto">
+                            <button class="request__btn" disabled="disabled">Публиковать
+                            </button>
+                          </div>
+                          <div class="col-auto">
+                            <button class="request__btn request__btn--del">Удалить
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -183,6 +285,8 @@
                         </div>
                       </div>
                       <div class="col-12 col-md-10">
+                        <div class="request__date">16.07.2019
+                        </div>
                         <p>Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём.</p>
                       </div>
                     </div>
@@ -193,8 +297,6 @@
                       </div>
                       <div class="col-12 col-md-10">
                         <p>Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка</p><textarea class="request__textarea"></textarea>
-                        <button class="request__btn under-canvas" type="submit">отправить ответ
-                        </button>
                       </div>
                     </div>
                     <div class="request__footer">
@@ -206,8 +308,20 @@
                         <div class="soc"><a class="soc__item" href="#" target="_blank"><i class="fab fa-instagram"></i></a><a class="soc__item" href="#" target="_blank"><i class="fab  fa-facebook-f"></i></a><a class="soc__item" href="#" target="_blank"><i class="fab  fa-vk"></i></a><a class="soc__item" href="#" target="_blank"><i class="fab  fa-youtube"></i></a>
                         </div>
                       </div>
-                      <div class="col-auto ml-auto">
-                        <div class="request__status request__status--answered">Отвечено
+                      <div class="col-auto ml-auto mw-100">
+                        <div class="row justify-content-end align-items-center">
+                          <div class="col-auto">
+                            <button class="request__btn">Сохранить
+                            </button>
+                          </div>
+                          <div class="col-auto">
+                            <button class="request__btn" disabled="disabled">Публиковать
+                            </button>
+                          </div>
+                          <div class="col-auto">
+                            <button class="request__btn request__btn--del" disabled="disabled">Удалить
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -221,17 +335,53 @@
                         </div>
                       </div>
                       <div class="col-12 col-md-10">
+                        <div class="request__date">16.07.2019
+                        </div>
                         <p>Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём.</p>
                       </div>
                     </div>
                     <div class="request__footer">
-                      <div class="col-auto ml-auto">
-                        <div class="request__status request__status--consideration">На рассмотрении
+                      <div class="col-auto">
+                        <div class="request__share">поделиться
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <div class="soc"><a class="soc__item" href="#" target="_blank"><i class="fab fa-instagram"></i></a><a class="soc__item" href="#" target="_blank"><i class="fab  fa-facebook-f"></i></a><a class="soc__item" href="#" target="_blank"><i class="fab  fa-vk"></i></a><a class="soc__item" href="#" target="_blank"><i class="fab  fa-youtube"></i></a>
+                        </div>
+                      </div>
+                      <div class="col-auto ml-auto mw-100">
+                        <div class="row justify-content-end align-items-center">
+                          <div class="col-auto">
+                            <div class="request__status request__status--answered">Отвечено
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                            <button class="request__btn request__btn--edit">Редактировать
+                            </button>
+                          </div>
+                          <div class="col-auto">
+                            <button class="request__btn">Снять с публикации
+                            </button>
+                          </div>
+                          <div class="col-auto">
+                            <button class="request__btn request__btn--del">Удалить
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <nav>
+                  <ul class="pagination">
+                    <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1"><i class="fas fa-chevron-left"></i></a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">2<span class="sr-only">(current)</span></a></li>
+                    <li class="page-item"><a class="page-link page-link-more" href="#">...</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a></li>
+                  </ul>
+                </nav>
               </div>
             </div>
           </div>

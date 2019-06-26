@@ -4,7 +4,7 @@ mixin s-offices()
 		.container
 			+b.section-title
 				h2 Отдельные офисы
-				
+
 			+e.row.row
 				mixin item(i, t, pr)
 					+e.col.col-xl-4.col-md-6
@@ -12,21 +12,21 @@ mixin s-offices()
 							+e.img-wrap.img-bg(href="#" style=`background-image: url(img/office-${i}.jpg);`)
 								img(src=`img/office-${i}.jpg`, alt="")
 							+e.caption
-								+e.title= t 
+								+e.title= t
 								+e.item-row.row.h4.row--sm
 									.col-auto
-										+icon('user') 
-										| 
+										+icon('user')
+										|
 										strong 10
-									
+
 									.col-auto
 										// 08.02 добавил
-										+icon('square') 
-										//- span.text-primary S 
-										| 
+										+icon('square')
+										//- span.text-primary S
+										|
 										strong 80 кв.м
 									.col.text-right.strong 7 этаж
-								
+
 								.row.align-items-center.row--sm
 									.col
 										+e.price= pr
@@ -47,11 +47,11 @@ mixin s-offices-rent()
 				.row
 					.col
 						h2 Подбор помещения
-					.col-md-auto 
-						+e.text 
+					.col-md-auto
+						+e.text
 							+icon('clock')
-							| Доступ в здание 
-							| 
+							| Доступ в здание
+							|
 							span.text-primary с 8-00 до 22-00.
 			+e.head
 				+form-wrap()
@@ -60,27 +60,27 @@ mixin s-offices-rent()
 							+e.input-wrap.form-group
 								+e.head-title Тип помещения
 								label
-									+e.SELECT.input.form-control( required   )&attributes(attributes) 
+									+e.SELECT.input.form-control( required   )&attributes(attributes)
 										option( ) Офисы
-										option( ) Офисы 
+										option( ) Офисы
 									//- +e.SPAN.title-label
 							// +e.input-wrap
-						
+
 						+e.head-col.col-xxl-2.col-md-4
 							+e.input-wrap.form-group
 								+e.head-title Секция
 								label
-									+e.SELECT.input.form-control( required   )&attributes(attributes) 
+									+e.SELECT.input.form-control( required   )&attributes(attributes)
 										option( ) Южная башня
-										option( ) Южная башня 
+										option( ) Южная башня
 									//- +e.SPAN.title-label
 							// +e.input-wrap
-						
+
 						+e.head-col.col-xxl-2.col-md-4
 							+e.input-wrap.form-group
 								+e.head-title Этаж
 								label
-									+e.SELECT.input.form-control( required   )&attributes(attributes) 
+									+e.SELECT.input.form-control( required   )&attributes(attributes)
 										option( ) 2
 										option( ) 2
 									//- +e.SPAN.title-label
@@ -94,7 +94,7 @@ mixin s-offices-rent()
 						+e.head-col.col-xxl-2.col-auto
 							+in-ch('')
 								+e.SPAN.text С мебелью
-						
+
 						+e.head-col.col-xxl-2.col-auto
 							+in-ch('')
 								+e.SPAN.text С готовой отделкой
@@ -112,25 +112,25 @@ mixin s-offices-rent()
 								.row
 
 									.col
-										+e.title= t 
+										+e.title= t
 									.col-auto.text-right
 										+e.label Южная башня
 										br
 										+e.label Офис
 								+e.item-row.row.h4.row--sm
 									.col-auto
-										+icon('user') 
-										| 
+										+icon('user')
+										|
 										strong 10
-									
+
 									.col-auto
 										// 08.02 добавил
-										+icon('square') 
-										//- span.text-primary S 
-										| 
+										+icon('square')
+										//- span.text-primary S
+										|
 										strong 80 кв.м
 									.col.text-right.strong 7 этаж
-								
+
 								.row.align-items-center.row--sm
 									.col
 										+e.price= pr
@@ -152,7 +152,7 @@ mixin s-offices-rent2()
 			+b.section-title
 				.row
 					.col
-						h2 Календарь 
+						h2 Календарь
 			+b.blockpicker.section.pt-0
 				.row.no-gutters
 					.col-lg-3.col-auto
@@ -160,10 +160,10 @@ mixin s-offices-rent2()
 						mixin title(t)
 							+e.title-item
 								div
-									.d-none.d-lg-inline Переговорная 
-									| 
-									span= t 
-									| 
+									.d-none.d-lg-inline Переговорная
+									|
+									span= t
+									|
 								.s-offices__popover.btn-popover(data-toggle="popover" data-trigger="hover" data-content='VIP-переговорная (до 20 человек), со всей необходимой канцелярией, флипчартом и проектором/монитором ') ?
 						+title('Лондон')
 						+title('Рим')
@@ -177,7 +177,7 @@ mixin s-offices-rent2()
 									+e.slide.swiper-slide
 										+e.slide-head
 											+e.date= t
-											+e.hours 
+											+e.hours
 												+e.hours-item 08:00
 												+e.hours-item 09:00
 												+e.hours-item 10:00
@@ -193,98 +193,98 @@ mixin s-offices-rent2()
 												+e.hours-item 20:00
 												+e.hours-item 21:00
 												+e.hours-item 22:00
-											+e.hours--body 
-												+e.hours-item--body 
-												+e.hours-item--body 
-												+e.hours-item--body 
-												+e.hours-item--body 
-												+e.hours-item--body 
-												+e.hours-item--body 
-												+e.hours-item--body 
+											+e.hours--body
+												+e.hours-item--body
+												+e.hours-item--body
+												+e.hours-item--body
+												+e.hours-item--body
+												+e.hours-item--body
+												+e.hours-item--body
+												+e.hours-item--body
 													+e.btn(class=" popup-with-move-anim" href="#modal-rent")
-												+e.hours-item--body 
+												+e.hours-item--body
 													+e.btn(class=" popup-with-move-anim" href="#modal-rent")
-												+e.hours-item--body 
+												+e.hours-item--body
 													+e.btn(class=" popup-with-move-anim" href="#modal-rent")
-												+e.hours-item--body 
+												+e.hours-item--body
 													+e.btn(class=" popup-with-move-anim" href="#modal-rent")
-												+e.hours-item--body 
+												+e.hours-item--body
 													+e.btn(class=" popup-with-move-anim" href="#modal-rent")
-												+e.hours-item--body 
+												+e.hours-item--body
 													+e.btn(class=" popup-with-move-anim" href="#modal-rent")
-												+e.hours-item--body 
+												+e.hours-item--body
 													+e.btn(class=" popup-with-move-anim" href="#modal-rent")
-												+e.hours-item--body 
+												+e.hours-item--body
 													+e.btn(class=" popup-with-move-anim" href="#modal-rent")
-												+e.hours-item--body 
+												+e.hours-item--body
 													+e.btn(class=" popup-with-move-anim" href="#modal-rent")
-											
-											+e.hours--body 
-												+e.hours-item--body 
+
+											+e.hours--body
+												+e.hours-item--body
 													+e.btn(class=" popup-with-move-anim" href="#modal-rent")
-												+e.hours-item--body 
+												+e.hours-item--body
 													+e.btn(class=" popup-with-move-anim" href="#modal-rent")
-												+e.hours-item--body 
+												+e.hours-item--body
 													+e.btn(class=" popup-with-move-anim" href="#modal-rent")
-												+e.hours-item--body 
+												+e.hours-item--body
 													+e.btn(class=" popup-with-move-anim" href="#modal-rent")
-												+e.hours-item--body 
-												+e.hours-item--body 
-												+e.hours-item--body 
-												+e.hours-item--body 
-												+e.hours-item--body 
-												+e.hours-item--body 
-												+e.hours-item--body 
-												+e.hours-item--body 
+												+e.hours-item--body
+												+e.hours-item--body
+												+e.hours-item--body
+												+e.hours-item--body
+												+e.hours-item--body
+												+e.hours-item--body
+												+e.hours-item--body
+												+e.hours-item--body
 													+e.btn(class=" popup-with-move-anim" href="#modal-rent")
-												+e.hours-item--body 
+												+e.hours-item--body
 													+e.btn(class=" popup-with-move-anim" href="#modal-rent")
-												+e.hours-item--body 
+												+e.hours-item--body
 													+e.btn(class=" popup-with-move-anim" href="#modal-rent")
-												+e.hours-item--body 
+												+e.hours-item--body
 													+e.btn(class=" popup-with-move-anim" href="#modal-rent")
-											
-											+e.hours--body 
-												+e.hours-item--body 
-												+e.hours-item--body 
-												+e.hours-item--body 
-												+e.hours-item--body 
+
+											+e.hours--body
+												+e.hours-item--body
+												+e.hours-item--body
+												+e.hours-item--body
+												+e.hours-item--body
 												+e.hours-item--body: +e.btn(class=" popup-with-move-anim" href="#modal-rent")
 												+e.hours-item--body: +e.btn(class=" popup-with-move-anim" href="#modal-rent")
 												+e.hours-item--body: +e.btn(class=" popup-with-move-anim" href="#modal-rent")
 												+e.hours-item--body: +e.btn(class=" popup-with-move-anim" href="#modal-rent")
 												+e.hours-item--body: +e.btn(class=" popup-with-move-anim" href="#modal-rent")
 												+e.hours-item--body: +e.btn(class=" popup-with-move-anim" href="#modal-rent")
-												+e.hours-item--body 
-												+e.hours-item--body 
-												+e.hours-item--body 
-												+e.hours-item--body 
-												+e.hours-item--body 
-											
-											+e.hours--body 
-												+e.hours-item--body 
-												+e.hours-item--body 
-												+e.hours-item--body 
-												+e.hours-item--body 
-												+e.hours-item--body 
-												+e.hours-item--body 
-												+e.hours-item--body 
-												+e.hours-item--body 
-												+e.hours-item--body 
-												+e.hours-item--body 
-												+e.hours-item--body 
+												+e.hours-item--body
+												+e.hours-item--body
+												+e.hours-item--body
+												+e.hours-item--body
+												+e.hours-item--body
+
+											+e.hours--body
+												+e.hours-item--body
+												+e.hours-item--body
+												+e.hours-item--body
+												+e.hours-item--body
+												+e.hours-item--body
+												+e.hours-item--body
+												+e.hours-item--body
+												+e.hours-item--body
+												+e.hours-item--body
+												+e.hours-item--body
+												+e.hours-item--body
 												+e.hours-item--body: +e.btn(class=" popup-with-move-anim" href="#modal-rent")
 												+e.hours-item--body: +e.btn(class=" popup-with-move-anim" href="#modal-rent")
 												+e.hours-item--body: +e.btn(class=" popup-with-move-anim" href="#modal-rent")
 												+e.hours-item--body: +e.btn(class=" popup-with-move-anim" href="#modal-rent")
 									// /+e.slide
 								+slide('18 февраля')
-									
-									
+
+
 								+slide('19 февраля')
 								+slide('20 февраля')
-							 
-									
+
+
 			.h3.strong.ttu.pb-3 Забронировать переговорную
 			+form-wrap()
 				.row
@@ -293,39 +293,39 @@ mixin s-offices-rent2()
 							.col-lg-12.col-sm-6
 								+input("text","Дата начала встречи ")(class="startDate")
 							.col-lg-12.col-sm-6
-								+input("text","Дата окончания встречи")(class="endDate") 
+								+input("text","Дата окончания встречи")(class="endDate")
 					.col-xl-2.col-lg-6
 						.row.time-picker-block-js
 							.col-lg-12.col-sm-6
-								+input("text"," Налало встречи")(class="startTime")
+								+input("text"," Показывать, от")(class="startTime")
 							.col-lg-12.col-sm-6
-								+input("text","Окончание встречи")(class="endTime") 
+								+input("text","Показывать, до")(class="endTime")
 					.col-xl-4
 						+e.input-wrap.form-group
 							+e.head-title Выберите переговорную
 							label
-								+e.SELECT.input.form-control( required   )&attributes(attributes) 
+								+e.SELECT.input.form-control( required   )&attributes(attributes)
 									option( ) Офисы
-									option( ) Офисы 
+									option( ) Офисы
 						// +e.input-wrap
 						+input("tel","Ваш номер телефона")
-					 
-								
+
+
 					.col-xl-4
 						.row
 							.col-xl-12.col-sm-6
 								+input("text","Ваше имя, фамилия")
 							.col-xl-12.col-sm-6
-								+input("email","Ваше e-mail") 
-					
+								+input("email","Ваше e-mail")
+
 				.row.justify-content-center
 					.col-xl.col-md-auto.order-xl-first.order-last
-						+e.warning 
-							span Вводите только существующий 
-								| 
-								strong e-mail  
-								| 
-								| так как на него мы отправим ссылку для оплаты 
+						+e.warning
+							span Вводите только существующий
+								|
+								strong e-mail
+								|
+								| так как на него мы отправим ссылку для оплаты
 								|
 								span.text-primary переговорной комнаты
 								|
@@ -337,7 +337,7 @@ mixin s-offices-rent2()
 							.col
 								+e.BUTTON.btn(type="submit") Отправить
 								//- +e.SPAN.title-label
-							
+
 			+e.row.row
 				mixin item(i, t, pr)
 					+e.col.col-xl-6
@@ -354,17 +354,17 @@ mixin s-offices-rent2()
 										.row
 
 											.col
-												+e.title= t  
+												+e.title= t
 										+e.item-row.row.h4.row--sm
 											.col-auto
-												+icon('user') 
-												| 
+												+icon('user')
+												|
 												strong 10
-											
-											.col-auto 
+
+											.col-auto
 												strong 1 этаж
 											//- .col.text-right.strong 7 этаж
-										
+
 										.row.align-items-center.row--sm
 											.col
 												+e.price= pr
@@ -386,7 +386,7 @@ mixin s-offices-14()
 	+b.s-offices.section.bgn#s-offices&attributes(attributes)
 		.container
 			+b.section-title
-				h2 Отдельные офисы 
+				h2 Отдельные офисы
 			+e.row.row
 				mixin item(i, t,  t2, li1, li2, pr1, pr2, pr3 )
 					+e.col.col-xl-4.col-md-6
@@ -396,29 +396,29 @@ mixin s-offices-14()
 							+e.caption
 								.row
 									.col
-										+e.title= t 
+										+e.title= t
 									.col-auto.pt-2
-										+icon('user') 
-										| 
+										+icon('user')
+										|
 										strong= t2
 								ul
 									li= li1
 									li= li2
-								
+
 								.row.align-items-center.row--sm
 									.col
 										table
 											tr
 												td.small Первый час:
 												td.h5.strong.text-primary= pr1
-											
+
 											tr
 												td.small Последующие:
 												td.h5.strong.text-primary= pr2
-											
+
 											tr
 												td.small День:
-												td.h5.strong.text-primary= pr3 
+												td.h5.strong.text-primary= pr3
 									.col-xxl-auto
 										+e.btn--sm(href="#") Оставить заявку
 					// +e.col.col-xl-4.col-md-6
@@ -431,16 +431,16 @@ mixin s-offices-14()
 						+e.title-footer.h4.strong В  цену уже включены:
 					+e.footer-col.col-auto
 						+e.footer-label Услуги клининга
-					
+
 					+e.footer-col.col-auto
 						+e.footer-label Высокоскоростной интернет
-					
+
 					+e.footer-col.col-auto
 						+e.footer-label Техническая поддержка
-					
+
 					+e.footer-col.col-auto
 						+e.footer-label Оборудование
-					
+
 
 
 	// end s-offices
