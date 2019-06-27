@@ -1,73 +1,73 @@
 include ../mixin-wrap/form-wrap.pug
 include ../mixin-wrap/mixin-wrap.pug
-mixin modal() 
- 
+mixin modal()
+
 	//- #modal-win.modal.fade(tabindex='-1', role='dialog', aria-labelledby='modal-win', aria-hidden='true')
-		
-	//- 	div( class="   modal-dialog  modal-dialog-centered  " role='document') 
+
+	//- 	div( class="   modal-dialog  modal-dialog-centered  " role='document')
 	//- 		+form-wrap()(class=" modal-content modal-win ")
 	//- 			button.close.mfp-close(type='button', data-dismiss='modal', aria-label='Close')  ×
-	//- 			+input("tel","Введите ваш телефон")(name="tel" required) 
-				
+	//- 			+input("tel","Введите ваш телефон")(name="tel" required)
+
 	//- 			+e.BUTTON.btn.btn.btn-accent.btn-block Отправить
 	//- 			+b.wrap-polite
 	//- 				+b.custom-input.polite
 	//- 					+b.LABEL.custom-input.polite
 	//- 						+e.INPUT.input.__input-radio(type="checkbox" checked name="polite" required value="")
 	//- 						+e.SPAN.lab
-	//- 						| Даю 
-	//- 						| 
-	//- 						span.link( data-toggle='modal', data-target='#exampleModal2') согласие 
+	//- 						| Даю
+	//- 						|
+	//- 						span.link( data-toggle='modal', data-target='#exampleModal2') согласие
 
 	//- 						| на хранение и обработку   персональных данных
-	
- 
+
+
 
 	//- #thanks.modal.fade(tabindex='-1', role='dialog', aria-labelledby='thanks', aria-hidden='true')
-	//- 	div( class=" ttext-center  modal-dialog  modal-dialog-centered  " role='document') 
+	//- 	div( class=" ttext-center  modal-dialog  modal-dialog-centered  " role='document')
 	//- 		+form-wrap()(class=" modal-content modal-win ")
 	//- 			button.close.mfp-close(type='button', data-dismiss='modal', aria-label='Close')  ×
 	//- 			br
 	//- 			.h2 Заявка принята
 	//- 			br
 	//- 			.h3 Скоро с Вами свяжутся
-	//- 			br 
+	//- 			br
 
-	+form-wrap()(id="modal-call" class="zoom-anim-dialog mfp-hide modal-win modal-form" ) 
+	+form-wrap()(id="modal-call" class="zoom-anim-dialog mfp-hide modal-win modal-form" )
 		.h4.text-primary.ttu.strong.pb-3 Заполните форму и мы свяжемся с Вами в течении суток
 		+input-l("text","Ваше имя")
-		+input-un("email","Ваш e-mail (необязательно)") 
+		+input-un("email","Ваш e-mail (необязательно)")
 		+input-l("text","Текст сообщения")
 		.row.row--sm.align-items-center
 			.col-sm
 				+polite
 			.col
 				+e.BUTTON.btn(type="submit") Отправить
-		
+
 	// #modal-call
-	
-	+form-wrap()(id="modal-po" class="zoom-anim-dialog mfp-hide modal-win modal-form" ) 
+
+	+form-wrap()(id="modal-po" class="zoom-anim-dialog mfp-hide modal-win modal-form" )
 		.h4.text-primary.ttu.strong.pb-5  Вход в личный кабинет
 		+input-l("text","Ваше логин")
-		+input-l("text","Пароль") 
+		+input-l("text","Пароль")
 		.row.row--sm.align-items-center
 			.col-sm.text-center.my-2
 				a(href="#").tdu Забыли пароль?
 			.col
 				+e.BUTTON.btn(type="submit") Войти
-		
+
 	// #modal-call
-	
-	+form-wrap()(id="modal-event" class="zoom-anim-dialog mfp-hide modal-win modal-form" ) 
+
+	+form-wrap()(id="modal-event" class="zoom-anim-dialog mfp-hide modal-win modal-form" )
 		.h4.text-primary.ttu.strong.pb-5  Заполните форму и мы свяжемся с Вами в ближайщее время
 		+input-l("text","Ваше имя, фамилия")
-		+input-un("email","Ваш e-mail (необязательно)") 
-		+input-un("tel","Ваш телефон") 
+		+input-un("email","Ваш e-mail (необязательно)")
+		+input-un("tel","Ваш телефон")
 		+input-l("text","Тема мероприятия")
 		.row.row--sm.align-items-center.date-picker-block-js
 			.col-sm
 				+input-l("text","Даты проведения")(class="datepicker-date-input startDate")
-			
+
 			.col-sm
 				+input-l("text","Даты проведения")(class="datepicker-date-input endDate " disabled)
 		+in-ch('polite')
@@ -75,10 +75,10 @@ mixin modal()
 		.row.row--sm.align-items-center.time-picker-block-js
 			.col-sm
 				+input-l("text","Время проведения")(class="datepicker-date-input time-picker")
-			
+
 			.col-sm
 				+input-l("text","Время проведения")(class="datepicker-date-input time-picker")
-			
+
 			.col-sm-5
 				+input-l("number","Количество гостей")
 		.form-group.ttu.strong Дополнительная информация
@@ -88,29 +88,66 @@ mixin modal()
 		.form-group
 			+in-ch('polite')
 				+e.SPAN.text Флипчарты
-		
+
 		.form-group
 			+in-ch('polite')
 				+e.SPAN.text Фуршет
-		
+
 		.row.row--sm.align-items-center
 			.col-sm
 				+polite
 			.col
 				+e.BUTTON.btn(type="submit") ЗАбронировать
-		
+
 	// #modal-call
 
-	+form-wrap()(id="modal-rent" class="zoom-anim-dialog mfp-hide modal-win modal-form" ) 
+	+form-wrap()(id="modal-rent" class="zoom-anim-dialog mfp-hide modal-win modal-form" )
 		.h4.text-primary.ttu.strong.pb-3 Заполните форму и мы свяжемся с Вами в течении суток
 		+input-l("text","Ваше имя")
-		+input-un("email","Ваш e-mail (необязательно)") 
+		+input-un("email","Ваш e-mail (необязательно)")
 		+input-l("text","Текст сообщения")
 		.row.row--sm.align-items-center
 			.col-sm
 				+polite
 			.col
 				+e.BUTTON.btn(type="submit") Отправить
-		
-	// #modal-rent
+				// #modal-rent
+
+	+form-wrap()(id="modal-login" class="zoom-anim-dialog mfp-hide modal-win modal-win--lg modal-form form-wrap--login" )
+		+e.buttons-wrapper
+			+e.A.btn Войти на сайт
+			+e.A.btn регистрация
+
+		+input-l("text","Логин")
+		+input-un("password","Пароль")
+		.row.row--sm.align-items-center
+			.col-12
+				.col-sm.text-right.forget-password
+					a(href="#").tdu Забыли пароль?
+			.col-sm
+				+in-ch('polite')(checked)
+					| Запомнить меня
+			.col
+				+e.BUTTON.btn(type="submit") Войти
+			.col-12
+				+e.login-soc
+					.col-auto Войти через соц. сеть
+					.col-auto
+						+soc()
+
+						//login
+
+	+form-wrap()(id="modal-recover-password" class="zoom-anim-dialog mfp-hide modal-win modal-win--lg modal-form form-wrap--recovery" )
+		.row.row--sm.align-items-center.pb-3
+				+e.A.back(href='#')
+					+icon('arrow-left')
+				.h4.text-primary.ttu.strong.text-center Восстановление пароля
+		+input-un("email","Ваш e-mail")
+		.row.row--sm.align-items-center
+			.col-12.text-primary.mb-4 Мы отправили инструкцию по смене пароля Вам на E-mail
+			.col-sm
+				+polite()
+			.col
+				+e.BUTTON.btn(type="submit") Войти
+
 	// modal

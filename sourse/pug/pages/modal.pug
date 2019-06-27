@@ -1,0 +1,41 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-about/_s-about.pug
+include ../blocks/s-infrastructure/_s-infrastructure.pug
+include ../blocks/s-logos/_s-logos.pug
+include ../blocks/s-main-calendar/_s-main-calendar.pug
+include ../blocks/s-news/_s-news.pug
+include ../blocks/s-block/_s-block.pug
+include ../blocks/s-sq/_s-sq.pug
+include ../blocks/s-number-2/_s-number-2.pug
+include ../blocks/aside/_aside.pug
+include ../blocks/request/request
+
+block title
+	title ЛИЧНЫЙ КАБИНЕТ
+
+block pagecontent
+	+mob-mnu()
+	+header()
+		//- +top-line()
+		+top-nav-po()
+		+b.header-block
+			.container
+				+breadcrumb("Фитнес-зал","Технопарк")
+
+	.animate-block#particles-js.particle-canvas.particles-js
+		.container
+			h1.under-canvas.page-title.page-title.pb-0
+				span ЛИЧНЫЙ КАБИНЕТ
+			.row.flex-column.align-items-center.mb-5
+				+e.A.btn.popup-with-move-anim(href="#modal-login") Приемная_логин
+				+e.A.btn.popup-with-move-anim(href="#modal-recover-password") Приемная_логин2
+
+	.bg-primary.animate-footer
+		canvas.x-canvas-2
+		//- +s-contact()
+		+footer()
+

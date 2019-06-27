@@ -1,340 +1,482 @@
-.form-wrap{
-	&__foot{
-		max-width: 650px;
-		line-height: 1;
-		.strong{
-			margin-bottom: 30px;
-		}
-	}
-	.input-group-append{
-		display: none;
-	}
- 	&__input-wrap{
+.form-wrap {
+  &__foot {
+    max-width: 650px;
+    line-height: 1;
 
- 		// max-width: 466px;
-	 }
-	 &__input-wrap{
-		margin-bottom: rem(30);
-		position: relative;
-		// max-width: 466px;
-	}
-				.input-pay{
-					padding-right: 35px;
-				}
-				
-	&__after{
-		position: absolute;
-		right: 15px;
-		top: rem(15);
-		font-size: 13px;
-	}
-	input:-webkit-autofill {
-		// -webkit-box-shadow: 0 0 0 30px white inset;
-		// background-color: #000000 !important;
-}
-	input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill,
- 	&__input{
-		//  outline: 0 !important;
-		//  resize: none;
-		box-shadow: none !important;
-		 border-radius: 0;
-		 border-top: none;
-		 border-left: none;
-		 border-right: none;
-		 background-color: transparent !important;
-		 border-bottom: 2px solid #7f7f7f;
-		 padding-top:13px;
-		 padding-bottom:13px;
+    .strong {
+      margin-bottom: 30px;
+    }
+  }
 
-		 &[disabled]{
-			 opacity: 0.3;
-			 pointer-events: none;
-			 ~ .form-wrap__title-label{
-				 opacity: 0.5;
-			 }
-		 }
-	 }
-	 &__btn{
-		@extend .btn;
-	 }
-	 &__captcha{
-		margin-bottom: 20px;
-	}
- 	&__btn{
- 		cursor: pointer;
- 	}
- 	label{
- 		width: 100%;
-		 display: block;
-		 position: relative;
-	 }
-	 &__head{
-		 margin-bottom: rem(24);
-	 }
-	 &__title-label{
-		// color: $gray;
-		@include mt(.35);
-		cursor: text;
-		position: absolute;
-		left: 0;
-		top: em(-10);
-		z-index: 2;
-		// color: $gray;
-		font-size: 13px;  
-		max-width: 100%;
-		@include ellips();
-		z-index: 3;
-	 }
-	 .empty &__input{
-		background-color: transparent;
+  .input-group-append {
+    display: none;
+  }
 
-	}
-	&__title-label{
-		// top: em(12px);
-		// font-size: 1em;
-		//  color: #858585;
-		// transform: translateY(rem(-12px));
-		background-color: transparent;
-	}
-	&__title-label,
-	&__input:focus ~ &__title-label{
-		top: em(-20); 
-		font-size: 12px;
-	}
-	
-	.empty .gj-timepicker-bootstrap + &__title-label{
-		// font-size: 14px;
-		padding-right: 20px;
-	}
-	.empty &__title-label{
-		top: em(12); 
-		font-size: 16px;
-		}
-		
-		&__input{
-		 
-			padding-left: 0;
-		}
-		   
-		&__btn{
-			@extend .btn;
-			@extend .btn-lg;
-			@extend .btn-outline-primary;
-			color: #000000;
-			@extend .btn-block;
-			@include media-breakpoint-up(sm) {
+  &__input-wrap {
 
-				min-width: 140px;
-			}
-			min-width: 120px;
-			&--edit{
-					width: 279px;
-					font-size: $em-base;
-			}
-		}
-	textarea{
-		height: 133px;
-	}
-	.form-wrap__input-name{
-		border: none;
-		font-weight: bold;
-		color: $primary;
-		padding-left: 0;
-		padding-right: 0;
-		text-transform: uppercase;
-		@extend .h4;
-		height: 2em;
-		width: 100%;
-		resize: none;
-		outline: none;
-		box-shadow: none;
-	}
-	.custom-input{
-		 
-		&__input[type=checkbox]+.custom-input__lab {
-		 left: 0;
-			 display: block;
-			 top: 2px;
-			 width: 20px;
-			 height: 20px;
-			 border: 1px solid #a3cde8;
-			 background-color: #fff;
-			 @include mt;
-			 position: absolute; 
-			 margin-right: 10px; 
-			 &::after{ 
-				 content: url(../img/svg/check.svg);
-				 left: 12px;
-			 }
-			 }
-		
-		 &__input:checked + &__lab{ 
-			 &::after{
-	 
-				 opacity: 1;
-			 }
-		 }
-	 
-	 }
+    // max-width: 466px;
+  }
+
+  &__input-wrap {
+    margin-bottom: rem(30);
+    position: relative;
+    // max-width: 466px;
+  }
+
+  .input-pay {
+    padding-right: 35px;
+  }
+
+  &__after {
+    position: absolute;
+    right: 15px;
+    top: rem(15);
+    font-size: 13px;
+  }
+
+  input:-webkit-autofill {
+    // -webkit-box-shadow: 0 0 0 30px white inset;
+    // background-color: #000000 !important;
+  }
+
+  input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill,
+  &__input {
+    //  outline: 0 !important;
+    //  resize: none;
+    box-shadow: none !important;
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent !important;
+    border-bottom: 2px solid #7f7f7f;
+    padding-top: 13px;
+    padding-bottom: 13px;
+
+    &[disabled] {
+      opacity: 0.3;
+      pointer-events: none;
+
+      ~ .form-wrap__title-label {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  &__btn {
+    @extend .btn;
+  }
+
+  &__captcha {
+    margin-bottom: 20px;
+  }
+
+  &__btn {
+    cursor: pointer;
+  }
+
+  label {
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+
+  &__head {
+    margin-bottom: rem(24);
+  }
+
+  &__title-label {
+    // color: $gray;
+    @include mt(.35);
+    cursor: text;
+    position: absolute;
+    left: 0;
+    top: em(-10);
+    z-index: 2;
+    // color: $gray;
+    font-size: 13px;
+    max-width: 100%;
+    @include ellips();
+    z-index: 3;
+  }
+
+  .empty &__input {
+    background-color: transparent;
+
+  }
+
+  &__title-label {
+    // top: em(12px);
+    // font-size: 1em;
+    //  color: #858585;
+    // transform: translateY(rem(-12px));
+    background-color: transparent;
+  }
+
+  &__title-label,
+  &__input:focus ~ &__title-label {
+    top: em(-20);
+    font-size: 12px;
+  }
+
+  .empty .gj-timepicker-bootstrap + &__title-label {
+    // font-size: 14px;
+    padding-right: 20px;
+  }
+
+  .empty &__title-label {
+    top: em(12);
+    font-size: 16px;
+  }
+
+  &__input {
+
+    padding-left: 0;
+  }
+
+  &__btn {
+    @extend .btn;
+    @extend .btn-lg;
+    @extend .btn-outline-primary;
+    color: #000000;
+    @extend .btn-block;
+    @include media-breakpoint-up(sm) {
+
+      min-width: 140px;
+    }
+    min-width: 120px;
+
+    &--edit {
+      width: 279px;
+      font-size: $em-base;
+    }
+  }
+
+  textarea {
+    height: 133px;
+  }
+
+  .form-wrap__input-name {
+    border: none;
+    font-weight: bold;
+    color: $primary;
+    padding-left: 0;
+    padding-right: 0;
+    text-transform: uppercase;
+    @extend .h4;
+    height: 2em;
+    width: 100%;
+    resize: none;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .custom-input {
+
+    &__input[type=checkbox] + .custom-input__lab {
+      left: 0;
+      display: block;
+      top: 2px;
+      width: 20px;
+      height: 20px;
+      border: 1px solid #a3cde8;
+      background-color: #fff;
+      @include mt;
+      position: absolute;
+      margin-right: 10px;
+
+      &::after {
+        content: url(../img/svg/check.svg);
+        left: 12px;
+      }
+    }
+
+    &__input:checked + &__lab {
+      &::after {
+
+        opacity: 1;
+      }
+    }
+
+  }
+
+  &__buttons-wrapper {
+    margin-top: 20px;
+    @include media-breakpoint-up(md) {
+      margin-top: 0;
+      border: 1px solid #0C95ED;
+      border-radius: 38px;
+      padding: 6px;
+      margin-bottom: 30px;
+      display: flex;
+
+      & .form-wrap__btn {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin: 0;
+        background-color: #0C95ED;
+        color: #ffffff !important;
+
+        &:last-child {
+          border: none;
+          background-color: inherit;
+          color: #0C95ED !important;
+        }
+      }
+    }
+  }
+
+  &__login-soc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+    font-size: 16px;
+
+    & .soc {
+      display: flex;
+    }
+
+    & .soc__item {
+      width: 50px;
+      height: 50px;
+      border: 2px solid #0C95ED;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      color: #494949;
+      margin-bottom: 0;
+
+      &:hover {
+        text-decoration: none;
+      }
+      @include media-breakpoint-down(md){
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  &--login {
+    & .forget-password {
+      font-size: 13px;
+      margin-bottom: 22px;
+    }
+  }
+
+  &__back {
+    margin-right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #0C95ED;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include media-breakpoint-down(md) {
+      margin-right: 5px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  & .icon-arrow-left {
+    stroke: #0C95ED;
+    width: 18px;
+    height: 17px;
+  }
 }
 
 
 .politic {
-	font-size: 11px;
-	position: relative;
-	padding-left: 30px;
-	// margin-bottom: 10px;
-	// margin-bottom: 10px;
-	// padding-bottom: 15px;
-	@include media-breakpoint-up(sm) {
-		margin-bottom: 0;
-	}
-	margin-bottom: 25px;
-	 a{
-		 text-decoration: underline;
-		 display: inline-block;
-	 }
-	 
-	 .custom-input{
-		position: absolute;
-		width: 20px;
-		left: 0;
- 
-	 
-	 }
-	
-	
+  font-size: 11px;
+  position: relative;
+  padding-left: 30px;
+  // margin-bottom: 10px;
+  // margin-bottom: 10px;
+  // padding-bottom: 15px;
+  @include media-breakpoint-up(sm) {
+    margin-bottom: 0;
+  }
+  margin-bottom: 25px;
+
+  a {
+    text-decoration: underline;
+    display: inline-block;
+  }
+
+  .custom-input {
+    position: absolute;
+    width: 20px;
+    left: 0;
+
+
+  }
+
 
 }
- 
-// 
-@include media-breakpoint-up(xl) {}
 
-@include media-breakpoint-up(lg) {}
-
-@include media-breakpoint-up(md) {}
-
-@include media-breakpoint-up(sm) {}
-
-@include media-breakpoint-up(xs) {}
-
-// 
-@include media-breakpoint-between(md, xl) {}
-
-// 
-@include media-breakpoint-only(xs) {}
-
-@include media-breakpoint-only(sm) {}
-
-@include media-breakpoint-only(md) {}
-
-@include media-breakpoint-only(lg) {}
-
-@include media-breakpoint-only(xl) {}
-
-// 
-@include media-breakpoint-down(xl) {}
-
-@include media-breakpoint-down(lg) {}
-
-@include media-breakpoint-down(md) {}
-
-@include media-breakpoint-down(sm) {}
-
-@include media-breakpoint-down(xs) {}
-
-
-.gj-picker{
-	@include media-breakpoint-up(sm) {
-
-		padding: rem(20px) !important;
-		// width: 320px;
-	}
-	width: 536px;
-	padding: rem(10px) !important;
-	max-width: calc(100vw - 30px);
-	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-	table{
-		width: 100%;
-	}
-	> div{
-		background-color: #2e91d9;
-		color: #ffffff;
-		padding: 0 !important;
-		// font-family: Roboto;
-		font-weight: bold;
-		font-size: $em-base;
-	}
+//
+@include media-breakpoint-up(xl) {
 }
+
+@include media-breakpoint-up(lg) {
+}
+
+@include media-breakpoint-up(md) {
+}
+
+@include media-breakpoint-up(sm) {
+}
+
+@include media-breakpoint-up(xs) {
+}
+
+//
+@include media-breakpoint-between(md, xl) {
+}
+
+//
+@include media-breakpoint-only(xs) {
+}
+
+@include media-breakpoint-only(sm) {
+}
+
+@include media-breakpoint-only(md) {
+}
+
+@include media-breakpoint-only(lg) {
+}
+
+@include media-breakpoint-only(xl) {
+}
+
+//
+@include media-breakpoint-down(xl) {
+}
+
+@include media-breakpoint-down(lg) {
+}
+
+@include media-breakpoint-down(md) {
+}
+
+@include media-breakpoint-down(sm) {
+}
+
+@include media-breakpoint-down(xs) {
+}
+
+
+.gj-picker {
+  @include media-breakpoint-up(sm) {
+
+    padding: rem(20px) !important;
+    // width: 320px;
+  }
+  width: 536px;
+  padding: rem(10px) !important;
+  max-width: calc(100vw - 30px);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  table {
+    width: 100%;
+  }
+
+  > div {
+    background-color: #2e91d9;
+    color: #ffffff;
+    padding: 0 !important;
+    // font-family: Roboto;
+    font-weight: bold;
+    font-size: $em-base;
+  }
+}
+
 .datepicker table tr td div, .datepicker table tr,
-.gj-picker-bootstrap table tr td div, .gj-picker-bootstrap table tr{
-	th, td{
-		border: 1px solid rgba(255, 255, 255, 0.25);
-		div{
-			font-size: 13px;
-			width: 100%;
-			// padding: rem(5) rem(5);
-			height: 37px;
-			line-height: 37px;
-			border-radius: 0 !important;
-			text-transform: uppercase;
-		}
-	}
+.gj-picker-bootstrap table tr td div, .gj-picker-bootstrap table tr {
+  th, td {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    div {
+      font-size: 13px;
+      width: 100%;
+      // padding: rem(5) rem(5);
+      height: 37px;
+      line-height: 37px;
+      border-radius: 0 !important;
+      text-transform: uppercase;
+    }
+  }
 }
 
 .datepicker table tr td.selected.gj-cursor-pointer div,
-.gj-picker-bootstrap table tr td.selected.gj-cursor-pointer div{
-	background-color: $danger;
-}
-.datepicker table tr td.disabled div, .datepicker table tr td.other-month div,
-.gj-picker-bootstrap table tr td.disabled div, .gj-picker-bootstrap table tr td.other-month div{
-	opacity: 0.2;
-color: #ffffff;
-}
-.datepicker div[role=navigator],
-.gj-picker-bootstrap div[role=navigator]{
-	height: 42px;
-	line-height: 42px;
-	// display: block;
-}
-.datepicker div[role=navigator],
-.gj-picker-bootstrap div[role=navigator]{
-	div:nth-child(1),
-	div:nth-child(3){
-		display: block;
-		// width: (100% / 7);
-		max-width: (99% / 7);
-		background-color: #2771a7;
-		line-height: 35px;
-		padding-top: 5px;
-		text-align: center;
-		i{
-			@include a-cent;
-			left: 50% !important;
-		}
-	}
-	div{
-		@include mt;
-		&:hover{
-			
-			background-color: lighten($color: #2771a7, $amount: 3.7);
-		}
-	}
-}
-.gj-picker-md table tr td div, .gj-picker-md table tr th div {
-	color: #ffffff;
+.gj-picker-bootstrap table tr td.selected.gj-cursor-pointer div {
+  background-color: $danger;
 }
 
-.gj-picker{
-	z-index: 100;
+.datepicker table tr td.disabled div, .datepicker table tr td.other-month div,
+.gj-picker-bootstrap table tr td.disabled div, .gj-picker-bootstrap table tr td.other-month div {
+  opacity: 0.2;
+  color: #ffffff;
+}
+
+.datepicker div[role=navigator],
+.gj-picker-bootstrap div[role=navigator] {
+  height: 42px;
+  line-height: 42px;
+  // display: block;
+}
+
+.datepicker div[role=navigator],
+.gj-picker-bootstrap div[role=navigator] {
+  div:nth-child(1),
+  div:nth-child(3) {
+    display: block;
+    // width: (100% / 7);
+    max-width: (99% / 7);
+    background-color: #2771a7;
+    line-height: 35px;
+    padding-top: 5px;
+    text-align: center;
+
+    i {
+      @include a-cent;
+      left: 50% !important;
+    }
+  }
+
+  div {
+    @include mt;
+
+    &:hover {
+
+      background-color: lighten($color: #2771a7, $amount: 3.7);
+    }
+  }
+}
+
+.gj-picker-md table tr td div, .gj-picker-md table tr th div {
+  color: #ffffff;
+}
+
+.gj-picker {
+  z-index: 100;
 }
 
 
 .s-form--page .date-picker-block-js input {
-	background-image: url(../img/calendar-icon-white.svg);
+  background-image: url(../img/calendar-icon-white.svg);
 
 }
 
-.s-form--page  option{
-	background-color: $body-color;
+.s-form--page option {
+  background-color: $body-color;
 }
+
+
