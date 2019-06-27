@@ -75,6 +75,23 @@ mixin soc()
 		+item()(class=" fa-vk")
 		+item()(class=" fa-youtube")
 
+mixin soc-login()
+	+b.soc
+		mixin item()
+			+e.A.item(href="#" target="_blank"): i(class="fab")&attributes(attributes)
+		+item()(class=" fa-facebook-f")
+		+item()(class=" fa-vk")
+		+item()(class=" fa-google")
+
+mixin soc-reg()
+	+b.soc
+		mixin item()
+			+e.A.item(href="#" target="_blank"): i(class="fab")&attributes(attributes)
+		+item()(class=" fa-facebook-f")
+		+item()(class=" fa-vk")
+
+
+
 mixin mnu()
 	- var nav= {"МЕРОПРИЯТИЯ":"#","Контакты ":"#"}
 	+b.nav

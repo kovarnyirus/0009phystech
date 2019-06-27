@@ -1033,7 +1033,7 @@
     </div>
     <div class="form-wrap zoom-anim-dialog mfp-hide modal-win modal-win modal-win--lg modal-form form-wrap form-wrap--login" id="modal-login">
       <form class="js-form-validate">
-        <div class="form-wrap__buttons-wrapper"><a class="form-wrap__btn">Войти на сайт</a><a class="form-wrap__btn">регистрация</a>
+        <div class="form-wrap__buttons-wrapper"><a class="form-wrap__btn form-wrap__btn--fill">Войти на сайт</a><a class="form-wrap__btn">регистрация</a>
         </div>
         <div class="form-wrap__input-wrap form-group">
           <label><input class="form-wrap__input form-control" type="text"/><span class="form-wrap__title-label">Логин</span>
@@ -1058,10 +1058,10 @@
             </button>
           </div>
           <div class="col-12">
-            <div class="form-wrap__login-soc">
+            <div class="form-wrap__soc form-wrap__soc--login">
               <div class="col-auto">Войти через соц. сеть</div>
               <div class="col-auto">
-                <div class="soc"><a class="soc__item" href="#" target="_blank"><i class="fab fa-instagram"></i></a><a class="soc__item" href="#" target="_blank"><i class="fab  fa-facebook-f"></i></a><a class="soc__item" href="#" target="_blank"><i class="fab  fa-vk"></i></a><a class="soc__item" href="#" target="_blank"><i class="fab  fa-youtube"></i></a>
+                <div class="soc"><a class="soc__item" href="#" target="_blank"><i class="fab  fa-facebook-f"></i></a><a class="soc__item" href="#" target="_blank"><i class="fab  fa-vk"></i></a><a class="soc__item" href="#" target="_blank"><i class="fab  fa-google"></i></a>
                 </div>
                 <!--login-->
               </div>
@@ -1098,6 +1098,69 @@
           <div class="col">
             <button class="form-wrap__btn" type="submit">Войти
             </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="form-wrap zoom-anim-dialog mfp-hide modal-win modal-win modal-win--lg modal-form form-wrap form-wrap--login" id="modal-reg">
+      <form class="js-form-validate">
+        <div class="form-wrap__buttons-wrapper"><a class="form-wrap__btn">Войти на сайт</a><a class="form-wrap__btn form-wrap__btn--fill">регистрация</a>
+        </div>
+        <div class="form-wrap__input-wrap form-group">
+          <label><input class="form-wrap__input form-control" type="text"/><span class="form-wrap__title-label">Имя</span>
+          </label>
+        </div>
+        <!-- +e.input-wrap-->
+        <div class="form-wrap__input-wrap form-group">
+          <label><input class="form-wrap__input form-control" type="text"/><span class="form-wrap__title-label">Фамилия</span>
+          </label>
+        </div>
+        <!-- +e.input-wrap-->
+        <div class="form-wrap__input-wrap form-group">
+          <label><input class="form-wrap__input form-control" type="text"/><span class="form-wrap__title-label">E-mail</span>
+          </label>
+        </div>
+        <!-- +e.input-wrap-->
+        <div class="row">
+          <div class="col-6">
+            <div class="form-wrap__input-wrap form-group">
+              <label><input class="form-wrap__input form-control" type="password"/><span class="form-wrap__title-label">Пароль</span>
+              </label>
+            </div>
+            <!-- +e.input-wrap-->
+          </div>
+          <div class="col-6">
+            <div class="form-wrap__input-wrap form-group">
+              <label><input class="form-wrap__input form-control" type="password"/><span class="form-wrap__title-label">Повторите пароль</span>
+              </label>
+            </div>
+            <!-- +e.input-wrap-->
+          </div>
+        </div>
+        <div class="row row--sm align-items-center">
+          <div class="col-sm">
+            <div class="politic">
+              <label class="custom-input"><input class="custom-input__input" type="checkbox" name="polite" checked="checked"/><span class="custom-input__lab"></span>
+              </label>Принимаю условия
+              
+              <a class="form-wrap__link" href="Soglasie.pdf" target="_blank">пользовательского соглашения</a>
+              и
+              <a class="form-wrap__link" href="Soglasie.pdf" target="_blank">политики конфиденциальности</a>
+            </div>
+          </div>
+          <div class="col">
+            <button class="form-wrap__btn" type="submit">Войти
+            </button>
+          </div>
+          <div class="col-12">
+            <div class="form-wrap__soc">
+              <div class="col-auto">Зарегистрироваться через социальные сети</div>
+              <div class="col-auto">
+                <div class="soc"><a class="soc__item" href="#" target="_blank"><i class="fab  fa-facebook-f"></i></a><a class="soc__item" href="#" target="_blank"><i class="fab  fa-vk"></i></a>
+                </div>
+                <!--login-->
+              </div>
+            </div>
           </div>
         </div>
       </form>

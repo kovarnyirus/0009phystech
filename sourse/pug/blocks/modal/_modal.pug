@@ -115,7 +115,7 @@ mixin modal()
 
 	+form-wrap()(id="modal-login" class="zoom-anim-dialog mfp-hide modal-win modal-win--lg modal-form form-wrap--login" )
 		+e.buttons-wrapper
-			+e.A.btn Войти на сайт
+			+e.A.btn--fill Войти на сайт
 			+e.A.btn регистрация
 
 		+input-l("text","Логин")
@@ -130,10 +130,10 @@ mixin modal()
 			.col
 				+e.BUTTON.btn(type="submit") Войти
 			.col-12
-				+e.login-soc
+				+e.soc--login
 					.col-auto Войти через соц. сеть
 					.col-auto
-						+soc()
+						+soc-login()
 
 						//login
 
@@ -149,5 +149,32 @@ mixin modal()
 				+polite()
 			.col
 				+e.BUTTON.btn(type="submit") Войти
+
+
+	+form-wrap()(id="modal-reg" class="zoom-anim-dialog mfp-hide modal-win modal-win--lg modal-form form-wrap--login" )
+		+e.buttons-wrapper
+			+e.A.btn Войти на сайт
+			+e.A.btn--fill регистрация
+
+		+input-l("text","Имя")
+		+input-l("text","Фамилия")
+		+input-l("text","E-mail")
+		.row
+			.col-6
+				+input-un("password","Пароль")
+			.col-6
+				+input-un("password","Повторите пароль")
+		.row.row--sm.align-items-center
+			.col-sm
+				+polite()
+			.col
+				+e.BUTTON.btn(type="submit") Войти
+			.col-12
+				+e.soc
+					.col-auto Зарегистрироваться через социальные сети
+					.col-auto
+						+soc-reg()
+
+						//login
 
 	// modal
