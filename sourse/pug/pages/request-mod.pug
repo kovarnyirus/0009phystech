@@ -44,23 +44,23 @@ block pagecontent
 						div.mb-3
 							+b.FORM.form-wrap
 								.row
-									.col-2.date-picker-block-js
+									.col-6.col-xl-4.col-xxl-2.date-picker-block-js
 										+input("text","Показывать, от ")(class="startDate")
-									.col-2.date-picker-block-js
+									.col-6.col-xl-4.col-xxl-2.date-picker-block-js
 										+input("text","Показывать, до ")(class="startDate")
-									.col-auto.ml-auto
+									.col-12.col-xxl-8.ml-auto
 										.row
 											.col-12.font-weight-bold.mb-3 Отображать только
-											.col-3
+											.col-6.col-xl-3
 												+in-ch('polite')(checked)
 													| Прочитанные
-											.col-3
+											.col-6.col-xl-3
 												+in-ch('polite')(checked)
-													| Не прочитанные
-											.col-3
+													| Не&nbsp;прочитанные
+											.col-6.col-xl-3
 												+in-ch('polite')(checked)
 													| Отвеченные
-											.col-3
+											.col-6.col-xl-3
 												+in-ch('polite')(checked)
 													| Не отвеченные
 						+request-mod()
