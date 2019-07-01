@@ -217,6 +217,7 @@
         margin: 0;
         color: #0C95ED !important;
         border: none;
+        margin-left: 1px;
         &:hover{
           color: #ffffff!important;
         }
@@ -224,6 +225,9 @@
         &--fill{
           background-color: #0C95ED;
           color: #ffffff !important;
+          &:hover{
+            background-color: #ef202f;
+          }
         }
       }
     }

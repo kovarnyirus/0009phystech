@@ -41,6 +41,28 @@ block pagecontent
 					.col-xxl-2.col-lg-3
 						+asideLK('Мой профиль', 'Мои обращения')
 					.col
+						div.mb-3
+							+b.FORM.form-wrap
+								.row
+									.col-6.col-xl-4.col-xxl-2.date-picker-block-js
+										+input("text","Показывать, от ")(class="startDate")
+									.col-6.col-xl-4.col-xxl-2.date-picker-block-js
+										+input("text","Показывать, до ")(class="startDate")
+									.col-12.col-xxl-8.ml-auto
+										.row
+											.col-12.font-weight-bold.mb-3 Отображать только
+											.col-6.col-xl-3
+												+in-ch('polite')(checked)
+													| Прочитанные
+											.col-6.col-xl-3
+												+in-ch('polite')(checked)
+													| Не&nbsp;прочитанные
+											.col-6.col-xl-3
+												+in-ch('polite')(checked)
+													| Отвеченные
+											.col-6.col-xl-3
+												+in-ch('polite')(checked)
+													| Не отвеченные
 						+request-user()
 
 	.bg-primary.animate-footer
