@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eca02f4b-f5de-4a41-a53c-f41b14f8786e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/request-mod.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/request-mod.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/request-user.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/request-user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/js/common.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/request/_request.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/request/_request.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/request/request.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/request/request.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/pages/request-user.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/pages/request-user.pug" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,8 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/request/_request.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="148" column="30" selection-start-line="148" selection-start-column="30" selection-end-line="148" selection-end-column="30" />
+            <state relative-caret-position="293">
+              <caret line="193" column="26" selection-start-line="193" selection-start-column="26" selection-end-line="193" selection-end-column="26" />
               <folding>
                 <element signature="e#664#856#2" expanded="true" />
                 <element signature="e#946#1143#2" expanded="true" />
@@ -280,12 +272,12 @@
       <workItem from="1561967239749" duration="3404000" />
       <workItem from="1561983425900" duration="753000" />
       <workItem from="1562225414248" duration="529000" />
-      <workItem from="1562248136440" duration="7863000" />
+      <workItem from="1562248136440" duration="8473000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49288000" />
+    <option name="totallyTimeSpent" value="49898000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -547,8 +539,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/request/_request.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="148" column="30" selection-start-line="148" selection-start-column="30" selection-end-line="148" selection-end-column="30" />
+        <state relative-caret-position="293">
+          <caret line="193" column="26" selection-start-line="193" selection-start-column="26" selection-end-line="193" selection-end-column="26" />
           <folding>
             <element signature="e#664#856#2" expanded="true" />
             <element signature="e#946#1143#2" expanded="true" />

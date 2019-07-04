@@ -192,9 +192,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 25px;
-      height: 25px;
       margin-bottom: 0;
+      width: 33px;
+      height: 33px;
+      @include media-breakpoint-down(md){
+        width: 25px;
+        height: 25px;
+      }
     }
 
     & .fab {
