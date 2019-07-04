@@ -840,6 +840,10 @@ $(".js-range-slider").ionRangeSlider({
 			}
 		);
 
+    $(".request__accordion-toggle").click(function () {
+       $(this).parents('.request__item').toggleClass('request__item--active').fadeIn(100)
+    })
+
 	});
 
 // 		$(document).ready(function() {
