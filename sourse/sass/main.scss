@@ -71,6 +71,7 @@ $output-bourbon-deprecation-warnings: false;
 @import "../pug/blocks/s-events/_s-events";
 @import "../pug/blocks/s-articals/_s-articals";
 @import "../pug/blocks/request/request";
+@import "landing";
 
 @import "media";// Всегда в конце
 

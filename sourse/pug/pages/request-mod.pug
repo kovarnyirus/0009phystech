@@ -43,6 +43,23 @@ block pagecontent
 					.col
 						div.mb-3
 							+b.FORM.form-wrap
+								+b.topic.row.mb-3
+									.col-auto
+										+e.item
+											+e.INPUT.input(type="checkbox" id='1')&attributes(attributes)
+											+e.LABEL.label(for='1') Все
+									.col-auto
+										+e.item
+											+e.INPUT.input(type="checkbox" id='2')&attributes(attributes)
+											+e.LABEL.label(for='2') Тематика
+									.col-auto
+										+e.item
+											+e.INPUT.input(type="checkbox" id='3')&attributes(attributes)
+											+e.LABEL.label(for='3') Тематика
+									.col-auto
+										+e.item
+											+e.INPUT.input(type="checkbox" id='4')&attributes(attributes)
+											+e.LABEL.label(for='4') Тематика
 								.row
 									.col-6.col-xl-4.col-xxl-2.date-picker-block-js
 										+input("text","Показывать, от ")(class="startDate")

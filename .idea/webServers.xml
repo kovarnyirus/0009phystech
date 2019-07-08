@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="652403ec-d0b7-4e25-b0a4-45a5a9e45f7f" name="test" url="http://46.36.221.242">
+        <fileTransfer host="46.36.221.242" port="22" rootFolder="/home/bitrix/ext_www/phystechpark.msharks.ru" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
