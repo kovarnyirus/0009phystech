@@ -517,9 +517,13 @@
 }
 
 .topic {
+  padding-left: 8px;
+  & .col-auto{
+    padding-left: 7px;
+    padding-right: 7px;
+  }
   &__input {
     display: none;
-
     &:checked {
       & + label {
         background: #494949;
@@ -563,8 +567,8 @@
   }
   @include media-breakpoint-down(md){
     .col-auto{
-      padding-left: 5px!important;
-      padding-right: 5px!important;
+      padding-left: 5px;
+      padding-right: 5px;
     }
     padding-left: 15px;
   }
