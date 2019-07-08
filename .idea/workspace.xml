@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eca02f4b-f5de-4a41-a53c-f41b14f8786e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sourse/sass/_landing.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/request-mod.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/request-mod.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/request-user.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/request-user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/form-wrap.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/form-wrap.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/_mixin-wrap.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/_mixin-wrap.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/request/request.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/request/request.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/pages/request-mod.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/pages/request-mod.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/pages/request-user.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/pages/request-user.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/main.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,8 +33,29 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/request/request.pug">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="324">
-                  <caret line="107" column="107" selection-start-line="107" selection-start-column="107" selection-end-line="107" selection-end-column="107" />
+                <state relative-caret-position="73">
+                  <caret line="78" column="17" lean-forward="true" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/mixin-wrap.pug">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="187">
+                  <caret line="68" column="11" lean-forward="true" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="11" />
+                  <folding>
+                    <element signature="n#pugin#0;n#!!top" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/request/_request.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1980">
+                  <caret line="181" column="7" selection-start-line="181" selection-start-column="7" selection-end-line="181" selection-end-column="7" />
                 </state>
               </provider>
             </entry>
@@ -51,8 +63,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sourse/pug/pages/request-user.pug">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-275">
-                  <caret line="45" column="16" lean-forward="true" selection-start-line="45" selection-start-column="16" selection-end-line="61" selection-end-column="56" />
+                <state relative-caret-position="157">
+                  <caret line="79" column="37" lean-forward="true" selection-start-line="79" selection-start-column="37" selection-end-line="79" selection-end-column="37" />
                   <folding>
                     <element signature="n#b#0;n#b#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#block#1;n#!!top" />
                   </folding>
@@ -64,7 +76,7 @@
             <entry file="file://$PROJECT_DIR$/sourse/pug/pages/request-mod.pug">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="204">
-                  <caret line="82" column="18" selection-start-line="82" selection-start-column="18" selection-end-line="82" selection-end-column="18" />
+                  <caret line="82" column="19" lean-forward="true" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
                 </state>
               </provider>
             </entry>
@@ -100,11 +112,20 @@
       </split-first>
       <split-second>
         <leaf>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/form-wrap.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="252">
+                <state relative-caret-position="260">
                   <caret line="533" column="3" lean-forward="true" selection-start-line="533" selection-start-column="3" selection-end-line="533" selection-end-column="3" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/_mixin-wrap.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="611">
+                  <caret line="220" column="35" selection-start-line="220" selection-start-column="35" selection-end-line="220" selection-end-column="35" />
                 </state>
               </provider>
             </entry>
@@ -122,8 +143,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>soc</find>
-      <find>Дата начала встречи</find>
       <find>s-offices</find>
       <find>pagination</find>
       <find>filter</find>
@@ -152,6 +171,8 @@
       <find>__status</find>
       <find>stat</find>
       <find>__answer</find>
+      <find>soc</find>
+      <find>so</find>
     </findStrings>
     <replaceStrings>
       <replace>.row.justify-content-end.align-items-center.flex-wrap</replace>
@@ -190,6 +211,7 @@
         <option value="$PROJECT_DIR$/sourse/pug/pages/request-user.pug" />
         <option value="$PROJECT_DIR$/sourse/pug/pages/request-mod.pug" />
         <option value="$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/form-wrap.scss" />
+        <option value="$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/_mixin-wrap.scss" />
         <option value="$PROJECT_DIR$/sourse/pug/blocks/request/request.pug" />
       </list>
     </option>
@@ -258,6 +280,12 @@
               <item name="sourse" type="462c0819:PsiDirectoryNode" />
               <item name="pug" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="0009phystech" type="b2602c69:ProjectViewProjectNode" />
+              <item name="0009phystech" type="462c0819:PsiDirectoryNode" />
+              <item name="sourse" type="462c0819:PsiDirectoryNode" />
+              <item name="sass" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -347,25 +375,26 @@
       <workItem from="1562248136440" duration="8904000" />
       <workItem from="1562310809830" duration="603000" />
       <workItem from="1562587384057" duration="1204000" />
-      <workItem from="1562594224774" duration="3426000" />
+      <workItem from="1562594224774" duration="4401000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55562000" />
+    <option name="totallyTimeSpent" value="56537000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4858569" visible="true" weight="0.26986668" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4858569" visible="true" weight="0.26986668" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Gulp" order="2" sideWeight="0.5141431" side_tool="true" weight="0.26986668" />
       <window_info id="npm" order="3" side_tool="true" weight="0.32995737" />
       <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32998884" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.17056856" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -374,7 +403,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Serial Monitor" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32998884" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="File Transfer" order="13" visible="true" weight="0.32998884" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -592,49 +621,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/request/_request.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-996">
-          <caret line="193" column="26" selection-start-line="193" selection-start-column="26" selection-end-line="193" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/mixin-wrap.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="135" column="9" lean-forward="true" selection-start-line="132" selection-start-column="2" selection-end-line="135" selection-end-column="9" />
-          <folding>
-            <element signature="n#pugin#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="1980">
+          <caret line="181" column="7" selection-start-line="181" selection-start-column="7" selection-end-line="181" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sourse/pug/pages/request-user.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-275">
-          <caret line="45" column="16" lean-forward="true" selection-start-line="45" selection-start-column="16" selection-end-line="61" selection-end-column="56" />
+        <state relative-caret-position="157">
+          <caret line="79" column="37" lean-forward="true" selection-start-line="79" selection-start-column="37" selection-end-line="79" selection-end-column="37" />
           <folding>
             <element signature="n#b#0;n#b#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#block#1;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sourse/pug/pages/request-mod.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="82" column="19" lean-forward="true" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/mixin-wrap.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="68" column="11" lean-forward="true" selection-start-line="68" selection-start-column="11" selection-end-line="68" selection-end-column="11" />
+          <folding>
+            <element signature="n#pugin#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/form-wrap.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
+        <state relative-caret-position="260">
           <caret line="533" column="3" lean-forward="true" selection-start-line="533" selection-start-column="3" selection-end-line="533" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sourse/pug/pages/request-mod.pug">
+    <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/_mixin-wrap.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="82" column="18" selection-start-line="82" selection-start-column="18" selection-end-line="82" selection-end-column="18" />
+        <state relative-caret-position="611">
+          <caret line="220" column="35" selection-start-line="220" selection-start-column="35" selection-end-line="220" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/request/request.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="107" column="107" selection-start-line="107" selection-start-column="107" selection-end-line="107" selection-end-column="107" />
+        <state relative-caret-position="73">
+          <caret line="78" column="17" lean-forward="true" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="17" />
         </state>
       </provider>
     </entry>

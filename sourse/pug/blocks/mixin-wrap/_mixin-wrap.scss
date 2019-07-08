@@ -1,5 +1,5 @@
- 
-	  
+
+
 .soc{
 	margin: 0 -5px;
 	@include media-breakpoint-down(sm) {
@@ -29,10 +29,10 @@
 		width: 31px;
 		height: 31px;
 	}
-	 
+
 
 }
- 
+
 
 .jq-selectbox{
 	max-width: 100%;
@@ -41,12 +41,12 @@
  // height: auto;
 	&__select{
 		// background-color: transparent;
-		 
-		box-shadow: none !important; 
+
+		box-shadow: none !important;
 		background-image: none !important;
 		text-shadow: none;
 		font-family: $default-font;
-		font-size: rem(14); 
+		font-size: rem(14);
 		text-align: left;
 		border: 1px solid #dadada;
 		background-color: #fff;
@@ -56,19 +56,19 @@
 		border-radius: rem(6);
 		@include mt;
 		&:hover{
-		 
+
 		}
 		&-text{
 			// width: 100% !important;
 			line-height: 1;
 		}
-	}	
+	}
 	&__select:hover &__trigger{
-		 
+
 	}
 	&__trigger{
 		border: none;
-		background-color: #dadada; 
+		background-color: #dadada;
 		height: 100%;
 		width: 40px;
 		border-radius: rem(6);
@@ -78,19 +78,19 @@
 		background-repeat: no-repeat;
 		@include mt;
 		&:hover{
-			
+
 
 		}
 	}
-	&__trigger-arrow { 
+	&__trigger-arrow {
 		border: none;
-    
+
 }
 li{
 	font-size: rem(16);
 	padding: em(10px) 10px em(10px);
 	&:hover {
-     
+
     color: #fff;
 }
 }
@@ -100,7 +100,7 @@ li{
 .custom-input{
 	display: block;
 	margin: auto;
-	 
+
 	margin-bottom: rem(20);
 	cursor: pointer;
 	position: relative;
@@ -119,9 +119,9 @@ li{
 		height: 20px;
 		background-color: $primary;
 		@include mt;
-		position: absolute; 
+		position: absolute;
 		margin-right: 10px;
-		&::after{ 
+		&::after{
 			@include far("\f00c");
 			position: absolute;
 			@include a-cent;
@@ -139,10 +139,10 @@ li{
 		height: 20px;
 		background-color: $primary;
 		@include mt;
-		position: absolute; 
+		position: absolute;
 		margin-right: 10px;
 		border-radius: 50%;
-		&::after{ 
+		&::after{
 			content: '';
 			position: absolute;
 			@include a-cent;
@@ -156,9 +156,9 @@ li{
 
 	&__input[type="checkbox"]:checked + &__lab{
 		// background-color: $success;
-		 
+
 	}
-	&__input:checked + &__lab{ 
+	&__input:checked + &__lab{
 		&::after{
 
 			opacity: 1;
@@ -172,7 +172,7 @@ li{
 .counter{
 	counter-reset: num;
 	&__item {
-		position: relative; 
+		position: relative;
 		&::before {
 			content: counter(num);
 			counter-increment: num;
@@ -183,14 +183,14 @@ li{
 
 .select2-container--default{
 	display: block;
-	outline: 0 !important; 
+	outline: 0 !important;
 	.select2-selection--single{
 		border-radius: 0;
 		border: none;
 		border-bottom: solid 1px ;
 		height: auto;
 		font-size: rem(24px);
-		outline: 0 !important; 
+		outline: 0 !important;
 		.select2-selection__arrow b{
 				border-color: $success transparent transparent transparent;
 			  border-style: solid;
@@ -203,11 +203,20 @@ li{
 			 padding-bottom: 5px;
 		}
 	}
-} 
+}
 .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{
 	border-color: transparent transparent $success transparent;
   border-width: 0 7px 7px 7px;
 }
 .select2-container--default .select2-results__option--highlighted[aria-selected]{
 	background-color: $success;
+}
+.ya-share2__badge{
+  border-radius: 50%!important;
+  background-color: #0c95ed!important;
+  width: 33px!important;
+  height: 33px!important;
+  display: flex!important;
+  align-items: center!important;
+  justify-content: center!important;
 }
