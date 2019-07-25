@@ -6,6 +6,7 @@
 .project
 .metadata
 bin/
+serv/
 tmp/
 *.tmp
 *.bak
@@ -216,9 +217,9 @@ pip-log.txt
 .mr.developer.cfg
 
 izo/
-.vscode/ 
-node_modules/ 
+.vscode/
+node_modules/
 screen/
- 
+
 
 

@@ -24,6 +24,11 @@
 		 	// box-shadow: 0 0 33px 0px rgba(255, 83, 0, 0.16);
 			opacity: .6 ;
 		}
+      &--telegram{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 	}
 	svg{
 		width: 31px;
@@ -219,4 +224,12 @@ li{
   display: flex!important;
   align-items: center!important;
   justify-content: center!important;
+}
+
+.ya-share2__container .ya-share2__item{
+  margin-right: 12px!important;
+  @include media-breakpoint-down(md){
+    margin-left: 4px!important;
+    margin-right: 0px!important;
+  }
 }

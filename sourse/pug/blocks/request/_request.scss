@@ -22,6 +22,8 @@
         max-height: 100%;
         text-overflow: unset;
         overflow: visible;
+        display: inline-block;
+        font-size: 20px;
 
       }
 
@@ -35,6 +37,7 @@
         box-shadow: none;
         max-height: 100%;
         padding-bottom: 35px;
+        border: 1px solid #acc8da;
       }
 
       & .request__accordion-toggle {
@@ -46,20 +49,22 @@
   &__accordion-toggle {
     position: absolute;
     background-image: url("data:image/svg+xml,%3Csvg width='10' height='17' viewBox='0 0 10 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.25 16L8.75 8.5L1.25 1' stroke='%230C95ED'/%3E%3C/svg%3E%0A");
-    right: 35px;
-    top: 45px;
+    right: 31px;
+    top: 51px;
     width: 15px;
     height: 15px;
     cursor: pointer;
     background-repeat: no-repeat;
+    transition: .2s;
   }
 
   &__question {
     background: #FFFFFF;
-    border: 1px solid #ACC8DA;
-    padding-top: 35px;
+    //border: 1px solid #ACC8DA;
+    padding-top: 27px;
+    padding-bottom: 9px;
     padding-right: 50px;
-    padding-left: 22px;
+    padding-left: 19px;
     display: flex;
     flex-wrap: wrap;
     font-size: 20px;
@@ -74,6 +79,12 @@
       padding-right: 0px;
       padding-left: 0px;
       font-size: 16px;
+    }
+    & p{
+      padding-left: 30px;
+      @include media-breakpoint-down(md){
+        padding-left: 0;
+      }
     }
   }
 
@@ -94,16 +105,22 @@
   &__date {
     margin-bottom: 20px;
     font-size: 16px;
+    padding-left: 30px;
+    @include media-breakpoint-down(md){
+      padding-left: 0;
+    }
   }
 
   &__avatar {
     border-radius: 50%;
     width: 63px;
     height: 63px;
+    margin-bottom: 13px;
   }
 
   &__name {
     font-weight: bold;
+    font-size: 20px;
   }
 
   &__city {
@@ -130,6 +147,11 @@
       text-transform: none;
       min-width: 132px;
       width: 132px;
+    }
+    &--omb{
+      @include media-breakpoint-up(xl){
+        margin-right: 30px;
+      }
     }
 
     &:disabled {
@@ -163,6 +185,12 @@
       padding-right: 0px;
       padding-left: 0px;
     }
+    & p{
+      padding-left: 30px;
+      @include media-breakpoint-down(md){
+        padding-left: 0;
+      }
+    }
   }
 
   &__footer {
@@ -170,9 +198,9 @@
     flex-wrap: wrap;
     background: #FFFFFF;
     border: 1px solid #ACC8DA;
-    padding-top: 18px;
-    padding-left: 30px;
-    padding-bottom: 18px;
+    padding-top: 17px;
+    padding-left: 19px;
+    padding-bottom: 15px;
     @include media-breakpoint-down(sm) {
       padding-top: 10px;
       padding-bottom: 10px;
@@ -210,6 +238,9 @@
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
+    @include media-breakpoint-down(md){
+      margin-bottom: 5px;
+    }
   }
 
   &__status {
@@ -247,5 +278,23 @@
       font-size: 13px;
       padding-right: 0;
     }
+  }
+}
+//.form-wrap__btn--omb{
+//  @include media-breakpoint-up(lg){
+//    width: 240px!important;
+//    max-width: 240px!important;
+//  }
+//  @include media-breakpoint-up(xxl){
+//    width: 280px!important;
+//    max-width: 280px!important;
+//  }
+//
+//}
+
+.row--password{
+  max-width: 515px!important;
+  @include media-breakpoint-down(xl){
+    max-width: 565px !important;
   }
 }
