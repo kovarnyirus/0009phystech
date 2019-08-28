@@ -281,12 +281,12 @@
 
 
 			>li {
-				position: relative; 
+				position: relative;
 					&::before {
-						counter-increment: num; 
-						content: counter(num) ". "; 
+						counter-increment: num;
+						content: counter(num) ". ";
 						margin-right: 3px;
-					} 
+					}
 			}
 
 			ol>li {
@@ -323,8 +323,8 @@
 		}
 	}
 
-	// 
-	// 
+	//
+	//
 	@include media-breakpoint-up(xl) {}
 
 
@@ -334,10 +334,10 @@
 
 	@include media-breakpoint-up(xs) {}
 
-	// 
+	//
 	@include media-breakpoint-between(md, xl) {}
 
-	// 
+	//
 	@include media-breakpoint-only(xs) {}
 
 	@include media-breakpoint-only(sm) {}
@@ -348,7 +348,7 @@
 
 	@include media-breakpoint-only(xl) {}
 
-	// 
+	//
 	@include media-breakpoint-down(xl) {}
 
 	@include media-breakpoint-down(lg) {}
@@ -493,4 +493,42 @@
 
 
 	}
+}
+
+.parking-block{
+  & .section-title{
+    font-size: 2.5rem;
+    line-height: 50px;
+    text-transform: uppercase;
+    padding-bottom: 0;
+    margin-bottom: 35px;
+    @include media-breakpoint-up(lg){
+      margin-bottom: 75px;
+    }
+  }
+  & .s-content__group{
+    padding-bottom: 15px;
+    @include media-breakpoint-up(lg){
+      padding-bottom: 30px;
+    }
+    & .s-content__number{
+      font-size: 3.375rem;
+      line-height: 1.257em;
+      @include media-breakpoint-up(lg){
+        font-size: 4.375rem;
+      }
+    }
+    & h4{
+      font-size: 1rem;
+      @include media-breakpoint-up(lg){
+        font-size: 1.25rem;
+      }
+    }
+  }
+  & .cost{
+    font-family: 'Geometria';
+    font-size: 25px;
+    line-height: 31px;
+  }
+
 }

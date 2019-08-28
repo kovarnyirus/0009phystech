@@ -1,16 +1,16 @@
 extends layout/main.pug
 
 
-include ../blocks/s-content/_s-content.pug
-include ../blocks/s-contact/_s-contact.pug
-include ../blocks/s-about/_s-about.pug
-include ../blocks/s-infrastructure/_s-infrastructure.pug
-include ../blocks/s-logos/_s-logos.pug
-include ../blocks/s-main-calendar/_s-main-calendar.pug
-include ../blocks/s-news/_s-news.pug
-include ../blocks/s-block/_s-block.pug
-include ../blocks/s-sq/_s-sq.pug
-include ../blocks/s-number-2/_s-number-2.pug
+include ../blocks/s-content/_s-content
+include ../blocks/s-contact/_s-contact
+include ../blocks/s-about/_s-about
+include ../blocks/s-infrastructure/_s-infrastructure
+include ../blocks/s-logos/_s-logos
+include ../blocks/s-main-calendar/_s-main-calendar
+include ../blocks/s-news/_s-news
+include ../blocks/s-block/_s-block
+include ../blocks/s-sq/_s-sq
+include ../blocks/s-number-2/_s-number-2
 
 block title
 	title УСЛУГА И СЕВРИС
@@ -20,7 +20,7 @@ block pagecontent
 	+header()
 		//- +top-line()
 		+top-nav()
-	
+
 		+b.header-block(style="background-image: url(img/head-bg-3.jpg);")
 			.container
 				+breadcrumb("Физтехпарк","Технопарк")
@@ -32,7 +32,7 @@ block pagecontent
 					a.btn.btn.btn-danger.popup-with-move-anim(href="#modal-event") Воспользоваться
 				// /изменил
 	.animate-block#particles-js.particle-canvas.particles-js
-		
+
 		//- .large-header#large-header
 			//- canvas.x-canvas#x-canvas
 			//- canvas.x-canvas#x-canvas2
@@ -40,9 +40,9 @@ block pagecontent
 		+b.s-content.section
 			.container
 				+e.section-title
-					h2 
-						span.text-primary К Вашим услугам  
-						| 
+					h2
+						span.text-primary К Вашим услугам
+						|
 						| – фитнес-зона, силовые и кардио-тренажеры, боксерский ринг, душевые кабинки. Опция будет доступна не только резидентам “Физтехпарка”, но и всем желающим вести здоровый образ жизни.
 				.row.justify-content-center
 					mixin item(i,t)
@@ -56,23 +56,26 @@ block pagecontent
 					+item("002-boxing-gloves.svg","БОКСЕРСКИЙ РИНГ")
 					+item("003-barbell.svg","СТОЙКА ВЕСОВ")
 					+item("004-exercise.svg", "ГРУШИ")
-			 
- 
+
+
 	+b.s-content--slider.text-white.bg-primary.animate-section.mb-0
 		canvas.x-canvas
 		.container
 			.row
-				.col-xxl-4.col-lg-5.section.po-event-no
+				.col-xxl-4.col-lg-5.section.po-event-no.parking-block
 					+b.section-title
-						h2.ttu Хотите арендовать  пространство?
-					.h3.strong Какой то текст про спортзал для наглядности, справа слайдер
+						h2.ttu Хотите арендовать парковку?
+					.h3.strong
 					mixin item(n,t)
-						+e.group 
+						+e.group
 							+e.number= n
 							.h4.strong= t
-					+item("20","Тренеров")
-					+item("25","Тренажеров")
-					+item("740 м2","Площадь спортзала")
+					+item("300","Машиномест")
+					+item("9000 м2","Площадь парковки")
+					.h3.strong.mt-lg-4.mb-lg-5 Услугу можно оплатить онлайн
+					p.cost 1 час – 50 руб.
+						br/ 1 сутки – 200 руб.
+						br/ 1 месяц – 4000 руб.
 				+e.slider-col.col
 					+e.slider-wrap
 						+e.slider--js
@@ -87,5 +90,4 @@ block pagecontent
 		+s-form()
 		//- +s-contact()
 		+footer()
-	
-	
+

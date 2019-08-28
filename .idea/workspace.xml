@@ -2,28 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eca02f4b-f5de-4a41-a53c-f41b14f8786e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sourse/pug/pages/pass-recovery.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/07-po-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/07-po-5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/07-po-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/07-po-6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/10-kovorking.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/10-kovorking.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/11-rent-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/11-rent-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/11-rent.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/11-rent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/14-platforms.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/14-platforms.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/04-servise.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/04-servise.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/modal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/request-mod.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/request-mod.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/request-user.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/request-user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/footer-page/_footer-page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/footer-page/_footer-page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/_mixin-wrap.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/_mixin-wrap.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/form-wrap.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/form-wrap.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/mixin-wrap.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/mixin-wrap.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/request/_request.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/request/_request.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/_landing.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/_landing.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/++/04-servise.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/pages/04-servise.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/s-content/_s-content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/s-content/_s-content.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,45 +33,6 @@
     <expand />
     <select />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/img/svg/sprite.svg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sourse/pug/pages/request-mod.pug">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="42" column="10" selection-start-line="42" selection-start-column="10" selection-end-line="84" />
-              <folding>
-                <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#block#1;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sourse/pug/pages/pass-recovery.pug">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/img/svg/_sprite.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="16" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -96,149 +40,10 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>Публичный вопрос</find>
-      <find>.fb-button:hover</find>
-      <find>col-auto ml-auto</find>
-      <find>rotate(0)</find>
-      <find>.appeal-items .item</find>
-      <find>.appeal-items .item &gt; .co</find>
-      <find>url(../images/arrow.png) 50% no-repeat</find>
-      <find>Обратиться</find>
-      <find>acti</find>
-      <find>form-wrap__btn--edit</find>
-      <find>edit</find>
-      <find>col-12 col-md-6</find>
-      <find>btn--edit</find>
-      <find>g/arrow-right.png)</find>
-      <find>item</find>
-      <find>ya-share2__item</find>
-      <find>before</find>
-      <find>__question</find>
-      <find>col-md-9 col-lg-8 col-xl-6</find>
-      <find>content</find>
-      <find>form-wrap__input form-control</find>
-      <find>form-wrap__input-wrap form-group</find>
-      <find>btn--omb</find>
-      <find>form-control</find>
-      <find>appeal-items</find>
-      <find>soc</find>
-      <find>soc__item</find>
-      <find>arrow</find>
-      <find>left</find>
-      <find>form-wrap</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>.row.justify-content-end.align-items-center.flex-wrap</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>C:\Users\kova\Desktop\metasharks\0009phystech\public</dir>
-      <dir>C:\Users\kova\Desktop\metasharks\0009phystech\sourse\pug\pages</dir>
-      <dir>C:\Users\kova\Desktop\metasharks\0009phystech\soursepagination</dir>
-      <dir>C:\Users\kova\Desktop\metasharks\0009phystech\sourse\pug</dir>
-      <dir>C:\Users\kova\Desktop\metasharks\0009phystech\serv\local\components\ombudsman</dir>
-      <dir>C:\Users\kova\Desktop\metasharks\0009phystech\serv</dir>
-      <dir>C:\Users\kova\Desktop\metasharks\0009phystech\sourse</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/gulpfile.js" />
-        <option value="$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/form-wrap.pug" />
-        <option value="$PROJECT_DIR$/sourse/pug/blocks/aside/_aside.pug" />
-        <option value="$PROJECT_DIR$/sourse/pug/pages/07-po-6.pug" />
-        <option value="$PROJECT_DIR$/sourse/pug/blocks/request-user/request-user.pug" />
-        <option value="$PROJECT_DIR$/sourse/pug/blocks/request-user/_request-user.scss" />
-        <option value="$PROJECT_DIR$/sourse/pug/blocks/s-offices/_s-offices.pug" />
-        <option value="$PROJECT_DIR$/sourse/pug/blocks/modal/_modal.scss" />
-        <option value="$PROJECT_DIR$/sourse/pug/pages/modal.pug" />
-        <option value="$PROJECT_DIR$/sourse/pug/blocks/modal/_modal.pug" />
-        <option value="$PROJECT_DIR$/sourse/js/common.js" />
-        <option value="$PROJECT_DIR$/sourse/sass/main.scss" />
-        <option value="&lt;652403ec-d0b7-4e25-b0a4-45a5a9e45f7f&gt;/local/templates/main/header.php" />
-        <option value="$PROJECT_DIR$/sourse/pug/pages/request-user.pug" />
-        <option value="$PROJECT_DIR$/sourse/pug/pages/request-mod.pug" />
-        <option value="$PROJECT_DIR$/sourse/pug/blocks/request/request.pug" />
-        <option value="&lt;652403ec-d0b7-4e25-b0a4-45a5a9e45f7f&gt;/.footer_col_l.menu.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/serv/local/components/ombudsman/user.auth/templates/.default/template.php" />
-        <option value="&lt;652403ec-d0b7-4e25-b0a4-45a5a9e45f7f&gt;/local/components/ombudsman/user.auth/templates/.default/template.php" />
-        <option value="$PROJECT_DIR$/serv/local/templates/ombudsman_landing/css/main.css" />
-        <option value="&lt;652403ec-d0b7-4e25-b0a4-45a5a9e45f7f&gt;/local/templates/main/js/common.js" />
-        <option value="&lt;652403ec-d0b7-4e25-b0a4-45a5a9e45f7f&gt;/local/templates/main/css/main.min.css" />
-        <option value="&lt;652403ec-d0b7-4e25-b0a4-45a5a9e45f7f&gt;/local/components/ombudsman/requests.list/templates/.default/template.php" />
-        <option value="&lt;652403ec-d0b7-4e25-b0a4-45a5a9e45f7f&gt;/local/templates/main/img/svg/check-white.svg" />
-        <option value="$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/form-wrap.scss" />
-        <option value="&lt;652403ec-d0b7-4e25-b0a4-45a5a9e45f7f&gt;/ombudsman_landing/index.php" />
-        <option value="&lt;652403ec-d0b7-4e25-b0a4-45a5a9e45f7f&gt;/local/components/ombudsman/new.request/templates/.default/template.php" />
-        <option value="&lt;652403ec-d0b7-4e25-b0a4-45a5a9e45f7f&gt;/local/components/ombudsman/landing.requests.list/templates/.default/template.php" />
-        <option value="&lt;652403ec-d0b7-4e25-b0a4-45a5a9e45f7f&gt;/local/components/ombudsman/profile/templates/.default/template.php" />
-        <option value="$PROJECT_DIR$/sourse/sass/_landing.scss" />
-        <option value="$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/mixin-wrap.pug" />
-        <option value="$PROJECT_DIR$/sourse/pug/blocks/request/_request.scss" />
-        <option value="$PROJECT_DIR$/sourse/pug/blocks/footer-page/_footer-page.scss" />
-        <option value="$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/_mixin-wrap.scss" />
-        <option value="&lt;652403ec-d0b7-4e25-b0a4-45a5a9e45f7f&gt;/uslugi-i-servisy/landings_includes/footer_socs.php" />
-        <option value="&lt;595ce71f-5628-40b8-a1bc-76f25cdc8478&gt;/fiztechpark.metasharks.ru/uslugi-i-servisy/landings_includes/footer_socs.php" />
-        <option value="$PROJECT_DIR$/public/img/svg/sprite.svg" />
-        <option value="$PROJECT_DIR$/sourse/pug/pages/07-po-5.pug" />
-        <option value="$PROJECT_DIR$/sourse/pug/pages/pass-recovery.pug" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="0009phystech" type="b2602c69:ProjectViewProjectNode" />
-              <item name="0009phystech" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="0009phystech" type="b2602c69:ProjectViewProjectNode" />
-              <item name="0009phystech" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="0009phystech" type="b2602c69:ProjectViewProjectNode" />
-              <item name="0009phystech" type="462c0819:PsiDirectoryNode" />
-              <item name="sourse" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="0009phystech" type="b2602c69:ProjectViewProjectNode" />
-              <item name="0009phystech" type="462c0819:PsiDirectoryNode" />
-              <item name="sourse" type="462c0819:PsiDirectoryNode" />
-              <item name="pug" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="0009phystech" type="b2602c69:ProjectViewProjectNode" />
-              <item name="0009phystech" type="462c0819:PsiDirectoryNode" />
-              <item name="sourse" type="462c0819:PsiDirectoryNode" />
-              <item name="pug" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
+  <component name="ProjectId" id="1Pxp5OMegf9iOcQrs0A2TASeTzF" />
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -256,6 +61,9 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2018.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kova\Desktop\metasharks\0009phystech\sourse\pug\pages" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\kova\Desktop\metasharks\0009phystech\sourse\pug\pages" />
       <recent name="C:\Users\kova\Desktop\metasharks\0009phystech\sourse\svg" />
@@ -359,12 +167,13 @@
       <workItem from="1563971760602" duration="732000" />
       <workItem from="1563973615356" duration="730000" />
       <workItem from="1564002604957" duration="170000" />
-      <workItem from="1564042579625" duration="1416000" />
+      <workItem from="1564042579625" duration="4070000" />
+      <workItem from="1564145831143" duration="974000" />
+      <workItem from="1566825419224" duration="1030000" />
+      <workItem from="1566839925020" duration="559000" />
+      <workItem from="1566997613628" duration="3116000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94809000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -375,347 +184,20 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48521507" visible="true" weight="0.18506667" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Gulp" order="2" sideWeight="0.51478493" side_tool="true" weight="0.18506667" />
-      <window_info id="npm" order="3" sideWeight="0.5150502" side_tool="true" weight="0.18506667" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49973333" visible="true" weight="0.17056856" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32998884" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32998884" />
-      <window_info anchor="bottom" id="Serial Monitor" order="9" weight="0.32998884" />
-      <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32998884" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5002667" side_tool="true" weight="0.17056856" />
-      <window_info anchor="bottom" id="File Transfer" order="13" weight="0.32998884" />
-      <window_info anchor="bottom" id="TypeScript" order="14" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.3296" />
-      <window_info anchor="right" id="Remote Host" order="4" visible="true" weight="0.2032" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sourse/sass/bootstrap/mixins/_pagination.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/s-offices/_s-offices.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6912">
-          <caret line="288" column="18" selection-start-line="288" selection-start-column="18" selection-end-line="288" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/top-nav/_top-nav.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="58" column="74" lean-forward="true" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sourse/pug/pages/07-po-6.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="58" column="21" lean-forward="true" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/img/arrow-profit-2.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/img/arrow-profit-1.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/img/arr-down.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/img/arrow-right-white.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/img/arrow-right-dark.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/img/arrow-right.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/img/arrow-profit-4.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sourse/svg/arr-left.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sourse/svg/sm-left.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sourse/pug/pages/modal.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/modal/_modal.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="146" column="56" selection-start-line="146" selection-start-column="56" selection-end-line="146" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/modal/_modal.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../2/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="13" selection-end-line="287" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sourse/sass/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1752">
-          <caret line="73" column="18" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sourse/pug/pages/request-user.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="55" column="23" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/main.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="20" column="99395" selection-start-line="20" selection-start-column="99385" selection-end-line="20" selection-end-column="99395" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serv/local/templates/ombudsman_landing/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serv/local/templates/ombudsman_landing/js/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sourse/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20208">
-          <caret line="842" column="4" selection-start-line="842" selection-start-column="4" selection-end-line="844" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serv/local/components/ombudsman/new.request/component.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serv/local/components/ombudsman/new.request/templates/.default/template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1512">
-          <caret line="63" column="47" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serv/local/components/ombudsman/user.auth/templates/.default/template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="97" column="35" selection-start-line="97" selection-start-column="35" selection-end-line="97" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serv/local/components/ombudsman/requests.list/templates/.default/template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="211" column="28" selection-start-line="211" selection-start-column="28" selection-end-line="211" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/form-wrap.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="209" column="61" selection-start-line="209" selection-start-column="61" selection-end-line="209" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/img/arrow.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/request/request.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="175" column="24" selection-start-line="175" selection-start-column="24" selection-end-line="175" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serv/local/components/ombudsman/profile/templates/.default/template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serv/local/templates/main/components/bitrix/main.profile/profile/template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="92" column="70" lean-forward="true" selection-start-line="92" selection-start-column="70" selection-end-line="92" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/request-user.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sourse/sass/bootstrap/_input-group.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="131" column="23" selection-start-line="131" selection-start-column="11" selection-end-line="131" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sourse/sass/_landing.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="325" selection-start-line="325" selection-end-line="325" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/footer-page/_footer-page.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/mixin-wrap.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="68" column="6" selection-start-line="68" selection-start-column="6" selection-end-line="68" selection-end-column="6" />
-          <folding>
-            <element signature="n#pugin#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/_mixin-wrap.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/request/_request.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="228" column="7" selection-start-line="228" selection-start-column="7" selection-end-line="228" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sourse/pug/blocks/footer-page/_footer-page.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sourse/svg/arrow-left.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serv/local/templates/main/11-rent.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18120">
-          <caret line="755" column="41" selection-start-line="755" selection-start-column="41" selection-end-line="755" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/img/svg/sprite.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/img/svg/check-white.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/img/svg/_sprite.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sourse/pug/pages/index.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-144">
-          <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sourse/pug/pages/07-po-5.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="56" column="83" lean-forward="true" selection-start-line="56" selection-start-column="83" selection-end-line="56" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sourse/pug/pages/request-mod.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="42" column="10" selection-start-line="42" selection-start-column="10" selection-end-line="84" />
-          <folding>
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#block#1;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sourse/pug/pages/pass-recovery.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
