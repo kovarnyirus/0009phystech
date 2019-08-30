@@ -1,13 +1,13 @@
 include ../mixin-wrap/mixin-wrap.pug
 
 
-																		 
+
 mixin mob-mnu()
-	
+
 	+b.trop.main-mnu.hidden-mnu.hidden-lg.landingMenu2.d-lg-none
 		.toggle-mnu.toggle-mnu-1
 			span
-		.wrapp-hidden 
+		.wrapp-hidden
 			+e.logo
 				a(href="#")
 					img(src="img/logo-new.svg", alt="")
@@ -16,11 +16,11 @@ mixin mob-mnu()
 				+e.tel.h4.strong.text-white(href="tel:") +7 (495) 114-50-12
 	//  мобильное меню
 mixin mob-mnu--wsh()
-	
+
 	+b.trop.main-mnu.hidden-mnu.hidden-lg.landingMenu2.d-lg-none
 		.toggle-mnu.toggle-mnu-1
 			span
-		.wrapp-hidden 
+		.wrapp-hidden
 			+e.logo
 				a(href="#")
 					img(src="img/logo-new.svg", alt="")
@@ -29,7 +29,7 @@ mixin mob-mnu--wsh()
 				+e.tel.h4.strong.text-white(href="tel:") +7 (495) 114-50-12
 	//  мобильное меню
 
-mixin top-nav() 
+mixin top-nav()
 	// start top-nav
 	+b.top-nav
 		.container
@@ -41,9 +41,9 @@ mixin top-nav()
 								a(href="#")
 									img.res-i(src="img/logo-new.svg", alt="")
 						.col-auto.d-none.d-md-block.d-lg-none.d-xxl-block
-							+e.title МЕЖДУНАРОДНЫЙ   
+							+e.title МЕЖДУНАРОДНЫЙ
 								|
-								span.d-block НАУЧНО-ОБРАЗОВАТЕЛЬНЫЙ 
+								span.d-block НАУЧНО-ОБРАЗОВАТЕЛЬНЫЙ
 								|  КЛАСТЕР
 				.col.d-none.d-lg-block
 					+mnu()
@@ -57,7 +57,7 @@ mixin top-nav()
 				// добавил
 				.col-auto
 					+e.A.btn.popup-with-move-anim(href="#modal-call") Обратная связь
-				
+
 
 				.col-auto
 					// изменил
@@ -67,10 +67,10 @@ mixin top-nav()
 				.col-auto.d-lg-none
 					.toggle-mnu.toggle-mnu-1.d-lg-none
 						span
-					
+
 	// end top-nav
 
-mixin top-nav-po() 
+mixin top-nav-po()
 	// start top-nav
 	+b.top-nav
 		.container
@@ -82,9 +82,9 @@ mixin top-nav-po()
 								a(href="#")
 									img.res-i(src="img/logo-new.svg", alt="")
 						.col-auto.d-none.d-md-block.d-lg-none.d-xxl-block
-							+e.title МЕЖДУНАРОДНЫЙ   
+							+e.title МЕЖДУНАРОДНЫЙ
 								|
-								span.d-block НАУЧНО-ОБРАЗОВАТЕЛЬНЫЙ 
+								span.d-block НАУЧНО-ОБРАЗОВАТЕЛЬНЫЙ
 								|  КЛАСТЕР
 				.col.d-none.d-lg-block
 					+mnu()
@@ -98,7 +98,7 @@ mixin top-nav-po()
 				// добавил
 				.col-auto
 					+e.A.btn.popup-with-move-anim(href="#modal-call") Обратная связь
-				
+
 
 				.col-auto
 					// изменил
@@ -115,12 +115,12 @@ mixin top-nav-po()
 				.col-auto.d-lg-none
 					.toggle-mnu.toggle-mnu-1.d-lg-none
 						span
-					
+
 	// end top-nav
 
 
 
-mixin top-nav--landing() 
+mixin top-nav--landing()
 	// start top-nav
 	+b.top-nav--landing
 		.container
@@ -131,10 +131,10 @@ mixin top-nav--landing()
 							+e.logo
 								a(href="#")
 									img.res-i(src="img/logo-land.svg", alt="")
-						.col-auto.d-none.d-md-block.d-lg-none.d-xxl-block
-							+e.title МЕЖДУНАРОДНЫЙ   
+						.col-auto.d-none.d-md-block.d-lg-none.d-xxxl-block
+							+e.title МЕЖДУНАРОДНЫЙ
 								|
-								span.d-block НАУЧНО-ОБРАЗОВАТЕЛЬНЫЙ 
+								span.d-block НАУЧНО-ОБРАЗОВАТЕЛЬНЫЙ
 								|  КЛАСТЕР
 				.col.d-none.d-lg-block
 					+mnu()
@@ -148,7 +148,7 @@ mixin top-nav--landing()
 				//- // добавил
 				//- .col-auto
 				//- 	+e.A.btn.popup-with-move-anim(href="#modal-call") Обратная связь
-				
+
 
 				.col-auto.d-none.d-sm-block
 					+e.tel.h4.strong(href="tel:") +7 (495) 114-50-12
@@ -160,9 +160,9 @@ mixin top-nav--landing()
 				.col-auto.d-lg-none
 					.toggle-mnu.toggle-mnu-1.d-lg-none
 						span
-					
+
 	// end top-nav
-mixin top-nav--wsh() 
+mixin top-nav--wsh()
 	// start top-nav
 	+b.top-nav--landing
 		.container
@@ -174,9 +174,9 @@ mixin top-nav--wsh()
 								a(href="#")
 									img.res-i(src="img/logo-land.svg", alt="")
 						.col-auto.d-none.d-md-block.d-lg-none.d-xxl-block
-							+e.title МЕЖДУНАРОДНЫЙ   
+							+e.title МЕЖДУНАРОДНЫЙ
 								|
-								span.d-block НАУЧНО-ОБРАЗОВАТЕЛЬНЫЙ 
+								span.d-block НАУЧНО-ОБРАЗОВАТЕЛЬНЫЙ
 								|  КЛАСТЕР
 				.col.d-none.d-lg-block
 					+mnu--wsh
@@ -190,7 +190,7 @@ mixin top-nav--wsh()
 				//- // добавил
 				//- .col-auto
 				//- 	+e.A.btn.popup-with-move-anim(href="#modal-call") Обратная связь
-				
+
 
 				.col-auto.d-none.d-sm-block
 					+e.link-wrap.text-right
@@ -204,5 +204,5 @@ mixin top-nav--wsh()
 				.col-auto.d-lg-none
 					.toggle-mnu.toggle-mnu-1.d-lg-none
 						span
-					
+
 	// end top-nav

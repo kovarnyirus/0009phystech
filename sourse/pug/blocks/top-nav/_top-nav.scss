@@ -3,7 +3,7 @@
 	top: 100%;
 	// @include clearfix;ss
 	z-index: 201;
-	
+
 	// padding-top: 3px;
 	@include mt;
 	@include media-breakpoint-up(xxl) {
@@ -70,7 +70,7 @@
 		width: 207px;
 		line-height: 1;
 		@include media-breakpoint-up(xxxl){
-			
+
 			margin-right: 124px;
 		}
 					@include media-breakpoint-up(xxl){
@@ -83,7 +83,7 @@
 		@extend .btn-outline-primary;
 		color: #ffffff;
 		@include media-breakpoint-up(xxl) {
-			
+
 			font-size: 13px;
 			width: 171px;
 		}
@@ -97,7 +97,7 @@
 		height: $h2-font-size;
 		display: inline-flex;
 		justify-content: center;
-		align-items: center; 
+		align-items: center;
 		position: relative;
 		overflow: hidden;
 		color: transparent !important;
@@ -132,7 +132,7 @@
 		}
 
 	}
-	
+
 	&__btn-lang{
 		@extend .btn-outline-primary;
 		@extend .btn;
@@ -162,15 +162,54 @@
 
 	&--landing{
 		color: #ffffff !important;
-		.top-nav__btn-po,
+        .top-nav__btn-po,
 		.top-nav__tel,
-		.nav__link
-		{
+		.nav__link {
 			color: #ffffff !important;
+            font-size: 16px;
+          @include media-breakpoint-only(xl){
+            font-size: 13px;
+          }
+          @include media-breakpoint-only(lg){
+            font-size: 12px;
+          }
 		}
 	 &.fixed{
 		 background-color: $body-color;
 	 }
+      & .nav__item{
+        margin-right: 29px;
+        margin-left: 0;
+        &:last-child{
+          margin-right: 0;
+        }
+        @include media-breakpoint-only(xl){
+          & a{
+            font-size: 13px;
+          }
+
+          & .top-nav__logo img{
+            max-width: 150px;
+          }
+        }
+
+        @include media-breakpoint-only(lg){
+          & a{
+            font-size: 12px;
+          }
+
+          & .top-nav__logo img{
+            max-width: 120px;
+          }
+        }
+      }
+      & .top-nav__title{
+        margin-right: 0;
+        line-height: 1.2;
+      }
+      & .nav{
+        justify-content: center;
+      }
 	}
 	@include media-breakpoint-up(xl) {}
 
@@ -182,10 +221,10 @@
 
 	@include media-breakpoint-up(xs) {}
 
-	// 
+	//
 	@include media-breakpoint-between(md, xl) {}
 
-	// 
+	//
 	@include media-breakpoint-only(xs) {}
 
 	@include media-breakpoint-only(sm) {}
@@ -196,7 +235,7 @@
 
 	@include media-breakpoint-only(xl) {}
 
-	// 
+	//
 	@include media-breakpoint-down(xl) {}
 
 	@include media-breakpoint-down(lg) {}
@@ -208,7 +247,7 @@
 	}
 
 	@include media-breakpoint-down(sm) {
-	
+
 	}
 
 	@include media-breakpoint-down(xs) {
@@ -217,7 +256,7 @@
 			height: 2rem;
 			font-size: 18px;
 			&::before{
-				
+
 				font-size: 18px;
 			}
 		}
@@ -241,7 +280,7 @@
 	.dropdown{
 
 		&-toggle{
-			
+
 			&::after{
 				display: none;
 			}
@@ -254,7 +293,7 @@
 				width: $popover-arrow-width;
 				height: $popover-arrow-height;
 				margin: 0 $border-radius-lg;
-		
+
 				&::before,
 				&::after {
 					position: absolute;
@@ -272,17 +311,17 @@
 				right: 0;
 				left: auto;
 			}
-		
+
 			.arrow::before,
 			.arrow::after {
 				border-width: 0 ($popover-arrow-width / 2) $popover-arrow-height ($popover-arrow-width / 2);
 			}
-		
+
 			.arrow::before {
 				top: 0;
 				border-bottom-color: $popover-arrow-outer-color;
 			}
-		
+
 			.arrow::after {
 				top: $popover-border-width;
 				border-bottom-color: $popover-arrow-color;
@@ -301,7 +340,7 @@ a{
 		margin-left: -5px;
 			margin-right: -5px;
 	}
-	
+
 	// @include roww(19);
 	@include media-breakpoint-up(xxxl) {
 
@@ -346,7 +385,7 @@ a{
 				background-size: 100%;
 				display: block;
 				line-height: 1;
-				
+
 			}
 			&.hover-block:hover{
 				&::before{
@@ -359,7 +398,7 @@ a{
 
 				}
 			}
-			 
+
 		}
 	}
 }
@@ -378,7 +417,7 @@ a{
 		left: -50%;
 		top: 0;
 	}
-	
+
 	&::after{
 		content: '';
 		position: absolute;
@@ -394,17 +433,17 @@ a{
 	@include media-breakpoint-up(lg) {
 
 		left: 50%;
-		transform: translateX(-50%); 
+		transform: translateX(-50%);
 		top: 100%;
 		position: absolute;
 		text-align: left;
-		width: 213px; 
+		width: 213px;
 		background-color: #fff;
 	}
 	padding: 15px 20px;
-	border: 1px solid #0C95ED; 
+	border: 1px solid #0C95ED;
 box-shadow: 4px 4px 50px rgba(12, 149, 237, 0.22);
-	
+
 	&__link{
 		display: block;
 		@extend .text-body;
@@ -424,12 +463,12 @@ box-shadow: 4px 4px 50px rgba(12, 149, 237, 0.22);
 .toggle-mnu{
 	@extend .btn;
 	display: block;
-	height: 40px; 
+	height: 40px;
 	width: 40px;
 	margin-left: 0;
 	position: relative;
 	z-index: 999 !important;
-	right: 0;  
+	right: 0;
 	top: $h;
 	@extend .btn-outline-primary;
 	cursor: pointer;
@@ -458,7 +497,7 @@ box-shadow: 4px 4px 50px rgba(12, 149, 237, 0.22);
 			width: 18px;
 			height: $h;
 			transition: all 0.3s;
-			backface-visibility: hidden; 
+			backface-visibility: hidden;
 		}
 		span:after,
 		span:before{
@@ -501,7 +540,7 @@ box-shadow: 4px 4px 50px rgba(12, 149, 237, 0.22);
 		right: 0;
 		transform: translate(100%, 0);
 			@include mt(.6);
-			will-change: transform; 
+			will-change: transform;
 		.wrapp-hidden{
 			background-color: #000;
 			padding: 5% 0;
@@ -517,7 +556,7 @@ box-shadow: 4px 4px 50px rgba(12, 149, 237, 0.22);
 				.toggle-mnu{
 					opacity: 1;
 				}
-			} 
+			}
 			.toggle-mnu{
 				// position: relative;
 				cursor: pointer;
@@ -553,7 +592,7 @@ box-shadow: 4px 4px 50px rgba(12, 149, 237, 0.22);
 
 
 			}
- 
+
 
 		 }
 
