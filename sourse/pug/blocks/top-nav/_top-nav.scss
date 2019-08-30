@@ -57,6 +57,12 @@
 	}
 
 	&__logo{
+      @include media-breakpoint-only(lg){
+        width: 130px;
+      }
+      @include media-breakpoint-only(xl){
+        width: 180px;
+      }
 		@include media-breakpoint-up(xxxl) {
 
 			width: 212px;

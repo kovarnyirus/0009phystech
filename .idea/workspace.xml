@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eca02f4b-f5de-4a41-a53c-f41b14f8786e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/img/logo-black.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/04-servise.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/04-servise.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/07-po-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/07-po-5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/07-po-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/07-po-6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/10-kovorking.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/10-kovorking.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/11-rent-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/11-rent-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/11-rent.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/11-rent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/12-workshop.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/12-workshop.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/14-platforms.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/14-platforms.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/modal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/pass-recovery.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/pass-recovery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/request-mod.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/request-mod.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/request-user.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/request-user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/mixin-wrap.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/mixin-wrap.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/top-nav/_top-nav.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/top-nav/_top-nav.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/top-nav/_top-nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/top-nav/_top-nav.scss" afterDir="false" />
     </list>
@@ -186,7 +175,7 @@
       <workItem from="1566839925020" duration="559000" />
       <workItem from="1566997613628" duration="3773000" />
       <workItem from="1567159687398" duration="3778000" />
-      <workItem from="1567174782589" duration="3653000" />
+      <workItem from="1567174782589" duration="4522000" />
     </task>
     <servers />
   </component>
